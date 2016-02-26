@@ -1,6 +1,7 @@
 from bottle import route, run, template, get
 from bottle import static_file, url
 import json
+import os
 
 def check_login(username, password):
 	with open("login.json", 'r') as infile:
@@ -58,4 +59,7 @@ def do_login():
     else:
         return "<p>Login failed.</p>"
 
-run(host='localhost', port=8080, debug=True)
+if __name__ == "__main__":
+
+    port = int(os.environ.get('PORT', 5000))
+    main.app.run(host='0.0.0.0', port=port)
