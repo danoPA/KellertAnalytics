@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88c8f250-0766-42a8-a247-09275567178c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_projections.html" afterPath="$PROJECT_DIR$/index_projections.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_stats.html" afterPath="$PROJECT_DIR$/index_stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/power_rankings_load.py" afterPath="$PROJECT_DIR$/power_rankings_load.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <ignored path="KellertAnalytics.iws" />
@@ -26,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.71631205">
+              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -58,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_projections.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_projections.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_projections.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.4366198">
+            <state vertical-scroll-proportion="-78.75">
               <caret line="126" column="85" selection-start-line="126" selection-start-column="85" selection-end-line="126" selection-end-column="85" />
               <folding />
             </state>
@@ -108,9 +105,9 @@
         <option value="$PROJECT_DIR$/index_powerrankings.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/power_rankings_load.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/index_stats.html" />
         <option value="$PROJECT_DIR$/index_projections.html" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -436,16 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_stats.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.125">
@@ -456,9 +443,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index_projections.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.4366198">
+        <state vertical-scroll-proportion="-78.75">
           <caret line="126" column="85" selection-start-line="126" selection-start-column="85" selection-end-line="126" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71631205">
+          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
