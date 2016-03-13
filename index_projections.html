@@ -123,7 +123,8 @@ $(document).ready(function(){
         $('#sel1').on('change', function(){
         selected1 = $(this).find("option:selected").val();
           if(selected2 !== "" & selected1 !== selected2){
-            $("p.output").text(selected1 +" has a "+(json[selected1][selected2]*100)+"% percent chance of beating "+ selected2);
+            $("p.output").text(selected1 +" has a "+Math.round(json[selected1][selected2]*100)+
+                "% percent chance of beating "+ selected2);
             }
         });
 
