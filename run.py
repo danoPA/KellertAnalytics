@@ -23,13 +23,17 @@ def home():
 def powerrank():
     rankings = load_power_rankings("power_rankings_2016_temp.csv")
 
-    return template("index.html", url = url, rankings = rankings)
+    return template("index_powerrankings.html", url = url, rankings = rankings)
 
 @route('/stats')
 def stats():
     stats = load_team_stats("adjustedStats_2016.csv")
 
     return template("index_stats.html", url = url, stats = stats)
+
+@route('/projections')
+def projections():
+    return template("index_projections.html", url=url)
 
 
 @route('/static/<filename>', name = 'static')
