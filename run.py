@@ -3,7 +3,7 @@ from bottle import static_file, url
 import json
 import os
 import pandas as pd
-from power_rankings_load import load_power_rankings, load_team_stats
+from power_rankings_load import load_power_rankings, load_team_stats, load_teams
 
 
 def check_login(username, password):
@@ -33,7 +33,8 @@ def stats():
 
 @route('/projections')
 def projections():
-    return template("index_projections.html", url=url)
+    teams = load_teams("probs_2015.csv")
+    return template("index_projections.html", url=url, teams=teams)
 
 
 @route('/static/<filename>', name = 'static')
@@ -65,6 +66,6 @@ def do_login():
 
 if __name__ == "__main__":
 
-    port = int(os.environ.get('PORT', 80))
+    port = int(os.environ.get('PORT', 8080))
     debug(True)
-    run(host='0.0.0.0', port=port, reloader=True)
+    run(host='localhost', port=port, reloader=True)

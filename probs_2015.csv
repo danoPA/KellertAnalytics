@@ -1,0 +1,2279 @@
+Teams,Probability that Team 1 beats Team 2
+Albany NY-Arizona,0.0587
+Albany NY-Arkansas,0.3879
+Albany NY-Baylor,0.1169
+Albany NY-Belmont,0.4031
+Albany NY-Boise St,0.2582
+Albany NY-Buffalo,0.4167
+Albany NY-Butler,0.1891
+Albany NY-BYU,0.1751
+Albany NY-Cincinnati,0.4717
+Albany NY-Coastal Car,0.555
+Albany NY-Davidson,0.2414
+Albany NY-Dayton,0.1685
+Albany NY-Duke,0.0326
+Albany NY-E Washington,0.4847
+Albany NY-Georgetown,0.0762
+Albany NY-Georgia,0.187
+Albany NY-Georgia St,0.495
+Albany NY-Gonzaga,0.1592
+Albany NY-Hampton,0.5607
+Albany NY-Harvard,0.4191
+Albany NY-Indiana,0.2525
+Albany NY-Iowa,0.226
+Albany NY-Iowa St,0.1188
+Albany NY-Kansas,0.0852
+Albany NY-Kentucky,0.0
+Albany NY-Lafayette,0.5783
+Albany NY-Louisville,0.181
+Albany NY-LSU,0.3816
+Albany NY-Manhattan,0.4978
+Albany NY-Maryland,0.1498
+Albany NY-Michigan St,0.1855
+Albany NY-Mississippi,0.4061
+Albany NY-N Dakota St,0.6014
+Albany NY-NC State,0.2433
+Albany NY-New Mexico St,0.397
+Albany NY-North Carolina,0.1063
+Albany NY-North Florida,0.3692
+Albany NY-Northeastern,0.4725
+Albany NY-Northern Iowa,0.0903
+Albany NY-Notre Dame,0.0577
+Albany NY-Ohio St,0.1111
+Albany NY-Oklahoma,0.1727
+Albany NY-Oklahoma St,0.1807
+Albany NY-Oregon,0.357
+Albany NY-Providence,0.1758
+Albany NY-Purdue,0.1552
+Albany NY-Robert Morris,0.61
+Albany NY-San Diego St,0.2764
+Albany NY-SF Austin,0.1965
+Albany NY-SMU,0.3004
+Albany NY-St John's,0.3738
+Albany NY-Texas,0.068
+Albany NY-TX Southern,0.3839
+Albany NY-UAB,0.4581
+Albany NY-UC Irvine,0.4005
+Albany NY-UCLA,0.1982
+Albany NY-Utah,0.0126
+Albany NY-VA Commonwealth,0.2125
+Albany NY-Valparaiso,0.4036
+Albany NY-Villanova,0.0641
+Albany NY-Virginia,0.0053
+Albany NY-West Virginia,0.1341
+Albany NY-Wichita St,0.2235
+Albany NY-Wisconsin,0.0276
+Albany NY-Wofford,0.4946
+Albany NY-Wyoming,0.4641
+Albany NY-Xavier,0.1702
+Arizona-Arkansas,0.6405
+Arizona-Baylor,0.6025
+Arizona-Belmont,0.8541
+Arizona-Boise St,0.7794
+Arizona-Buffalo,0.8155
+Arizona-Butler,0.6196
+Arizona-BYU,0.6986
+Arizona-Cincinnati,0.8719
+Arizona-Coastal Car,0.975
+Arizona-Davidson,0.8853
+Arizona-Dayton,0.6896
+Arizona-Duke,0.5253
+Arizona-E Washington,0.9713
+Arizona-Georgetown,0.8095
+Arizona-Georgia,0.7402
+Arizona-Georgia St,0.9778
+Arizona-Gonzaga,0.5997
+Arizona-Hampton,1.0
+Arizona-Harvard,0.8051
+Arizona-Indiana,0.8351
+Arizona-Iowa,0.6882
+Arizona-Iowa St,0.6656
+Arizona-Kansas,0.7504
+Arizona-Kentucky,0.5337
+Arizona-Lafayette,0.9523
+Arizona-Louisville,0.6687
+Arizona-LSU,0.842
+Arizona-Manhattan,0.976
+Arizona-Maryland,0.7637
+Arizona-Michigan St,0.5546
+Arizona-Mississippi,0.7472
+Arizona-N Dakota St,0.9502
+Arizona-NC State,0.7968
+Arizona-New Mexico St,1.0
+Arizona-North Carolina,0.6142
+Arizona-North Florida,1.0
+Arizona-Northeastern,0.8159
+Arizona-Northern Iowa,0.7041
+Arizona-Notre Dame,0.6642
+Arizona-Ohio St,0.6832
+Arizona-Oklahoma,0.6555
+Arizona-Oklahoma St,0.7042
+Arizona-Oregon,0.8159
+Arizona-Providence,0.7896
+Arizona-Purdue,0.8891
+Arizona-Robert Morris,0.9528
+Arizona-San Diego St,0.8297
+Arizona-SF Austin,0.8084
+Arizona-SMU,0.6433
+Arizona-St John's,0.7756
+Arizona-Texas,0.679
+Arizona-TX Southern,0.9267
+Arizona-UAB,1.0
+Arizona-UC Irvine,0.9914
+Arizona-UCLA,0.7796
+Arizona-Utah,0.4872
+Arizona-VA Commonwealth,0.7961
+Arizona-Valparaiso,0.8568
+Arizona-Villanova,0.5886
+Arizona-Virginia,0.3812
+Arizona-West Virginia,0.7767
+Arizona-Wichita St,0.625
+Arizona-Wisconsin,0.5123
+Arizona-Wofford,1.0
+Arizona-Wyoming,0.9327
+Arizona-Xavier,0.6933
+Arkansas-Baylor,0.26
+Arkansas-Belmont,0.7689
+Arkansas-Boise St,0.5106
+Arkansas-Buffalo,0.6701
+Arkansas-Butler,0.369
+Arkansas-BYU,0.3016
+Arkansas-Cincinnati,0.5741
+Arkansas-Coastal Car,0.8
+Arkansas-Davidson,0.6106
+Arkansas-Dayton,0.4812
+Arkansas-Duke,0.1267
+Arkansas-E Washington,0.7925
+Arkansas-Georgetown,0.4702
+Arkansas-Georgia,0.4072
+Arkansas-Georgia St,0.7192
+Arkansas-Gonzaga,0.289
+Arkansas-Hampton,0.871
+Arkansas-Harvard,0.5824
+Arkansas-Indiana,0.4739
+Arkansas-Iowa,0.409
+Arkansas-Iowa St,0.4437
+Arkansas-Kansas,0.3175
+Arkansas-Kentucky,0.15
+Arkansas-Lafayette,0.8158
+Arkansas-Louisville,0.2964
+Arkansas-LSU,0.484
+Arkansas-Manhattan,0.7118
+Arkansas-Maryland,0.5186
+Arkansas-Michigan St,0.3636
+Arkansas-Mississippi,0.5978
+Arkansas-N Dakota St,0.7511
+Arkansas-NC State,0.4925
+Arkansas-New Mexico St,0.8002
+Arkansas-North Carolina,0.3322
+Arkansas-North Florida,0.6156
+Arkansas-Northeastern,0.6625
+Arkansas-Northern Iowa,0.4592
+Arkansas-Notre Dame,0.4121
+Arkansas-Ohio St,0.3707
+Arkansas-Oklahoma,0.3129
+Arkansas-Oklahoma St,0.4896
+Arkansas-Oregon,0.6105
+Arkansas-Providence,0.453
+Arkansas-Purdue,0.5556
+Arkansas-Robert Morris,0.8168
+Arkansas-San Diego St,0.4964
+Arkansas-SF Austin,0.6294
+Arkansas-SMU,0.3682
+Arkansas-St John's,0.6254
+Arkansas-Texas,0.368
+Arkansas-TX Southern,0.8862
+Arkansas-UAB,0.7951
+Arkansas-UC Irvine,0.7431
+Arkansas-UCLA,0.6614
+Arkansas-Utah,0.2659
+Arkansas-VA Commonwealth,0.4917
+Arkansas-Valparaiso,0.7783
+Arkansas-Villanova,0.1894
+Arkansas-Virginia,0.2523
+Arkansas-West Virginia,0.4971
+Arkansas-Wichita St,0.5559
+Arkansas-Wisconsin,0.2972
+Arkansas-Wofford,0.7763
+Arkansas-Wyoming,0.7459
+Arkansas-Xavier,0.4755
+Baylor-Belmont,0.8578
+Baylor-Boise St,0.7034
+Baylor-Buffalo,0.7115
+Baylor-Butler,0.5343
+Baylor-BYU,0.6772
+Baylor-Cincinnati,0.7064
+Baylor-Coastal Car,0.7984
+Baylor-Davidson,0.6847
+Baylor-Dayton,0.674
+Baylor-Duke,0.3167
+Baylor-E Washington,0.9431
+Baylor-Georgetown,0.6355
+Baylor-Georgia,0.6915
+Baylor-Georgia St,0.7278
+Baylor-Gonzaga,0.4508
+Baylor-Hampton,0.798
+Baylor-Harvard,0.8294
+Baylor-Indiana,0.8179
+Baylor-Iowa,0.6646
+Baylor-Iowa St,0.4882
+Baylor-Kansas,0.5122
+Baylor-Kentucky,0.151
+Baylor-Lafayette,0.8403
+Baylor-Louisville,0.4916
+Baylor-LSU,0.6765
+Baylor-Manhattan,0.8602
+Baylor-Maryland,0.5929
+Baylor-Michigan St,0.5589
+Baylor-Mississippi,0.6405
+Baylor-N Dakota St,0.9272
+Baylor-NC State,0.6568
+Baylor-New Mexico St,0.8352
+Baylor-North Carolina,0.5257
+Baylor-North Florida,0.7654
+Baylor-Northeastern,0.8153
+Baylor-Northern Iowa,0.5033
+Baylor-Notre Dame,0.4565
+Baylor-Ohio St,0.5348
+Baylor-Oklahoma,0.4772
+Baylor-Oklahoma St,0.5336
+Baylor-Oregon,0.712
+Baylor-Providence,0.5878
+Baylor-Purdue,0.6896
+Baylor-Robert Morris,0.8711
+Baylor-San Diego St,0.6303
+Baylor-SF Austin,0.702
+Baylor-SMU,0.7133
+Baylor-St John's,0.6081
+Baylor-Texas,0.5936
+Baylor-TX Southern,0.9079
+Baylor-UAB,0.7345
+Baylor-UC Irvine,0.8076
+Baylor-UCLA,0.6435
+Baylor-Utah,0.4286
+Baylor-VA Commonwealth,0.7163
+Baylor-Valparaiso,0.757
+Baylor-Villanova,0.3498
+Baylor-Virginia,0.2928
+Baylor-West Virginia,0.4818
+Baylor-Wichita St,0.5105
+Baylor-Wisconsin,0.3349
+Baylor-Wofford,0.8703
+Baylor-Wyoming,0.8098
+Baylor-Xavier,0.6406
+Belmont-Boise St,0.3113
+Belmont-Buffalo,0.2889
+Belmont-Butler,0.2439
+Belmont-BYU,0.1388
+Belmont-Cincinnati,0.4344
+Belmont-Coastal Car,0.4261
+Belmont-Davidson,0.235
+Belmont-Dayton,0.3119
+Belmont-Duke,0.1497
+Belmont-E Washington,0.416
+Belmont-Georgetown,0.1005
+Belmont-Georgia,0.1201
+Belmont-Georgia St,0.3066
+Belmont-Gonzaga,0.0652
+Belmont-Hampton,0.5233
+Belmont-Harvard,0.411
+Belmont-Indiana,0.2758
+Belmont-Iowa,0.0697
+Belmont-Iowa St,0.144
+Belmont-Kansas,0.231
+Belmont-Kentucky,0.0431
+Belmont-Lafayette,0.4195
+Belmont-Louisville,0.1459
+Belmont-LSU,0.1938
+Belmont-Manhattan,0.5496
+Belmont-Maryland,0.2036
+Belmont-Michigan St,0.3308
+Belmont-Mississippi,0.2485
+Belmont-N Dakota St,0.7737
+Belmont-NC State,0.1765
+Belmont-New Mexico St,0.2382
+Belmont-North Carolina,0.1924
+Belmont-North Florida,0.4812
+Belmont-Northeastern,0.5544
+Belmont-Northern Iowa,0.3548
+Belmont-Notre Dame,0.2033
+Belmont-Ohio St,0.1668
+Belmont-Oklahoma,0.1381
+Belmont-Oklahoma St,0.2044
+Belmont-Oregon,0.3496
+Belmont-Providence,0.1094
+Belmont-Purdue,0.1185
+Belmont-Robert Morris,0.4813
+Belmont-San Diego St,0.33
+Belmont-SF Austin,0.2798
+Belmont-SMU,0.0833
+Belmont-St John's,0.2164
+Belmont-Texas,0.183
+Belmont-TX Southern,0.6468
+Belmont-UAB,0.4196
+Belmont-UC Irvine,0.4825
+Belmont-UCLA,0.3115
+Belmont-Utah,0.1892
+Belmont-VA Commonwealth,0.2361
+Belmont-Valparaiso,0.5463
+Belmont-Villanova,0.0606
+Belmont-Virginia,0.092
+Belmont-West Virginia,0.1585
+Belmont-Wichita St,0.2178
+Belmont-Wisconsin,0.0
+Belmont-Wofford,0.426
+Belmont-Wyoming,0.546
+Belmont-Xavier,0.1943
+Boise St-Buffalo,0.4942
+Boise St-Butler,0.3743
+Boise St-BYU,0.3663
+Boise St-Cincinnati,0.6388
+Boise St-Coastal Car,0.7802
+Boise St-Davidson,0.344
+Boise St-Dayton,0.5158
+Boise St-Duke,0.1975
+Boise St-E Washington,0.7115
+Boise St-Georgetown,0.4149
+Boise St-Georgia,0.3513
+Boise St-Georgia St,0.6946
+Boise St-Gonzaga,0.2381
+Boise St-Hampton,0.6775
+Boise St-Harvard,0.6791
+Boise St-Indiana,0.5685
+Boise St-Iowa,0.2634
+Boise St-Iowa St,0.179
+Boise St-Kansas,0.264
+Boise St-Kentucky,0.196
+Boise St-Lafayette,0.7081
+Boise St-Louisville,0.2723
+Boise St-LSU,0.5186
+Boise St-Manhattan,0.7224
+Boise St-Maryland,0.4327
+Boise St-Michigan St,0.5498
+Boise St-Mississippi,0.4216
+Boise St-N Dakota St,0.7329
+Boise St-NC State,0.4668
+Boise St-New Mexico St,0.8072
+Boise St-North Carolina,0.1295
+Boise St-North Florida,0.7157
+Boise St-Northeastern,0.7611
+Boise St-Northern Iowa,0.554
+Boise St-Notre Dame,0.3883
+Boise St-Ohio St,0.4381
+Boise St-Oklahoma,0.3199
+Boise St-Oklahoma St,0.5542
+Boise St-Oregon,0.6453
+Boise St-Providence,0.3973
+Boise St-Purdue,0.4094
+Boise St-Robert Morris,0.7694
+Boise St-San Diego St,0.5308
+Boise St-SF Austin,0.5435
+Boise St-SMU,0.4629
+Boise St-St John's,0.5696
+Boise St-Texas,0.4035
+Boise St-TX Southern,0.6898
+Boise St-UAB,0.7747
+Boise St-UC Irvine,0.7503
+Boise St-UCLA,0.5454
+Boise St-Utah,0.425
+Boise St-VA Commonwealth,0.5563
+Boise St-Valparaiso,0.6934
+Boise St-Villanova,0.1395
+Boise St-Virginia,0.2624
+Boise St-West Virginia,0.2914
+Boise St-Wichita St,0.4405
+Boise St-Wisconsin,0.1887
+Boise St-Wofford,0.7839
+Boise St-Wyoming,0.6631
+Boise St-Xavier,0.4801
+Buffalo-Butler,0.3056
+Buffalo-BYU,0.3573
+Buffalo-Cincinnati,0.5392
+Buffalo-Coastal Car,0.8929
+Buffalo-Davidson,0.5155
+Buffalo-Dayton,0.4464
+Buffalo-Duke,0.1008
+Buffalo-E Washington,0.7035
+Buffalo-Georgetown,0.4362
+Buffalo-Georgia,0.3722
+Buffalo-Georgia St,0.6554
+Buffalo-Gonzaga,0.171
+Buffalo-Hampton,0.7625
+Buffalo-Harvard,0.61
+Buffalo-Indiana,0.4389
+Buffalo-Iowa,0.2546
+Buffalo-Iowa St,0.2913
+Buffalo-Kansas,0.256
+Buffalo-Kentucky,0.1011
+Buffalo-Lafayette,0.8216
+Buffalo-Louisville,0.2039
+Buffalo-LSU,0.4191
+Buffalo-Manhattan,0.8653
+Buffalo-Maryland,0.3935
+Buffalo-Michigan St,0.3006
+Buffalo-Mississippi,0.4124
+Buffalo-N Dakota St,0.6655
+Buffalo-NC State,0.3373
+Buffalo-New Mexico St,0.7082
+Buffalo-North Carolina,0.1522
+Buffalo-North Florida,0.7078
+Buffalo-Northeastern,0.6624
+Buffalo-Northern Iowa,0.4244
+Buffalo-Notre Dame,0.2598
+Buffalo-Ohio St,0.1595
+Buffalo-Oklahoma,0.1918
+Buffalo-Oklahoma St,0.5149
+Buffalo-Oregon,0.4855
+Buffalo-Providence,0.4184
+Buffalo-Purdue,0.5508
+Buffalo-Robert Morris,0.7626
+Buffalo-San Diego St,0.4313
+Buffalo-SF Austin,0.5643
+Buffalo-SMU,0.3936
+Buffalo-St John's,0.5604
+Buffalo-Texas,0.2144
+Buffalo-TX Southern,0.7738
+Buffalo-UAB,0.6765
+Buffalo-UC Irvine,0.6213
+Buffalo-UCLA,0.5061
+Buffalo-Utah,0.1469
+Buffalo-VA Commonwealth,0.4869
+Buffalo-Valparaiso,0.6241
+Buffalo-Villanova,0.1331
+Buffalo-Virginia,0.2257
+Buffalo-West Virginia,0.5235
+Buffalo-Wichita St,0.3716
+Buffalo-Wisconsin,0.1226
+Buffalo-Wofford,0.6549
+Buffalo-Wyoming,0.5642
+Buffalo-Xavier,0.3508
+Butler-BYU,0.5379
+Butler-Cincinnati,0.7191
+Butler-Coastal Car,0.8172
+Butler-Davidson,0.606
+Butler-Dayton,0.6866
+Butler-Duke,0.1786
+Butler-E Washington,0.8408
+Butler-Georgetown,0.5863
+Butler-Georgia,0.5228
+Butler-Georgia St,0.6518
+Butler-Gonzaga,0.2217
+Butler-Hampton,0.8515
+Butler-Harvard,0.6341
+Butler-Indiana,0.6494
+Butler-Iowa,0.5251
+Butler-Iowa St,0.2582
+Butler-Kansas,0.4328
+Butler-Kentucky,0.1367
+Butler-Lafayette,0.8608
+Butler-Louisville,0.2916
+Butler-LSU,0.6892
+Butler-Manhattan,0.8191
+Butler-Maryland,0.6345
+Butler-Michigan St,0.5697
+Butler-Mississippi,0.7131
+Butler-N Dakota St,0.857
+Butler-NC State,0.5782
+Butler-New Mexico St,0.8513
+Butler-North Carolina,0.3563
+Butler-North Florida,0.8139
+Butler-Northeastern,0.8325
+Butler-Northern Iowa,0.6052
+Butler-Notre Dame,0.4372
+Butler-Ohio St,0.305
+Butler-Oklahoma,0.2473
+Butler-Oklahoma St,0.6054
+Butler-Oregon,0.6648
+Butler-Providence,0.4787
+Butler-Purdue,0.7315
+Butler-Robert Morris,0.7112
+Butler-San Diego St,0.6421
+Butler-SF Austin,0.6542
+Butler-SMU,0.5743
+Butler-St John's,0.5601
+Butler-Texas,0.5442
+Butler-TX Southern,0.8392
+Butler-UAB,0.813
+Butler-UC Irvine,0.7637
+Butler-UCLA,0.656
+Butler-Utah,0.4099
+Butler-VA Commonwealth,0.6075
+Butler-Valparaiso,0.7411
+Butler-Villanova,0.3921
+Butler-Virginia,0.2145
+Butler-West Virginia,0.5228
+Butler-Wichita St,0.5515
+Butler-Wisconsin,0.2878
+Butler-Wofford,0.7966
+Butler-Wyoming,0.7361
+Butler-Xavier,0.5915
+BYU-Cincinnati,0.6671
+BYU-Coastal Car,0.8321
+BYU-Davidson,0.6434
+BYU-Dayton,0.6947
+BYU-Duke,0.1891
+BYU-E Washington,0.8548
+BYU-Georgetown,0.5332
+BYU-Georgia,0.4701
+BYU-Georgia St,0.7519
+BYU-Gonzaga,0.3215
+BYU-Hampton,0.7819
+BYU-Harvard,0.7353
+BYU-Indiana,0.6572
+BYU-Iowa,0.5623
+BYU-Iowa St,0.3862
+BYU-Kansas,0.4406
+BYU-Kentucky,0.3022
+BYU-Lafayette,0.8176
+BYU-Louisville,0.5399
+BYU-LSU,0.6974
+BYU-Manhattan,0.8643
+BYU-Maryland,0.5816
+BYU-Michigan St,0.4566
+BYU-Mississippi,0.6006
+BYU-N Dakota St,0.8432
+BYU-NC State,0.706
+BYU-New Mexico St,0.7725
+BYU-North Carolina,0.3648
+BYU-North Florida,0.7681
+BYU-Northeastern,0.8152
+BYU-Northern Iowa,0.6125
+BYU-Notre Dame,0.4147
+BYU-Ohio St,0.4636
+BYU-Oklahoma,0.4058
+BYU-Oklahoma St,0.6127
+BYU-Oregon,0.7336
+BYU-Providence,0.5461
+BYU-Purdue,0.5884
+BYU-Robert Morris,0.7884
+BYU-San Diego St,0.5593
+BYU-SF Austin,0.6923
+BYU-SMU,0.4913
+BYU-St John's,0.6281
+BYU-Texas,0.4611
+BYU-TX Southern,0.8275
+BYU-UAB,0.7671
+BYU-UC Irvine,0.7153
+BYU-UCLA,0.7845
+BYU-Utah,0.3286
+BYU-VA Commonwealth,0.6751
+BYU-Valparaiso,0.5702
+BYU-Villanova,0.2218
+BYU-Virginia,0.2847
+BYU-West Virginia,0.6203
+BYU-Wichita St,0.4383
+BYU-Wisconsin,0.1187
+BYU-Wofford,0.7184
+BYU-Wyoming,0.7482
+BYU-Xavier,0.5685
+Cincinnati-Coastal Car,0.5968
+Cincinnati-Davidson,0.2504
+Cincinnati-Dayton,0.4523
+Cincinnati-Duke,0.1651
+Cincinnati-E Washington,0.7086
+Cincinnati-Georgetown,0.3214
+Cincinnati-Georgia,0.4684
+Cincinnati-Georgia St,0.5709
+Cincinnati-Gonzaga,0.1453
+Cincinnati-Hampton,0.7358
+Cincinnati-Harvard,0.4953
+Cincinnati-Indiana,0.505
+Cincinnati-Iowa,0.471
+Cincinnati-Iowa St,0.2664
+Cincinnati-Kansas,0.2912
+Cincinnati-Kentucky,0.1341
+Cincinnati-Lafayette,0.7056
+Cincinnati-Louisville,0.3597
+Cincinnati-LSU,0.3347
+Cincinnati-Manhattan,0.6595
+Cincinnati-Maryland,0.5499
+Cincinnati-Michigan St,0.2758
+Cincinnati-Mississippi,0.4785
+Cincinnati-N Dakota St,0.5196
+Cincinnati-NC State,0.4334
+Cincinnati-New Mexico St,0.5633
+Cincinnati-North Carolina,0.2773
+Cincinnati-North Florida,0.6828
+Cincinnati-Northeastern,0.6678
+Cincinnati-Northern Iowa,0.3701
+Cincinnati-Notre Dame,0.2349
+Cincinnati-Ohio St,0.3149
+Cincinnati-Oklahoma,0.2569
+Cincinnati-Oklahoma St,0.3402
+Cincinnati-Oregon,0.3409
+Cincinnati-Providence,0.3941
+Cincinnati-Purdue,0.376
+Cincinnati-Robert Morris,0.6165
+Cincinnati-San Diego St,0.4071
+Cincinnati-SF Austin,0.4197
+Cincinnati-SMU,0.4295
+Cincinnati-St John's,0.3857
+Cincinnati-Texas,0.3402
+Cincinnati-TX Southern,0.7779
+Cincinnati-UAB,0.6214
+Cincinnati-UC Irvine,0.7472
+Cincinnati-UCLA,0.4819
+Cincinnati-Utah,0.2418
+Cincinnati-VA Commonwealth,0.4025
+Cincinnati-Valparaiso,0.5397
+Cincinnati-Villanova,0.2275
+Cincinnati-Virginia,0.1395
+Cincinnati-West Virginia,0.3785
+Cincinnati-Wichita St,0.3471
+Cincinnati-Wisconsin,0.1263
+Cincinnati-Wofford,0.54
+Cincinnati-Wyoming,0.5999
+Cincinnati-Xavier,0.3565
+Coastal Car-Davidson,0.2339
+Coastal Car-Dayton,0.3409
+Coastal Car-Duke,0.0
+Coastal Car-E Washington,0.4447
+Coastal Car-Georgetown,0.1899
+Coastal Car-Georgia,0.2094
+Coastal Car-Georgia St,0.3956
+Coastal Car-Gonzaga,0.0646
+Coastal Car-Hampton,0.5521
+Coastal Car-Harvard,0.4699
+Coastal Car-Indiana,0.2746
+Coastal Car-Iowa,0.129
+Coastal Car-Iowa St,0.0228
+Coastal Car-Kansas,0.0797
+Coastal Car-Kentucky,0.0
+Coastal Car-Lafayette,0.5987
+Coastal Car-Louisville,0.2053
+Coastal Car-LSU,0.4034
+Coastal Car-Manhattan,0.6686
+Coastal Car-Maryland,0.1725
+Coastal Car-Michigan St,0.1794
+Coastal Car-Mississippi,0.3076
+Coastal Car-N Dakota St,0.3809
+Coastal Car-NC State,0.2056
+Coastal Car-New Mexico St,0.4175
+Coastal Car-North Carolina,0.1014
+Coastal Car-North Florida,0.4196
+Coastal Car-Northeastern,0.4928
+Coastal Car-Northern Iowa,0.1731
+Coastal Car-Notre Dame,0.1423
+Coastal Car-Ohio St,0.0758
+Coastal Car-Oklahoma,0.0169
+Coastal Car-Oklahoma St,0.1432
+Coastal Car-Oregon,0.2882
+Coastal Car-Providence,0.1084
+Coastal Car-Purdue,0.1174
+Coastal Car-Robert Morris,0.5702
+Coastal Car-San Diego St,0.3891
+Coastal Car-SF Austin,0.3088
+Coastal Car-SMU,0.2629
+Coastal Car-St John's,0.2454
+Coastal Car-Texas,0.2424
+Coastal Car-TX Southern,0.5852
+Coastal Car-UAB,0.5386
+Coastal Car-UC Irvine,0.5414
+Coastal Car-UCLA,0.3103
+Coastal Car-Utah,0.0982
+Coastal Car-VA Commonwealth,0.1147
+Coastal Car-Valparaiso,0.3645
+Coastal Car-Villanova,0.1504
+Coastal Car-Virginia,0.0313
+Coastal Car-West Virginia,0.1275
+Coastal Car-Wichita St,0.2771
+Coastal Car-Wisconsin,0.0542
+Coastal Car-Wofford,0.4247
+Coastal Car-Wyoming,0.5446
+Coastal Car-Xavier,0.1633
+Davidson-Dayton,0.6266
+Davidson-Duke,0.1526
+Davidson-E Washington,0.6379
+Davidson-Georgetown,0.3748
+Davidson-Georgia,0.6127
+Davidson-Georgia St,0.7745
+Davidson-Gonzaga,0.3147
+Davidson-Hampton,0.7783
+Davidson-Harvard,0.7282
+Davidson-Indiana,0.5289
+Davidson-Iowa,0.4942
+Davidson-Iowa St,0.2882
+Davidson-Kansas,0.2524
+Davidson-Kentucky,0.2071
+Davidson-Lafayette,0.7523
+Davidson-Louisville,0.2312
+Davidson-LSU,0.5391
+Davidson-Manhattan,0.7382
+Davidson-Maryland,0.4833
+Davidson-Michigan St,0.4187
+Davidson-Mississippi,0.5626
+Davidson-N Dakota St,0.8078
+Davidson-NC State,0.5174
+Davidson-New Mexico St,0.7355
+Davidson-North Carolina,0.2072
+Davidson-North Florida,0.702
+Davidson-Northeastern,0.8088
+Davidson-Northern Iowa,0.5443
+Davidson-Notre Dame,0.4974
+Davidson-Ohio St,0.396
+Davidson-Oklahoma,0.3382
+Davidson-Oklahoma St,0.6349
+Davidson-Oregon,0.6355
+Davidson-Providence,0.5381
+Davidson-Purdue,0.6106
+Davidson-Robert Morris,0.8136
+Davidson-San Diego St,0.7019
+Davidson-SF Austin,0.5339
+Davidson-SMU,0.6038
+Davidson-St John's,0.6202
+Davidson-Texas,0.3027
+Davidson-TX Southern,0.7929
+Davidson-UAB,0.7912
+Davidson-UC Irvine,0.7988
+Davidson-UCLA,0.6863
+Davidson-Utah,0.1711
+Davidson-VA Commonwealth,0.4564
+Davidson-Valparaiso,0.7734
+Davidson-Villanova,0.2153
+Davidson-Virginia,0.3986
+Davidson-West Virginia,0.492
+Davidson-Wichita St,0.4003
+Davidson-Wisconsin,0.1428
+Davidson-Wofford,0.6516
+Davidson-Wyoming,0.8017
+Davidson-Xavier,0.5305
+Dayton-Duke,0.1067
+Dayton-E Washington,0.6205
+Dayton-Georgetown,0.3841
+Dayton-Georgia,0.471
+Dayton-Georgia St,0.6938
+Dayton-Gonzaga,0.1171
+Dayton-Hampton,0.7071
+Dayton-Harvard,0.6182
+Dayton-Indiana,0.4775
+Dayton-Iowa,0.353
+Dayton-Iowa St,0.1783
+Dayton-Kansas,0.3536
+Dayton-Kentucky,0.1053
+Dayton-Lafayette,0.7677
+Dayton-Louisville,0.2114
+Dayton-LSU,0.548
+Dayton-Manhattan,0.6616
+Dayton-Maryland,0.4621
+Dayton-Michigan St,0.3685
+Dayton-Mississippi,0.4811
+Dayton-N Dakota St,0.7022
+Dayton-NC State,0.3456
+Dayton-New Mexico St,0.7162
+Dayton-North Carolina,0.3697
+Dayton-North Florida,0.8054
+Dayton-Northeastern,0.7905
+Dayton-Northern Iowa,0.493
+Dayton-Notre Dame,0.3274
+Dayton-Ohio St,0.1967
+Dayton-Oklahoma,0.1688
+Dayton-Oklahoma St,0.5534
+Dayton-Oregon,0.6445
+Dayton-Providence,0.3062
+Dayton-Purdue,0.4689
+Dayton-Robert Morris,0.8291
+Dayton-San Diego St,0.5
+Dayton-SF Austin,0.5126
+Dayton-SMU,0.5223
+Dayton-St John's,0.4785
+Dayton-Texas,0.2824
+Dayton-TX Southern,0.8097
+Dayton-UAB,0.7741
+Dayton-UC Irvine,0.7496
+Dayton-UCLA,0.5446
+Dayton-Utah,0.1234
+Dayton-VA Commonwealth,0.405
+Dayton-Valparaiso,0.5422
+Dayton-Villanova,0.1691
+Dayton-Virginia,0.2919
+Dayton-West Virginia,0.2906
+Dayton-Wichita St,0.5301
+Dayton-Wisconsin,0.3387
+Dayton-Wofford,0.6628
+Dayton-Wyoming,0.6925
+Dayton-Xavier,0.4192
+Duke-E Washington,0.9973
+Duke-Georgetown,0.7708
+Duke-Georgia,0.6724
+Duke-Georgia St,0.9419
+Duke-Gonzaga,0.7099
+Duke-Hampton,1.0
+Duke-Harvard,0.8902
+Duke-Indiana,0.6773
+Duke-Iowa,0.7399
+Duke-Iowa St,0.4455
+Duke-Kansas,0.6505
+Duke-Kentucky,0.3134
+Duke-Lafayette,1.0
+Duke-Louisville,0.6593
+Duke-LSU,0.8351
+Duke-Manhattan,1.0
+Duke-Maryland,0.8461
+Duke-Michigan St,0.6057
+Duke-Mississippi,0.8304
+Duke-N Dakota St,1.0
+Duke-NC State,0.6385
+Duke-New Mexico St,0.9245
+Duke-North Carolina,0.6344
+Duke-North Florida,0.8488
+Duke-Northeastern,0.9319
+Duke-Northern Iowa,0.9371
+Duke-Notre Dame,0.6547
+Duke-Ohio St,0.6734
+Duke-Oklahoma,0.6458
+Duke-Oklahoma St,0.8168
+Duke-Oregon,0.8092
+Duke-Providence,0.7515
+Duke-Purdue,0.8213
+Duke-Robert Morris,0.9799
+Duke-San Diego St,0.7619
+Duke-SF Austin,0.8013
+Duke-SMU,0.6956
+Duke-St John's,0.7984
+Duke-Texas,0.67
+Duke-TX Southern,0.9843
+Duke-UAB,0.9687
+Duke-UC Irvine,0.9865
+Duke-UCLA,0.8629
+Duke-Utah,0.718
+Duke-VA Commonwealth,0.8185
+Duke-Valparaiso,0.9713
+Duke-Villanova,0.5784
+Duke-Virginia,0.5516
+Duke-West Virginia,0.768
+Duke-Wichita St,0.8571
+Duke-Wisconsin,0.4419
+Duke-Wofford,0.9884
+Duke-Wyoming,0.8075
+Duke-Xavier,0.6849
+E Washington-Georgetown,0.1968
+E Washington-Georgia,0.2174
+E Washington-Georgia St,0.4351
+E Washington-Gonzaga,0.0691
+E Washington-Hampton,0.7416
+E Washington-Harvard,0.5097
+E Washington-Indiana,0.313
+E Washington-Iowa,0.1058
+E Washington-Iowa St,0.2093
+E Washington-Kansas,0.1756
+E Washington-Kentucky,0.0153
+E Washington-Lafayette,0.5184
+E Washington-Louisville,0.0909
+E Washington-LSU,0.3819
+E Washington-Manhattan,0.5583
+E Washington-Maryland,0.3006
+E Washington-Michigan St,0.1556
+E Washington-Mississippi,0.316
+E Washington-N Dakota St,0.4813
+E Washington-NC State,0.1231
+E Washington-New Mexico St,0.4274
+E Washington-North Carolina,0.1365
+E Washington-North Florida,0.52
+E Washington-Northeastern,0.5029
+E Washington-Northern Iowa,0.241
+E Washington-Notre Dame,0.2083
+E Washington-Ohio St,0.1715
+E Washington-Oklahoma,0.1127
+E Washington-Oklahoma St,0.3315
+E Washington-Oregon,0.4175
+E Washington-Providence,0.2062
+E Washington-Purdue,0.306
+E Washington-Robert Morris,0.5801
+E Washington-San Diego St,0.367
+E Washington-SF Austin,0.4376
+E Washington-SMU,0.2404
+E Washington-St John's,0.3741
+E Washington-Texas,0.0682
+E Washington-TX Southern,0.625
+E Washington-UAB,0.5186
+E Washington-UC Irvine,0.5513
+E Washington-UCLA,0.3188
+E Washington-Utah,0.103
+E Washington-VA Commonwealth,0.3332
+E Washington-Valparaiso,0.4641
+E Washington-Villanova,0.0341
+E Washington-Virginia,0.0054
+E Washington-West Virginia,0.1042
+E Washington-Wichita St,0.2237
+E Washington-Wisconsin,0.0277
+E Washington-Wofford,0.4046
+E Washington-Wyoming,0.4041
+E Washington-Xavier,0.1704
+Georgetown-Georgia,0.5422
+Georgetown-Georgia St,0.7024
+Georgetown-Gonzaga,0.3019
+Georgetown-Hampton,0.8171
+Georgetown-Harvard,0.7455
+Georgetown-Indiana,0.6087
+Georgetown-Iowa,0.4839
+Georgetown-Iowa St,0.3376
+Georgetown-Kansas,0.3918
+Georgetown-Kentucky,0.1593
+Georgetown-Lafayette,0.7343
+Georgetown-Louisville,0.2807
+Georgetown-LSU,0.5885
+Georgetown-Manhattan,0.782
+Georgetown-Maryland,0.6838
+Georgetown-Michigan St,0.4985
+Georgetown-Mississippi,0.552
+Georgetown-N Dakota St,0.7904
+Georgetown-NC State,0.6878
+Georgetown-New Mexico St,0.7824
+Georgetown-North Carolina,0.3458
+Georgetown-North Florida,0.8368
+Georgetown-Northeastern,0.8546
+Georgetown-Northern Iowa,0.5341
+Georgetown-Notre Dame,0.4564
+Georgetown-Ohio St,0.4448
+Georgetown-Oklahoma,0.357
+Georgetown-Oklahoma St,0.5042
+Georgetown-Oregon,0.745
+Georgetown-Providence,0.4978
+Georgetown-Purdue,0.5702
+Georgetown-Robert Morris,0.8256
+Georgetown-San Diego St,0.6013
+Georgetown-SF Austin,0.7039
+Georgetown-SMU,0.6237
+Georgetown-St John's,0.6398
+Georgetown-Texas,0.4428
+Georgetown-TX Southern,0.864
+Georgetown-UAB,0.7455
+Georgetown-UC Irvine,0.7551
+Georgetown-UCLA,0.7058
+Georgetown-Utah,0.4598
+Georgetown-VA Commonwealth,0.5364
+Georgetown-Valparaiso,0.7616
+Georgetown-Villanova,0.3523
+Georgetown-Virginia,0.1445
+Georgetown-West Virginia,0.4516
+Georgetown-Wichita St,0.4803
+Georgetown-Wisconsin,0.3087
+Georgetown-Wofford,0.7581
+Georgetown-Wyoming,0.7578
+Georgetown-Xavier,0.5805
+Georgia-Georgia St,0.6472
+Georgia-Gonzaga,0.2184
+Georgia-Hampton,0.8349
+Georgia-Harvard,0.7818
+Georgia-Indiana,0.5517
+Georgia-Iowa,0.4869
+Georgia-Iowa St,0.4018
+Georgia-Kansas,0.3661
+Georgia-Kentucky,0.0826
+Georgia-Lafayette,0.8076
+Georgia-Louisville,0.2544
+Georgia-LSU,0.6823
+Georgia-Manhattan,0.9133
+Georgia-Maryland,0.5964
+Georgia-Michigan St,0.3214
+Georgia-Mississippi,0.5553
+Georgia-N Dakota St,0.7726
+Georgia-NC State,0.5703
+Georgia-New Mexico St,0.7892
+Georgia-North Carolina,0.3212
+Georgia-North Florida,0.8167
+Georgia-Northeastern,0.8027
+Georgia-Northern Iowa,0.4768
+Georgia-Notre Dame,0.4605
+Georgia-Ohio St,0.3292
+Georgia-Oklahoma,0.3014
+Georgia-Oklahoma St,0.5071
+Georgia-Oregon,0.6584
+Georgia-Providence,0.4104
+Georgia-Purdue,0.5731
+Georgia-Robert Morris,0.8388
+Georgia-San Diego St,0.544
+Georgia-SF Austin,0.647
+Georgia-SMU,0.5964
+Georgia-St John's,0.6129
+Georgia-Texas,0.3558
+Georgia-TX Southern,0.8788
+Georgia-UAB,0.6952
+Georgia-UC Irvine,0.8225
+Georgia-UCLA,0.4683
+Georgia-Utah,0.2552
+Georgia-VA Commonwealth,0.5092
+Georgia-Valparaiso,0.7364
+Georgia-Villanova,0.3601
+Georgia-Virginia,0.2423
+Georgia-West Virginia,0.5148
+Georgia-Wichita St,0.4533
+Georgia-Wisconsin,0.2278
+Georgia-Wofford,0.8258
+Georgia-Wyoming,0.7352
+Georgia-Xavier,0.5232
+Georgia St-Gonzaga,0.1573
+Georgia St-Hampton,0.6899
+Georgia St-Harvard,0.5904
+Georgia St-Indiana,0.4795
+Georgia St-Iowa,0.2064
+Georgia St-Iowa St,0.0942
+Georgia St-Kansas,0.1797
+Georgia St-Kentucky,0.0623
+Georgia St-Lafayette,0.6852
+Georgia St-Louisville,0.1872
+Georgia St-LSU,0.4293
+Georgia St-Manhattan,0.6974
+Georgia St-Maryland,0.2239
+Georgia St-Michigan St,0.2833
+Georgia St-Mississippi,0.3024
+Georgia St-N Dakota St,0.5888
+Georgia St-NC State,0.4083
+Georgia St-New Mexico St,0.5684
+Georgia St-North Carolina,0.1674
+Georgia St-North Florida,0.5996
+Georgia St-Northeastern,0.5232
+Georgia St-Northern Iowa,0.1344
+Georgia St-Notre Dame,0.1531
+Georgia St-Ohio St,0.3246
+Georgia St-Oklahoma,0.2061
+Georgia St-Oklahoma St,0.1647
+Georgia St-Oregon,0.4054
+Georgia St-Providence,0.249
+Georgia St-Purdue,0.3809
+Georgia St-Robert Morris,0.6564
+Georgia St-San Diego St,0.4421
+Georgia St-SF Austin,0.4543
+Georgia St-SMU,0.3143
+Georgia St-St John's,0.2698
+Georgia St-Texas,0.1968
+Georgia St-TX Southern,0.6387
+Georgia St-UAB,0.5381
+Georgia St-UC Irvine,0.6321
+Georgia St-UCLA,0.396
+Georgia St-Utah,0.1627
+Georgia St-VA Commonwealth,0.3473
+Georgia St-Valparaiso,0.4838
+Georgia St-Villanova,0.1202
+Georgia St-Virginia,0.1825
+Georgia St-West Virginia,0.3549
+Georgia St-Wichita St,0.2935
+Georgia St-Wisconsin,0.2013
+Georgia St-Wofford,0.5455
+Georgia St-Wyoming,0.4849
+Georgia St-Xavier,0.3624
+Gonzaga-Hampton,0.9279
+Gonzaga-Harvard,0.8821
+Gonzaga-Indiana,0.7266
+Gonzaga-Iowa,0.7273
+Gonzaga-Iowa St,0.4921
+Gonzaga-Kansas,0.7572
+Gonzaga-Kentucky,0.2702
+Gonzaga-Lafayette,0.9746
+Gonzaga-Louisville,0.6158
+Gonzaga-LSU,0.8549
+Gonzaga-Manhattan,0.9668
+Gonzaga-Maryland,0.714
+Gonzaga-Michigan St,0.4721
+Gonzaga-Mississippi,0.7595
+Gonzaga-N Dakota St,1.0
+Gonzaga-NC State,0.7174
+Gonzaga-New Mexico St,0.7965
+Gonzaga-North Carolina,0.5601
+Gonzaga-North Florida,0.9332
+Gonzaga-Northeastern,0.8348
+Gonzaga-Northern Iowa,0.7147
+Gonzaga-Notre Dame,0.4906
+Gonzaga-Ohio St,0.6896
+Gonzaga-Oklahoma,0.5416
+Gonzaga-Oklahoma St,0.5042
+Gonzaga-Oregon,0.6488
+Gonzaga-Providence,0.6492
+Gonzaga-Purdue,0.7498
+Gonzaga-Robert Morris,0.9752
+Gonzaga-San Diego St,0.6302
+Gonzaga-SF Austin,0.8208
+Gonzaga-SMU,0.7141
+Gonzaga-St John's,0.7575
+Gonzaga-Texas,0.6269
+Gonzaga-TX Southern,0.9802
+Gonzaga-UAB,0.9325
+Gonzaga-UC Irvine,0.9791
+Gonzaga-UCLA,0.7019
+Gonzaga-Utah,0.5834
+Gonzaga-VA Commonwealth,0.5962
+Gonzaga-Valparaiso,0.9021
+Gonzaga-Villanova,0.5942
+Gonzaga-Virginia,0.5674
+Gonzaga-West Virginia,0.6951
+Gonzaga-Wichita St,0.6938
+Gonzaga-Wisconsin,0.488
+Gonzaga-Wofford,0.9812
+Gonzaga-Wyoming,0.8906
+Gonzaga-Xavier,0.7629
+Hampton-Harvard,0.3506
+Hampton-Indiana,0.319
+Hampton-Iowa,0.0921
+Hampton-Iowa St,0.0826
+Hampton-Kansas,0.0506
+Hampton-Kentucky,0.0
+Hampton-Lafayette,0.4996
+Hampton-Louisville,0.1139
+Hampton-LSU,0.174
+Hampton-Manhattan,0.4204
+Hampton-Maryland,0.1307
+Hampton-Michigan St,0.1464
+Hampton-Mississippi,0.1703
+Hampton-N Dakota St,0.3424
+Hampton-NC State,0.1326
+Hampton-New Mexico St,0.3567
+Hampton-North Carolina,0.1361
+Hampton-North Florida,0.4132
+Hampton-Northeastern,0.3988
+Hampton-Northern Iowa,0.2816
+Hampton-Notre Dame,0.0219
+Hampton-Ohio St,0.1687
+Hampton-Oklahoma,0.1394
+Hampton-Oklahoma St,0.1311
+Hampton-Oregon,0.1475
+Hampton-Providence,0.1282
+Hampton-Purdue,0.1641
+Hampton-Robert Morris,0.3807
+Hampton-San Diego St,0.2549
+Hampton-SF Austin,0.1711
+Hampton-SMU,0.1006
+Hampton-St John's,0.2292
+Hampton-Texas,0.0277
+Hampton-TX Southern,0.516
+Hampton-UAB,0.5324
+Hampton-UC Irvine,0.3293
+Hampton-UCLA,0.0819
+Hampton-Utah,0.0139
+Hampton-VA Commonwealth,0.1623
+Hampton-Valparaiso,0.3394
+Hampton-Villanova,0.0094
+Hampton-Virginia,0.0703
+Hampton-West Virginia,0.0611
+Hampton-Wichita St,0.2111
+Hampton-Wisconsin,0.0
+Hampton-Wofford,0.4225
+Hampton-Wyoming,0.3319
+Hampton-Xavier,0.1549
+Harvard-Indiana,0.3447
+Harvard-Iowa,0.2536
+Harvard-Iowa St,0.1729
+Harvard-Kansas,0.2889
+Harvard-Kentucky,0.0565
+Harvard-Lafayette,0.7324
+Harvard-Louisville,0.2055
+Harvard-LSU,0.2942
+Harvard-Manhattan,0.5932
+Harvard-Maryland,0.3004
+Harvard-Michigan St,0.1809
+Harvard-Mississippi,0.2578
+Harvard-N Dakota St,0.6658
+Harvard-NC State,0.304
+Harvard-New Mexico St,0.4931
+Harvard-North Carolina,0.097
+Harvard-North Florida,0.5854
+Harvard-Northeastern,0.5386
+Harvard-Northern Iowa,0.3613
+Harvard-Notre Dame,0.0814
+Harvard-Ohio St,0.1633
+Harvard-Oklahoma,0.1651
+Harvard-Oklahoma St,0.211
+Harvard-Oregon,0.4508
+Harvard-Providence,0.2053
+Harvard-Purdue,0.2765
+Harvard-Robert Morris,0.6134
+Harvard-San Diego St,0.2473
+Harvard-SF Austin,0.4397
+Harvard-SMU,0.3004
+Harvard-St John's,0.2554
+Harvard-Texas,0.1845
+Harvard-TX Southern,0.747
+Harvard-UAB,0.584
+Harvard-UC Irvine,0.5569
+Harvard-UCLA,0.3814
+Harvard-Utah,0.2131
+Harvard-VA Commonwealth,0.2129
+Harvard-Valparaiso,0.4085
+Harvard-Villanova,0.1115
+Harvard-Virginia,0.0833
+Harvard-West Virginia,0.3421
+Harvard-Wichita St,0.3108
+Harvard-Wisconsin,0.1032
+Harvard-Wofford,0.5908
+Harvard-Wyoming,0.6506
+Harvard-Xavier,0.3191
+Indiana-Iowa,0.3
+Indiana-Iowa St,0.3657
+Indiana-Kansas,0.3
+Indiana-Kentucky,0.1693
+Indiana-Lafayette,0.7129
+Indiana-Louisville,0.429
+Indiana-LSU,0.6156
+Indiana-Manhattan,0.7277
+Indiana-Maryland,0.4695
+Indiana-Michigan St,0.3453
+Indiana-Mississippi,0.4585
+Indiana-N Dakota St,0.7078
+Indiana-NC State,0.5036
+Indiana-New Mexico St,0.6328
+Indiana-North Carolina,0.3156
+Indiana-North Florida,0.6911
+Indiana-Northeastern,0.6767
+Indiana-Northern Iowa,0.5004
+Indiana-Notre Dame,0.4545
+Indiana-Ohio St,0.3536
+Indiana-Oklahoma,0.3559
+Indiana-Oklahoma St,0.4103
+Indiana-Oregon,0.7423
+Indiana-Providence,0.3738
+Indiana-Purdue,0.4763
+Indiana-Robert Morris,0.714
+Indiana-San Diego St,0.4472
+Indiana-SF Austin,0.5803
+Indiana-SMU,0.4394
+Indiana-St John's,0.6064
+Indiana-Texas,0.4098
+Indiana-TX Southern,0.634
+Indiana-UAB,0.69
+Indiana-UC Irvine,0.7866
+Indiana-UCLA,0.5822
+Indiana-Utah,0.31
+Indiana-VA Commonwealth,0.5027
+Indiana-Valparaiso,0.6097
+Indiana-Villanova,0.1143
+Indiana-Virginia,0.3276
+Indiana-West Virginia,0.5085
+Indiana-Wichita St,0.447
+Indiana-Wisconsin,0.1029
+Indiana-Wofford,0.6094
+Indiana-Wyoming,0.7294
+Indiana-Xavier,0.4566
+Iowa-Iowa St,0.3687
+Iowa-Kansas,0.453
+Iowa-Kentucky,0.2202
+Iowa-Lafayette,0.7951
+Iowa-Louisville,0.4924
+Iowa-LSU,0.6798
+Iowa-Manhattan,0.9031
+Iowa-Maryland,0.5644
+Iowa-Michigan St,0.4393
+Iowa-Mississippi,0.6132
+Iowa-N Dakota St,0.7308
+Iowa-NC State,0.6286
+Iowa-New Mexico St,0.7832
+Iowa-North Carolina,0.4972
+Iowa-North Florida,0.9278
+Iowa-Northeastern,0.8252
+Iowa-Northern Iowa,0.5652
+Iowa-Notre Dame,0.3069
+Iowa-Ohio St,0.4458
+Iowa-Oklahoma,0.5085
+Iowa-Oklahoma St,0.5353
+Iowa-Oregon,0.776
+Iowa-Providence,0.5289
+Iowa-Purdue,0.6615
+Iowa-Robert Morris,0.796
+Iowa-San Diego St,0.5421
+Iowa-SF Austin,0.7049
+Iowa-SMU,0.3537
+Iowa-St John's,0.6709
+Iowa-Texas,0.4438
+Iowa-TX Southern,0.8946
+Iowa-UAB,0.7763
+Iowa-UC Irvine,0.8462
+Iowa-UCLA,0.7368
+Iowa-Utah,0.3705
+Iowa-VA Commonwealth,0.6579
+Iowa-Valparaiso,0.7324
+Iowa-Villanova,0.3833
+Iowa-Virginia,0.3561
+Iowa-West Virginia,0.573
+Iowa-Wichita St,0.7221
+Iowa-Wisconsin,0.3396
+Iowa-Wofford,0.8492
+Iowa-Wyoming,0.6382
+Iowa-Xavier,0.5514
+Iowa St-Kansas,0.6595
+Iowa St-Kentucky,0.2689
+Iowa St-Lafayette,0.9291
+Iowa St-Louisville,0.5786
+Iowa St-LSU,0.7037
+Iowa St-Manhattan,0.8885
+Iowa St-Maryland,0.5898
+Iowa St-Michigan St,0.5557
+Iowa St-Mississippi,0.6376
+Iowa St-N Dakota St,1.0
+Iowa St-NC State,0.6237
+Iowa St-New Mexico St,0.8932
+Iowa St-North Carolina,0.5827
+Iowa St-North Florida,0.914
+Iowa St-Northeastern,0.8735
+Iowa St-Northern Iowa,0.6809
+Iowa St-Notre Dame,0.4833
+Iowa St-Ohio St,0.6219
+Iowa St-Oklahoma,0.6245
+Iowa St-Oklahoma St,0.7112
+Iowa St-Oregon,0.7092
+Iowa St-Providence,0.675
+Iowa St-Purdue,0.6866
+Iowa St-Robert Morris,0.9599
+Iowa St-San Diego St,0.7778
+Iowa St-SF Austin,0.8195
+Iowa St-SMU,0.7404
+Iowa St-St John's,0.6654
+Iowa St-Texas,0.6806
+Iowa St-TX Southern,0.9968
+Iowa St-UAB,0.8229
+Iowa St-UC Irvine,0.8656
+Iowa St-UCLA,0.761
+Iowa St-Utah,0.576
+Iowa St-VA Commonwealth,0.5928
+Iowa St-Valparaiso,0.8447
+Iowa St-Villanova,0.4672
+Iowa St-Virginia,0.4402
+Iowa St-West Virginia,0.6291
+Iowa St-Wichita St,0.6578
+Iowa St-Wisconsin,0.3921
+Iowa St-Wofford,0.9585
+Iowa St-Wyoming,0.8378
+Iowa St-Xavier,0.6073
+Kansas-Kentucky,0.2134
+Kansas-Lafayette,0.8115
+Kansas-Louisville,0.4342
+Kansas-LSU,0.7993
+Kansas-Manhattan,0.9219
+Kansas-Maryland,0.5955
+Kansas-Michigan St,0.4714
+Kansas-Mississippi,0.8236
+Kansas-N Dakota St,0.8383
+Kansas-NC State,0.6896
+Kansas-New Mexico St,0.8071
+Kansas-North Carolina,0.6188
+Kansas-North Florida,0.767
+Kansas-Northeastern,0.8472
+Kansas-Northern Iowa,0.6866
+Kansas-Notre Dame,0.4292
+Kansas-Ohio St,0.4774
+Kansas-Oklahoma,0.5704
+Kansas-Oklahoma St,0.747
+Kansas-Oregon,0.7444
+Kansas-Providence,0.6807
+Kansas-Purdue,0.6621
+Kansas-Robert Morris,0.8724
+Kansas-San Diego St,0.6931
+Kansas-SF Austin,0.6744
+Kansas-SMU,0.6257
+Kansas-St John's,0.731
+Kansas-Texas,0.506
+Kansas-TX Southern,0.909
+Kansas-UAB,0.8565
+Kansas-UC Irvine,0.7493
+Kansas-UCLA,0.8266
+Kansas-Utah,0.3712
+Kansas-VA Commonwealth,0.749
+Kansas-Valparaiso,0.699
+Kansas-Villanova,0.4127
+Kansas-Virginia,0.2955
+Kansas-West Virginia,0.5749
+Kansas-Wichita St,0.6337
+Kansas-Wisconsin,0.3976
+Kansas-Wofford,0.812
+Kansas-Wyoming,0.7515
+Kansas-Xavier,0.6132
+Kentucky-Lafayette,1.0
+Kentucky-Louisville,0.8239
+Kentucky-LSU,0.8961
+Kentucky-Manhattan,1.0
+Kentucky-Maryland,0.8521
+Kentucky-Michigan St,0.7389
+Kentucky-Mississippi,0.8928
+Kentucky-N Dakota St,1.0
+Kentucky-NC State,0.7641
+Kentucky-New Mexico St,0.9765
+Kentucky-North Carolina,0.5622
+Kentucky-North Florida,1.0
+Kentucky-Northeastern,0.9813
+Kentucky-Northern Iowa,0.8526
+Kentucky-Notre Dame,0.7298
+Kentucky-Ohio St,0.7806
+Kentucky-Oklahoma,0.7225
+Kentucky-Oklahoma St,0.8527
+Kentucky-Oregon,0.9593
+Kentucky-Providence,0.7586
+Kentucky-Purdue,0.8561
+Kentucky-Robert Morris,1.0
+Kentucky-San Diego St,0.977
+Kentucky-SF Austin,0.8634
+Kentucky-SMU,0.8822
+Kentucky-St John's,0.9215
+Kentucky-Texas,0.8024
+Kentucky-TX Southern,1.0
+Kentucky-UAB,1.0
+Kentucky-UC Irvine,0.9776
+Kentucky-UCLA,0.8945
+Kentucky-Utah,0.8574
+Kentucky-VA Commonwealth,0.7034
+Kentucky-Valparaiso,0.9372
+Kentucky-Villanova,0.6896
+Kentucky-Virginia,0.5421
+Kentucky-West Virginia,0.7783
+Kentucky-Wichita St,0.8075
+Kentucky-Wisconsin,0.5841
+Kentucky-Wofford,0.9789
+Kentucky-Wyoming,1.0
+Kentucky-Xavier,0.7237
+Lafayette-Louisville,0.1929
+Lafayette-LSU,0.2946
+Lafayette-Manhattan,0.4946
+Lafayette-Maryland,0.1563
+Lafayette-Michigan St,0.0761
+Lafayette-Mississippi,0.2596
+Lafayette-N Dakota St,0.5982
+Lafayette-NC State,0.189
+Lafayette-New Mexico St,0.275
+Lafayette-North Carolina,0.1514
+Lafayette-North Florida,0.5166
+Lafayette-Northeastern,0.3796
+Lafayette-Northern Iowa,0.3375
+Lafayette-Notre Dame,0.0702
+Lafayette-Ohio St,0.0949
+Lafayette-Oklahoma,0.1262
+Lafayette-Oklahoma St,0.3075
+Lafayette-Oregon,0.3896
+Lafayette-Providence,0.2432
+Lafayette-Purdue,0.2511
+Lafayette-Robert Morris,0.5167
+Lafayette-San Diego St,0.3421
+Lafayette-SF Austin,0.2305
+Lafayette-SMU,0.1564
+Lafayette-St John's,0.2578
+Lafayette-Texas,0.1085
+Lafayette-TX Southern,0.4418
+Lafayette-UAB,0.455
+Lafayette-UC Irvine,0.4589
+Lafayette-UCLA,0.262
+Lafayette-Utah,0.0885
+Lafayette-VA Commonwealth,0.0982
+Lafayette-Valparaiso,0.2536
+Lafayette-Villanova,0.0517
+Lafayette-Virginia,0.0528
+Lafayette-West Virginia,0.1434
+Lafayette-Wichita St,0.1727
+Lafayette-Wisconsin,0.0168
+Lafayette-Wofford,0.2818
+Lafayette-Wyoming,0.3717
+Lafayette-Xavier,0.1483
+Louisville-LSU,0.6105
+Louisville-Manhattan,0.8265
+Louisville-Maryland,0.6468
+Louisville-Michigan St,0.5523
+Louisville-Mississippi,0.755
+Louisville-N Dakota St,0.8637
+Louisville-NC State,0.6506
+Louisville-New Mexico St,0.8607
+Louisville-North Carolina,0.459
+Louisville-North Florida,0.7315
+Louisville-Northeastern,0.781
+Louisville-Northern Iowa,0.5272
+Louisville-Notre Dame,0.3295
+Louisville-Ohio St,0.468
+Louisville-Oklahoma,0.5007
+Louisville-Oklahoma St,0.6478
+Louisville-Oregon,0.7364
+Louisville-Providence,0.7018
+Louisville-Purdue,0.8038
+Louisville-Robert Morris,0.8078
+Louisville-San Diego St,0.6242
+Louisville-SF Austin,0.7261
+Louisville-SMU,0.6469
+Louisville-St John's,0.6623
+Louisville-Texas,0.587
+Louisville-TX Southern,0.8449
+Louisville-UAB,0.7607
+Louisville-UC Irvine,0.7729
+Louisville-UCLA,0.7279
+Louisville-Utah,0.4824
+Louisville-VA Commonwealth,0.6498
+Louisville-Valparaiso,0.8119
+Louisville-Villanova,0.4339
+Louisville-Virginia,0.3467
+Louisville-West Virginia,0.5355
+Louisville-Wichita St,0.5943
+Louisville-Wisconsin,0.3891
+Louisville-Wofford,0.896
+Louisville-Wyoming,0.8656
+Louisville-Xavier,0.6944
+LSU-Manhattan,0.7496
+LSU-Maryland,0.3991
+LSU-Michigan St,0.3057
+LSU-Mississippi,0.5686
+LSU-N Dakota St,0.7904
+LSU-NC State,0.4633
+LSU-New Mexico St,0.6232
+LSU-North Carolina,0.3072
+LSU-North Florida,0.6224
+LSU-Northeastern,0.6676
+LSU-Northern Iowa,0.4902
+LSU-Notre Dame,0.3249
+LSU-Ohio St,0.2244
+LSU-Oklahoma,0.2567
+LSU-Oklahoma St,0.37
+LSU-Oregon,0.7019
+LSU-Providence,0.3938
+LSU-Purdue,0.4059
+LSU-Robert Morris,0.6765
+LSU-San Diego St,0.4671
+LSU-SF Austin,0.5399
+LSU-SMU,0.3389
+LSU-St John's,0.6563
+LSU-Texas,0.2798
+LSU-TX Southern,0.7777
+LSU-UAB,0.7115
+LSU-UC Irvine,0.6567
+LSU-UCLA,0.5719
+LSU-Utah,0.2115
+LSU-VA Commonwealth,0.5527
+LSU-Valparaiso,0.5394
+LSU-Villanova,0.1972
+LSU-Virginia,0.1695
+LSU-West Virginia,0.3181
+LSU-Wichita St,0.3167
+LSU-Wisconsin,0.1864
+LSU-Wofford,0.6903
+LSU-Wyoming,0.7802
+LSU-Xavier,0.266
+Manhattan-Maryland,0.1402
+Manhattan-Michigan St,0.0572
+Manhattan-Mississippi,0.1547
+Manhattan-N Dakota St,0.6188
+Manhattan-NC State,0.1733
+Manhattan-New Mexico St,0.3845
+Manhattan-North Carolina,0.0699
+Manhattan-North Florida,0.4467
+Manhattan-Northeastern,0.4296
+Manhattan-Northern Iowa,0.2311
+Manhattan-Notre Dame,0.0504
+Manhattan-Ohio St,0.1044
+Manhattan-Oklahoma,0.1057
+Manhattan-Oklahoma St,0.2012
+Manhattan-Oregon,0.2857
+Manhattan-Providence,0.1665
+Manhattan-Purdue,0.2958
+Manhattan-Robert Morris,0.4769
+Manhattan-San Diego St,0.3868
+Manhattan-SF Austin,0.3064
+Manhattan-SMU,0.1102
+Manhattan-St John's,0.243
+Manhattan-Texas,0.09
+Manhattan-TX Southern,0.492
+Manhattan-UAB,0.4152
+Manhattan-UC Irvine,0.388
+Manhattan-UCLA,0.2477
+Manhattan-Utah,0.0367
+Manhattan-VA Commonwealth,0.1726
+Manhattan-Valparaiso,0.4822
+Manhattan-Villanova,0.0
+Manhattan-Virginia,0.0903
+Manhattan-West Virginia,0.0955
+Manhattan-Wichita St,0.2451
+Manhattan-Wisconsin,0.0
+Manhattan-Wofford,0.5723
+Manhattan-Wyoming,0.3912
+Manhattan-Xavier,0.101
+Maryland-Michigan St,0.3601
+Maryland-Mississippi,0.6244
+Maryland-N Dakota St,0.7186
+Maryland-NC State,0.5793
+Maryland-New Mexico St,0.7369
+Maryland-North Carolina,0.4193
+Maryland-North Florida,0.8236
+Maryland-Northeastern,0.7499
+Maryland-Northern Iowa,0.4858
+Maryland-Notre Dame,0.3786
+Maryland-Ohio St,0.4878
+Maryland-Oklahoma,0.3999
+Maryland-Oklahoma St,0.5763
+Maryland-Oregon,0.6672
+Maryland-Providence,0.5097
+Maryland-Purdue,0.5219
+Maryland-Robert Morris,0.8748
+Maryland-San Diego St,0.4928
+Maryland-SF Austin,0.7763
+Maryland-SMU,0.4248
+Maryland-St John's,0.5617
+Maryland-Texas,0.4248
+Maryland-TX Southern,0.7638
+Maryland-UAB,0.7624
+Maryland-UC Irvine,0.8303
+Maryland-UCLA,0.5976
+Maryland-Utah,0.323
+Maryland-VA Commonwealth,0.4881
+Maryland-Valparaiso,0.6245
+Maryland-Villanova,0.2166
+Maryland-Virginia,0.3096
+Maryland-West Virginia,0.4635
+Maryland-Wichita St,0.5223
+Maryland-Wisconsin,0.2945
+Maryland-Wofford,0.7734
+Maryland-Wyoming,0.6526
+Maryland-Xavier,0.5321
+Michigan St-Mississippi,0.7484
+Michigan St-N Dakota St,0.86
+Michigan St-NC State,0.4632
+Michigan St-New Mexico St,0.7651
+Michigan St-North Carolina,0.4218
+Michigan St-North Florida,0.7873
+Michigan St-Northeastern,0.9267
+Michigan St-Northern Iowa,0.4902
+Michigan St-Notre Dame,0.533
+Michigan St-Ohio St,0.5212
+Michigan St-Oklahoma,0.4635
+Michigan St-Oklahoma St,0.5506
+Michigan St-Oregon,0.7301
+Michigan St-Providence,0.7551
+Michigan St-Purdue,0.6164
+Michigan St-Robert Morris,0.9247
+Michigan St-San Diego St,0.6475
+Michigan St-SF Austin,0.6895
+Michigan St-SMU,0.64
+Michigan St-St John's,0.5353
+Michigan St-Texas,0.4895
+Michigan St-TX Southern,0.9321
+Michigan St-UAB,0.7564
+Michigan St-UC Irvine,0.8581
+Michigan St-UCLA,0.7816
+Michigan St-Utah,0.4454
+Michigan St-VA Commonwealth,0.643
+Michigan St-Valparaiso,0.7458
+Michigan St-Villanova,0.3671
+Michigan St-Virginia,0.2798
+Michigan St-West Virginia,0.5284
+Michigan St-Wichita St,0.4668
+Michigan St-Wisconsin,0.3226
+Michigan St-Wofford,0.8006
+Michigan St-Wyoming,0.8304
+Michigan St-Xavier,0.5669
+Mississippi-N Dakota St,0.6148
+Mississippi-NC State,0.4699
+Mississippi-New Mexico St,0.7499
+Mississippi-North Carolina,0.0718
+Mississippi-North Florida,0.7183
+Mississippi-Northeastern,0.5531
+Mississippi-Northern Iowa,0.3463
+Mississippi-Notre Dame,0.361
+Mississippi-Ohio St,0.3806
+Mississippi-Oklahoma,0.3226
+Mississippi-Oklahoma St,0.4067
+Mississippi-Oregon,0.5581
+Mississippi-Providence,0.4004
+Mississippi-Purdue,0.5028
+Mississippi-Robert Morris,0.7115
+Mississippi-San Diego St,0.4135
+Mississippi-SF Austin,0.6369
+Mississippi-SMU,0.4359
+Mississippi-St John's,0.5426
+Mississippi-Texas,0.4365
+Mississippi-TX Southern,0.6918
+Mississippi-UAB,0.5967
+Mississippi-UC Irvine,0.8134
+Mississippi-UCLA,0.5184
+Mississippi-Utah,0.3071
+Mississippi-VA Commonwealth,0.5594
+Mississippi-Valparaiso,0.6363
+Mississippi-Villanova,0.1719
+Mississippi-Virginia,0.2044
+Mississippi-West Virginia,0.3846
+Mississippi-Wichita St,0.4736
+Mississippi-Wisconsin,0.2209
+Mississippi-Wofford,0.7867
+Mississippi-Wyoming,0.5756
+Mississippi-Xavier,0.3928
+N Dakota St-NC State,0.3142
+N Dakota St-New Mexico St,0.4019
+N Dakota St-North Carolina,0.1242
+N Dakota St-North Florida,0.3731
+N Dakota St-Northeastern,0.4767
+N Dakota St-Northern Iowa,0.3723
+N Dakota St-Notre Dame,0.0736
+N Dakota St-Ohio St,0.1884
+N Dakota St-Oklahoma,0.0992
+N Dakota St-Oklahoma St,0.3122
+N Dakota St-Oregon,0.365
+N Dakota St-Providence,0.1875
+N Dakota St-Purdue,0.256
+N Dakota St-Robert Morris,0.584
+N Dakota St-San Diego St,0.4373
+N Dakota St-SF Austin,0.2358
+N Dakota St-SMU,0.432
+N Dakota St-St John's,0.3532
+N Dakota St-Texas,0.1726
+N Dakota St-TX Southern,0.6595
+N Dakota St-UAB,0.5523
+N Dakota St-UC Irvine,0.5257
+N Dakota St-UCLA,0.3877
+N Dakota St-Utah,0.1214
+N Dakota St-VA Commonwealth,0.3438
+N Dakota St-Valparaiso,0.4403
+N Dakota St-Villanova,0.0541
+N Dakota St-Virginia,0.1154
+N Dakota St-West Virginia,0.1776
+N Dakota St-Wichita St,0.2972
+N Dakota St-Wisconsin,0.0791
+N Dakota St-Wofford,0.5594
+N Dakota St-Wyoming,0.5289
+N Dakota St-Xavier,0.2429
+NC State-New Mexico St,0.7635
+NC State-North Carolina,0.3255
+NC State-North Florida,0.6701
+NC State-Northeastern,0.6563
+NC State-Northern Iowa,0.3613
+NC State-Notre Dame,0.3146
+NC State-Ohio St,0.2434
+NC State-Oklahoma,0.2758
+NC State-Oklahoma St,0.5422
+NC State-Oregon,0.6934
+NC State-Providence,0.3852
+NC State-Purdue,0.5179
+NC State-Robert Morris,0.812
+NC State-San Diego St,0.5189
+NC State-SF Austin,0.5315
+NC State-SMU,0.6616
+NC State-St John's,0.5276
+NC State-Texas,0.4509
+NC State-TX Southern,0.8216
+NC State-UAB,0.6991
+NC State-UC Irvine,0.6763
+NC State-UCLA,0.6238
+NC State-Utah,0.2895
+NC State-VA Commonwealth,0.5744
+NC State-Valparaiso,0.6508
+NC State-Villanova,0.2736
+NC State-Virginia,0.3064
+NC State-West Virginia,0.4595
+NC State-Wichita St,0.428
+NC State-Wisconsin,0.2314
+NC State-Wofford,0.7699
+NC State-Wyoming,0.619
+NC State-Xavier,0.4378
+New Mexico St-North Carolina,0.1219
+New Mexico St-North Florida,0.5775
+New Mexico St-Northeastern,0.41
+New Mexico St-Northern Iowa,0.2036
+New Mexico St-Notre Dame,0.1659
+New Mexico St-Ohio St,0.218
+New Mexico St-Oklahoma,0.1595
+New Mexico St-Oklahoma St,0.2038
+New Mexico St-Oregon,0.4429
+New Mexico St-Providence,0.1982
+New Mexico St-Purdue,0.4497
+New Mexico St-Robert Morris,0.6362
+New Mexico St-San Diego St,0.3302
+New Mexico St-SF Austin,0.432
+New Mexico St-SMU,0.2631
+New Mexico St-St John's,0.3079
+New Mexico St-Texas,0.148
+New Mexico St-TX Southern,0.6197
+New Mexico St-UAB,0.546
+New Mexico St-UC Irvine,0.5487
+New Mexico St-UCLA,0.5242
+New Mexico St-Utah,0.2382
+New Mexico St-VA Commonwealth,0.2959
+New Mexico St-Valparaiso,0.4004
+New Mexico St-Villanova,0.1072
+New Mexico St-Virginia,0.1089
+New Mexico St-West Virginia,0.2752
+New Mexico St-Wichita St,0.2741
+New Mexico St-Wisconsin,0.0692
+New Mexico St-Wofford,0.5224
+New Mexico St-Wyoming,0.5822
+New Mexico St-Xavier,0.252
+North Carolina-North Florida,0.9864
+North Carolina-Northeastern,0.8871
+North Carolina-Northern Iowa,0.7319
+North Carolina-Notre Dame,0.506
+North Carolina-Ohio St,0.4941
+North Carolina-Oklahoma,0.4365
+North Carolina-Oklahoma St,0.7321
+North Carolina-Oregon,0.758
+North Carolina-Providence,0.6059
+North Carolina-Purdue,0.677
+North Carolina-Robert Morris,0.8794
+North Carolina-San Diego St,0.7983
+North Carolina-SF Austin,0.809
+North Carolina-SMU,0.7312
+North Carolina-St John's,0.7455
+North Carolina-Texas,0.6127
+North Carolina-TX Southern,0.8851
+North Carolina-UAB,0.8653
+North Carolina-UC Irvine,0.8803
+North Carolina-UCLA,0.8105
+North Carolina-Utah,0.448
+North Carolina-VA Commonwealth,0.7039
+North Carolina-Valparaiso,0.8619
+North Carolina-Villanova,0.3988
+North Carolina-Virginia,0.5225
+North Carolina-West Virginia,0.6813
+North Carolina-Wichita St,0.6498
+North Carolina-Wisconsin,0.4735
+North Carolina-Wofford,0.9126
+North Carolina-Wyoming,0.8522
+North Carolina-Xavier,0.6591
+North Florida-Northeastern,0.528
+North Florida-Northern Iowa,0.2071
+North Florida-Notre Dame,0.2657
+North Florida-Ohio St,0.1387
+North Florida-Oklahoma,0.1401
+North Florida-Oklahoma St,0.2675
+North Florida-Oregon,0.3529
+North Florida-Providence,0.3229
+North Florida-Purdue,0.3321
+North Florida-Robert Morris,0.6054
+North Florida-San Diego St,0.2727
+North Florida-SF Austin,0.2227
+North Florida-SMU,0.1463
+North Florida-St John's,0.3398
+North Florida-Texas,0.2155
+North Florida-TX Southern,0.7407
+North Florida-UAB,0.5438
+North Florida-UC Irvine,0.5163
+North Florida-UCLA,0.3748
+North Florida-Utah,0.1608
+North Florida-VA Commonwealth,0.1487
+North Florida-Valparaiso,0.4896
+North Florida-Villanova,0.0621
+North Florida-Virginia,0.0936
+North Florida-West Virginia,0.2212
+North Florida-Wichita St,0.2504
+North Florida-Wisconsin,0.056
+North Florida-Wofford,0.6104
+North Florida-Wyoming,0.4895
+North Florida-Xavier,0.2873
+Northeastern-Northern Iowa,0.2508
+Northeastern-Notre Dame,0.1857
+Northeastern-Ohio St,0.2386
+Northeastern-Oklahoma,0.1799
+Northeastern-Oklahoma St,0.2509
+Northeastern-Oregon,0.2779
+Northeastern-Providence,0.1855
+Northeastern-Purdue,0.316
+Northeastern-Robert Morris,0.6219
+Northeastern-San Diego St,0.2265
+Northeastern-SF Austin,0.3278
+Northeastern-SMU,0.2501
+Northeastern-St John's,0.2038
+Northeastern-Texas,0.2571
+Northeastern-TX Southern,0.4556
+Northeastern-UAB,0.5007
+Northeastern-UC Irvine,0.4129
+Northeastern-UCLA,0.4499
+Northeastern-Utah,0.1393
+Northeastern-VA Commonwealth,0.2527
+Northeastern-Valparaiso,0.3553
+Northeastern-Villanova,0.2201
+Northeastern-Virginia,0.1313
+Northeastern-West Virginia,0.2333
+Northeastern-Wichita St,0.2022
+Northeastern-Wisconsin,0.0927
+Northeastern-Wofford,0.4769
+Northeastern-Wyoming,0.627
+Northeastern-Xavier,0.1795
+Northern Iowa-Notre Dame,0.4079
+Northern Iowa-Ohio St,0.457
+Northern Iowa-Oklahoma,0.3089
+Northern Iowa-Oklahoma St,0.5153
+Northern Iowa-Oregon,0.5761
+Northern Iowa-Providence,0.5088
+Northern Iowa-Purdue,0.491
+Northern Iowa-Robert Morris,0.8141
+Northern Iowa-San Diego St,0.6425
+Northern Iowa-SF Austin,0.5046
+Northern Iowa-SMU,0.6347
+Northern Iowa-St John's,0.6511
+Northern Iowa-Texas,0.5443
+Northern Iowa-TX Southern,0.8837
+Northern Iowa-UAB,0.7316
+Northern Iowa-UC Irvine,0.7694
+Northern Iowa-UCLA,0.6269
+Northern Iowa-Utah,0.4126
+Northern Iowa-VA Commonwealth,0.6679
+Northern Iowa-Valparaiso,0.6237
+Northern Iowa-Villanova,0.1859
+Northern Iowa-Virginia,0.1885
+Northern Iowa-West Virginia,0.4928
+Northern Iowa-Wichita St,0.5817
+Northern Iowa-Wisconsin,0.2036
+Northern Iowa-Wofford,0.7124
+Northern Iowa-Wyoming,0.7121
+Northern Iowa-Xavier,0.4711
+Notre Dame-Ohio St,0.5332
+Notre Dame-Oklahoma,0.6562
+Notre Dame-Oklahoma St,0.7127
+Notre Dame-Oregon,0.6504
+Notre Dame-Providence,0.7066
+Notre Dame-Purdue,0.658
+Notre Dame-Robert Morris,0.8704
+Notre Dame-San Diego St,0.8696
+Notre Dame-SF Austin,0.8209
+Notre Dame-SMU,0.6817
+Notre Dame-St John's,0.6066
+Notre Dame-Texas,0.7725
+Notre Dame-TX Southern,0.9674
+Notre Dame-UAB,0.7636
+Notre Dame-UC Irvine,0.7463
+Notre Dame-UCLA,0.7022
+Notre Dame-Utah,0.6077
+Notre Dame-VA Commonwealth,0.6545
+Notre Dame-Valparaiso,0.7858
+Notre Dame-Villanova,0.5289
+Notre Dame-Virginia,0.4718
+Notre Dame-West Virginia,0.6608
+Notre Dame-Wichita St,0.7497
+Notre Dame-Wisconsin,0.4237
+Notre Dame-Wofford,0.8993
+Notre Dame-Wyoming,0.899
+Notre Dame-Xavier,0.7895
+Ohio St-Oklahoma,0.5779
+Ohio St-Oklahoma St,0.6335
+Ohio St-Oregon,0.8109
+Ohio St-Providence,0.6276
+Ohio St-Purdue,0.6689
+Ohio St-Robert Morris,0.8756
+Ohio St-San Diego St,0.6397
+Ohio St-SF Austin,0.6809
+Ohio St-SMU,0.6627
+Ohio St-St John's,0.7978
+Ohio St-Texas,0.4833
+Ohio St-TX Southern,0.8818
+Ohio St-UAB,0.8004
+Ohio St-UC Irvine,0.9047
+Ohio St-UCLA,0.6223
+Ohio St-Utah,0.4088
+Ohio St-VA Commonwealth,0.6656
+Ohio St-Valparaiso,0.8251
+Ohio St-Villanova,0.3597
+Ohio St-Virginia,0.3629
+Ohio St-West Virginia,0.522
+Ohio St-Wichita St,0.6711
+Ohio St-Wisconsin,0.4046
+Ohio St-Wofford,0.877
+Ohio St-Wyoming,0.7563
+Ohio St-Xavier,0.6806
+Oklahoma-Oklahoma St,0.6311
+Oklahoma-Oregon,0.6883
+Oklahoma-Providence,0.6252
+Oklahoma-Purdue,0.6966
+Oklahoma-Robert Morris,0.9347
+Oklahoma-San Diego St,0.7578
+Oklahoma-SF Austin,0.7087
+Oklahoma-SMU,0.6001
+Oklahoma-St John's,0.6751
+Oklahoma-Texas,0.6614
+Oklahoma-TX Southern,0.9109
+Oklahoma-UAB,0.7689
+Oklahoma-UC Irvine,0.8729
+Oklahoma-UCLA,0.8007
+Oklahoma-Utah,0.4965
+Oklahoma-VA Commonwealth,0.7234
+Oklahoma-Valparaiso,0.8532
+Oklahoma-Villanova,0.4174
+Oklahoma-Virginia,0.4206
+Oklahoma-West Virginia,0.6097
+Oklahoma-Wichita St,0.6987
+Oklahoma-Wisconsin,0.342
+Oklahoma-Wofford,0.8753
+Oklahoma-Wyoming,0.7847
+Oklahoma-Xavier,0.7383
+Oklahoma St-Oregon,0.6361
+Oklahoma St-Providence,0.5989
+Oklahoma St-Purdue,0.5811
+Oklahoma St-Robert Morris,0.7838
+Oklahoma St-San Diego St,0.5219
+Oklahoma St-SF Austin,0.6549
+Oklahoma St-SMU,0.4539
+Oklahoma St-St John's,0.5907
+Oklahoma St-Texas,0.3635
+Oklahoma St-TX Southern,0.6728
+Oklahoma St-UAB,0.882
+Oklahoma St-UC Irvine,0.7993
+Oklahoma St-UCLA,0.5364
+Oklahoma St-Utah,0.4727
+Oklahoma St-VA Commonwealth,0.5473
+Oklahoma St-Valparaiso,0.7439
+Oklahoma St-Villanova,0.3061
+Oklahoma St-Virginia,0.3389
+Oklahoma St-West Virginia,0.342
+Oklahoma St-Wichita St,0.4912
+Oklahoma St-Wisconsin,0.2938
+Oklahoma St-Wofford,0.8327
+Oklahoma St-Wyoming,0.7119
+Oklahoma St-Xavier,0.5311
+Oregon-Providence,0.3576
+Oregon-Purdue,0.4298
+Oregon-Robert Morris,0.7019
+Oregon-San Diego St,0.4609
+Oregon-SF Austin,0.4433
+Oregon-SMU,0.3328
+Oregon-St John's,0.5598
+Oregon-Texas,0.3343
+Oregon-TX Southern,0.7132
+Oregon-UAB,0.676
+Oregon-UC Irvine,0.7411
+Oregon-UCLA,0.3851
+Oregon-Utah,0.297
+Oregon-VA Commonwealth,0.4563
+Oregon-Valparaiso,0.6536
+Oregon-Villanova,0.1327
+Oregon-Virginia,0.2554
+Oregon-West Virginia,0.3423
+Oregon-Wichita St,0.4313
+Oregon-Wisconsin,0.1824
+Oregon-Wofford,0.6845
+Oregon-Wyoming,0.8045
+Oregon-Xavier,0.4105
+Providence-Purdue,0.5574
+Providence-Robert Morris,0.6976
+Providence-San Diego St,0.6186
+Providence-SF Austin,0.6312
+Providence-SMU,0.5205
+Providence-St John's,0.5068
+Providence-Texas,0.43
+Providence-TX Southern,0.8571
+Providence-UAB,0.6159
+Providence-UC Irvine,0.865
+Providence-UCLA,0.6632
+Providence-Utah,0.3579
+Providence-VA Commonwealth,0.5537
+Providence-Valparaiso,0.6596
+Providence-Villanova,0.2511
+Providence-Virginia,0.3743
+Providence-West Virginia,0.529
+Providence-Wichita St,0.648
+Providence-Wisconsin,0.3588
+Providence-Wofford,0.808
+Providence-Wyoming,0.7173
+Providence-Xavier,0.5074
+Purdue-Robert Morris,0.7499
+Purdue-San Diego St,0.5462
+Purdue-SF Austin,0.5889
+Purdue-SMU,0.5685
+Purdue-St John's,0.5548
+Purdue-Texas,0.3278
+Purdue-TX Southern,0.7597
+Purdue-UAB,0.7872
+Purdue-UC Irvine,0.7642
+Purdue-UCLA,0.5607
+Purdue-Utah,0.3774
+Purdue-VA Commonwealth,0.4813
+Purdue-Valparaiso,0.7685
+Purdue-Villanova,0.2714
+Purdue-Virginia,0.1536
+Purdue-West Virginia,0.3062
+Purdue-Wichita St,0.6058
+Purdue-Wisconsin,0.2293
+Purdue-Wofford,0.7073
+Purdue-Wyoming,0.7671
+Purdue-Xavier,0.4952
+Robert Morris-San Diego St,0.2808
+Robert Morris-SF Austin,0.2294
+Robert Morris-SMU,0.1854
+Robert Morris-St John's,0.2867
+Robert Morris-Texas,0.1077
+Robert Morris-TX Southern,0.6509
+Robert Morris-UAB,0.4233
+Robert Morris-UC Irvine,0.4273
+Robert Morris-UCLA,0.3211
+Robert Morris-Utah,0.0578
+Robert Morris-VA Commonwealth,0.2175
+Robert Morris-Valparaiso,0.3125
+Robert Morris-Villanova,0.0
+Robert Morris-Virginia,0.0523
+Robert Morris-West Virginia,0.1425
+Robert Morris-Wichita St,0.232
+Robert Morris-Wisconsin,0.0164
+Robert Morris-Wofford,0.4308
+Robert Morris-Wyoming,0.2799
+Robert Morris-Xavier,0.1172
+San Diego St-SF Austin,0.4374
+San Diego St-SMU,0.3868
+San Diego St-St John's,0.5237
+San Diego St-Texas,0.4773
+San Diego St-TX Southern,0.6688
+San Diego St-UAB,0.7262
+San Diego St-UC Irvine,0.7633
+San Diego St-UCLA,0.4995
+San Diego St-Utah,0.2561
+San Diego St-VA Commonwealth,0.4803
+San Diego St-Valparaiso,0.6471
+San Diego St-Villanova,0.2104
+San Diego St-Virginia,0.2431
+San Diego St-West Virginia,0.3955
+San Diego St-Wichita St,0.3941
+San Diego St-Wisconsin,0.1684
+San Diego St-Wofford,0.6462
+San Diego St-Wyoming,0.706
+San Diego St-Xavier,0.3738
+SF Austin-SMU,0.3742
+SF Austin-St John's,0.4207
+SF Austin-Texas,0.4051
+SF Austin-TX Southern,0.7812
+SF Austin-UAB,0.7159
+SF Austin-UC Irvine,0.6315
+SF Austin-UCLA,0.6374
+SF Austin-Utah,0.2457
+SF Austin-VA Commonwealth,0.4074
+SF Austin-Valparaiso,0.665
+SF Austin-Villanova,0.0504
+SF Austin-Virginia,0.2636
+SF Austin-West Virginia,0.2629
+SF Austin-Wichita St,0.2916
+SF Austin-Wisconsin,0.0694
+SF Austin-Wofford,0.6951
+SF Austin-Wyoming,0.6345
+SF Austin-Xavier,0.4216
+SMU-St John's,0.5014
+SMU-Texas,0.3946
+SMU-TX Southern,0.8841
+SMU-UAB,0.7021
+SMU-UC Irvine,0.74
+SMU-UCLA,0.5073
+SMU-Utah,0.2628
+SMU-VA Commonwealth,0.6085
+SMU-Valparaiso,0.7147
+SMU-Villanova,0.337
+SMU-Virginia,0.2193
+SMU-West Virginia,0.4333
+SMU-Wichita St,0.3717
+SMU-Wisconsin,0.1741
+SMU-Wofford,0.7733
+SMU-Wyoming,0.6525
+SMU-Xavier,0.3815
+St John's-Texas,0.4088
+St John's-TX Southern,0.8139
+St John's-UAB,0.7192
+St John's-UC Irvine,0.7555
+St John's-UCLA,0.5812
+St John's-Utah,0.2489
+St John's-VA Commonwealth,0.5017
+St John's-Valparaiso,0.6689
+St John's-Villanova,0.1437
+St John's-Virginia,0.3569
+St John's-West Virginia,0.5376
+St John's-Wichita St,0.5062
+St John's-Wisconsin,0.2226
+St John's-Wofford,0.6686
+St John's-Wyoming,0.5779
+St John's-Xavier,0.4254
+Texas-TX Southern,0.93
+Texas-UAB,0.7836
+Texas-UC Irvine,0.7945
+Texas-UCLA,0.6569
+Texas-Utah,0.3507
+Texas-VA Commonwealth,0.5482
+Texas-Valparaiso,0.742
+Texas-Villanova,0.4532
+Texas-Virginia,0.2455
+Texas-West Virginia,0.4937
+Texas-Wichita St,0.402
+Texas-Wisconsin,0.3187
+Texas-Wofford,0.7672
+Texas-Wyoming,0.797
+Texas-Xavier,0.4721
+TX Southern-UAB,0.4085
+TX Southern-UC Irvine,0.3834
+TX Southern-UCLA,0.3405
+TX Southern-Utah,0.0223
+TX Southern-VA Commonwealth,0.2381
+TX Southern-Valparaiso,0.4206
+TX Southern-Villanova,0.0
+TX Southern-Virginia,0.0
+TX Southern-West Virginia,0.1043
+TX Southern-Wichita St,0.224
+TX Southern-Wisconsin,0.0
+TX Southern-Wofford,0.477
+TX Southern-Wyoming,0.4164
+TX Southern-Xavier,0.1387
+UAB-UC Irvine,0.4575
+UAB-UCLA,0.3158
+UAB-Utah,0.0712
+UAB-VA Commonwealth,0.1498
+UAB-Valparaiso,0.4608
+UAB-Villanova,0.0928
+UAB-Virginia,0.0641
+UAB-West Virginia,0.1018
+UAB-Wichita St,0.4019
+UAB-Wisconsin,0.0
+UAB-Wofford,0.5816
+UAB-Wyoming,0.4608
+UAB-Xavier,0.3485
+UC Irvine-UCLA,0.3402
+UC Irvine-Utah,0.0254
+UC Irvine-VA Commonwealth,0.1423
+UC Irvine-Valparaiso,0.4872
+UC Irvine-Villanova,0.0151
+UC Irvine-Virginia,0.1372
+UC Irvine-West Virginia,0.2423
+UC Irvine-Wichita St,0.2111
+UC Irvine-Wisconsin,0.0375
+UC Irvine-Wofford,0.4285
+UC Irvine-Wyoming,0.4582
+UC Irvine-Xavier,0.1889
+UCLA-Utah,0.0937
+UCLA-VA Commonwealth,0.3453
+UCLA-Valparaiso,0.7233
+UCLA-Villanova,0.2297
+UCLA-Virginia,0.1719
+UCLA-West Virginia,0.261
+UCLA-Wichita St,0.4102
+UCLA-Wisconsin,0.2186
+UCLA-Wofford,0.7235
+UCLA-Wyoming,0.7532
+UCLA-Xavier,0.2993
+Utah-VA Commonwealth,0.6195
+Utah-Valparaiso,0.7763
+Utah-Villanova,0.4657
+Utah-Virginia,0.4088
+Utah-West Virginia,0.6275
+Utah-Wichita St,0.6864
+Utah-Wisconsin,0.3898
+Utah-Wofford,0.8864
+Utah-Wyoming,0.9163
+Utah-Xavier,0.6353
+VA Commonwealth-Valparaiso,0.772
+VA Commonwealth-Villanova,0.2442
+VA Commonwealth-Virginia,0.3372
+VA Commonwealth-West Virginia,0.5807
+VA Commonwealth-Wichita St,0.4891
+VA Commonwealth-Wisconsin,0.1718
+VA Commonwealth-Wofford,0.8309
+VA Commonwealth-Wyoming,0.68
+VA Commonwealth-Xavier,0.4988
+Valparaiso-Villanova,0.0908
+Valparaiso-Virginia,0.0929
+Valparaiso-West Virginia,0.2656
+Valparaiso-Wichita St,0.2945
+Valparaiso-Wisconsin,0.0815
+Valparaiso-Wofford,0.6369
+Valparaiso-Wyoming,0.5763
+Valparaiso-Xavier,0.3334
+Villanova-Virginia,0.5786
+Villanova-West Virginia,0.6148
+Villanova-Wichita St,0.7339
+Villanova-Wisconsin,0.5291
+Villanova-Wofford,0.9868
+Villanova-Wyoming,0.8361
+Villanova-Xavier,0.6823
+Virginia-West Virginia,0.7021
+Virginia-Wichita St,0.6407
+Virginia-Wisconsin,0.3753
+Virginia-Wofford,0.8648
+Virginia-Wyoming,0.9549
+Virginia-Xavier,0.6493
+West Virginia-Wichita St,0.4233
+West Virginia-Wisconsin,0.1308
+West Virginia-Wofford,0.7305
+West Virginia-Wyoming,0.8807
+West Virginia-Xavier,0.4934
+Wichita St-Wisconsin,0.162
+Wichita St-Wofford,0.6413
+Wichita St-Wyoming,0.7012
+Wichita St-Xavier,0.3443
+Wisconsin-Wofford,0.9039
+Wisconsin-Wyoming,0.8436
+Wisconsin-Xavier,0.6955
+Wofford-Wyoming,0.4845
+Wofford-Xavier,0.2159
+Wyoming-Xavier,0.3367

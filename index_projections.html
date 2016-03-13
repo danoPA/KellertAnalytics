@@ -62,7 +62,22 @@
 
 <div class="container">
 
-<p>Projections Coming Soon</p>
+<div class="form-group">
+  <label for="sel1">Select Team 1:</label>
+  <select class="form-control" id="sel1">
+      %for team in sorted(teams):
+        <option>{{team}}</option>
+      %end
+  </select>
+  <label for="sel2">Select Team 2:</label>
+  <select class="form-control" id="sel2">
+      %for team in sorted(teams):
+        <option>{{team}}</option>
+      %end
+  </select>
+</div>
+
+    <p class="output"></p>
 
 <div class="row">
 
@@ -102,9 +117,19 @@
 <script>
 $(document).ready(function(){
 
-    $("button").click(function(){
-        $("tr.nottop").toggle();
-    });
+  $.getJSON("static/probs.json", function(json){
+
+      $('#sel1').on('change', function(){
+        var selected1 = $(this).find("option:selected").val();
+        console.log(json[selected1]);
+        $('#sel2').on('change', function(){
+          var selected2 = $(this).find("option:selected").val();
+          $("p.output").text(selected1 +" has a "+(json[selected1][selected2]*100)+"% percent chance of beating "+ selected2);
+        });
+      });
+
+
+  });
 
 });
 </script>

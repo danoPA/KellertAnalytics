@@ -68,18 +68,34 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
+        <div>
             <table class="table-striped table sortable">
                 <tr>
                     <th>Team</th>
                     <th>Offensive Efficiency</th>
                     <th>Defensive Efficiency</th>
+                    <th>Three Points</th>
+                    <th>Defensive Rebounds</th>
+                    <th>Offensive Rebounds</th>
+                    <th>Turnovers</th>
+                    <th>Assists</th>
+                    <th>Steals</th>
+                    <th>Free Throws</th>
+                    <th>Fouls</th>
                 </tr>
                 %for stat in stats:
                     <tr>
                         <td>{{stat.Team}}</td>
                         <td>{{stat.Offense}}</td>
                         <td>{{stat.Defense}}</td>
+                        <td>{{stat.Threes}}</td>
+                        <td>{{stat.DefRebounds}}</td>
+                        <td>{{stat.OffRebounds}}</td>
+                        <td>{{stat.Turnovers}}</td>
+                        <td>{{stat.Assists}}</td>
+                        <td>{{stat.Steals}}</td>
+                        <td>{{stat.FreeThrows}}</td>
+                        <td>{{stat.FreeThrowsGiven}}</td>
                     </tr>
                 %end
             </table>
