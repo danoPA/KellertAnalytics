@@ -70,19 +70,20 @@
 
     <div class="row">
         <div>
-            <table class="table-striped table sortable">
+            <table class="table-striped table sortable table-condensed">
                 <tr>
-                    <th>Team</th>
-                    <th>Offensive Efficiency</th>
-                    <th>Defensive Efficiency</th>
-                    <th>Three Points</th>
-                    <th>Defensive Rebounds</th>
-                    <th>Offensive Rebounds</th>
-                    <th>Turnovers</th>
-                    <th>Assists</th>
-                    <th>Steals</th>
-                    <th>Free Throws</th>
-                    <th>Fouls</th>
+                    <th class="col-sm-2">Team</th>
+                    <th class="col-sm-1">Offensive Efficiency</th>
+                    <th class="col-sm-1">Defensive Efficiency</th>
+                    <th class="col-sm-1">Pace</th>
+                    <th class="col-sm-1">Threes</th>
+                    <th class="col-sm-1">Defensive Rebounds</th>
+                    <th class="col-sm-1">Offensive Rebounds</th>
+                    <th class="col-sm-1">Turnovers</th>
+                    <th class="col-sm-1">Assists</th>
+                    <th class="col-sm-1">Steals</th>
+                    <th class="col-sm-1">Free Throws</th>
+                    <th class="col-sm-1">Fouls</th>
                 </tr>
                 %for stat in stats:
                     <tr>
@@ -92,6 +93,7 @@
                         <td>{{round(stat.Threes,2)}}</td>
                         <td>{{round(stat.DefRebounds,2)}}</td>
                         <td>{{round(stat.OffRebounds,2)}}</td>
+                        <td>{{round(stat.Pace,2)}}</td>
                         <td>{{round(stat.Turnovers,2)}}</td>
                         <td>{{round(stat.Assists,2)}}</td>
                         <td>{{round(stat.Steals,2)}}</td>
