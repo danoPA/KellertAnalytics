@@ -16,9 +16,6 @@
         padding-top: 50px;
         padding-bottom: 20px;
     }
-    .nottop{
-       display:none;
-    }
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -64,30 +61,20 @@
 
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
-            <button>Show More/Less</button>
             <table class="table-striped table">
                 <tr>
-                    <th>Rank</th>
                     <th>Team</th>
-                    <th>Score</th>
+                    <th>Offensive Efficiency</th>
+                    <th>Defensive Efficiency</th>
                 </tr>
-                %for ranking in rankings:
-                    %if ranking.rank < 25:
-                        <tr class="top25">
-                            <td>{{ranking.rank + 1}}</td>
-                            <td>{{ranking.team}}</td>
-                            <td>{{ranking.score}}</td>
-                        </tr>
-                    %else:
-                        <tr class="nottop">
-                            <td>{{ranking.rank + 1}}</td>
-                            <td>{{ranking.team}}</td>
-                            <td>{{ranking.score}}</td>
-                        </tr>
-                    %end
+                %for stat in stats:
+                    <tr>
+                        <td>{{stat.Team}}</td>
+                        <td>{{stat.Offense}}</td>
+                        <td>{{stat.Defense}}</td>
+                    </tr>
                 %end
             </table>
-            <button>Show More/Less</button>
         </div>
     </div>
 
@@ -125,16 +112,19 @@
 
 
 </div><!--/.container -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
 
-    $("button").click(function(){
-        $("tr.nottop").toggle();
+<script>
+
+    var $ = jQuery = require('jquery');
+    require('./jquery.csv.js');
+
+    $(document).ready(function(){
+
+       var stats = $.csv.function("adjustedStats_2016.csv")
+
     });
 
-});
 </script>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </html>

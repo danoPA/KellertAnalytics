@@ -1,7 +1,10 @@
-from bottle import route, run, template, get
+from bottle import route, run, template, get, debug
 from bottle import static_file, url
 import json
 import os
+import pandas as pd
+from power_rankings_load import load_power_rankings, load_team_stats
+
 
 def check_login(username, password):
 	with open("login.json", 'r') as infile:
@@ -16,26 +19,23 @@ def home():
 	return template("index.html", url = url)
 
 
+@route('/powerrankings')
+def powerrank():
+    rankings = load_power_rankings("power_rankings_2016_temp.csv")
+
+    return template("index.html", url = url, rankings = rankings)
+
+@route('/stats')
+def stats():
+    stats = load_team_stats("adjustedStats_2016.csv")
+
+    return template("index_stats.html", url = url, stats = stats)
+
+
 @route('/static/<filename>', name = 'static')
 def send_static(filename):
     return static_file(filename, root='static')
 
-# Static Routes
-# @get('/<filename:re:.*\.js>')
-# def javascripts(filename):
-#     return static_file(filename, root='static/js')
-
-# @get('/<filename:re:.*\.css>')
-# def stylesheets(filename):
-#     return static_file(filename, root='static/css')
-
-# @get('/<filename:re:.*\.(jpg|png|gif|ico)>')
-# def images(filename):
-#     return static_file(filename, root='static/img')
-
-# @get('/<filename:re:.*\.(eot|ttf|woff|svg)>')
-# def fonts(filename):
-#     return static_file(filename, root='static/fonts')
 
 
 from bottle import get, post, request # or route
@@ -62,4 +62,5 @@ def do_login():
 if __name__ == "__main__":
 
     port = int(os.environ.get('PORT', 5000))
-    main.app.run(host='0.0.0.0', port=port)
+    debug(True)
+    run(host='localhost', port=port, reloader=True)
