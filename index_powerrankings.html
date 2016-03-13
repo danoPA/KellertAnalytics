@@ -77,13 +77,13 @@
                         <tr class="top25">
                             <td>{{ranking.rank + 1}}</td>
                             <td>{{ranking.team}}</td>
-                            <td>{{ranking.score}}</td>
+                            <td>{{round(ranking.score,2)}}</td>
                         </tr>
                     %else:
                         <tr class="nottop">
                             <td>{{ranking.rank + 1}}</td>
                             <td>{{ranking.team}}</td>
-                            <td>{{ranking.score}}</td>
+                            <td>{{round(ranking.score,2)}}</td>
                         </tr>
                     %end
                 %end

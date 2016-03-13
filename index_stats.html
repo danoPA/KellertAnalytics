@@ -87,16 +87,16 @@
                 %for stat in stats:
                     <tr>
                         <td>{{stat.Team}}</td>
-                        <td>{{stat.Offense}}</td>
-                        <td>{{stat.Defense}}</td>
-                        <td>{{stat.Threes}}</td>
-                        <td>{{stat.DefRebounds}}</td>
-                        <td>{{stat.OffRebounds}}</td>
-                        <td>{{stat.Turnovers}}</td>
-                        <td>{{stat.Assists}}</td>
-                        <td>{{stat.Steals}}</td>
-                        <td>{{stat.FreeThrows}}</td>
-                        <td>{{stat.FreeThrowsGiven}}</td>
+                        <td>{{round(stat.Offense,2)}}</td>
+                        <td>{{round(stat.Defense,2)}}</td>
+                        <td>{{round(stat.Threes,2)}}</td>
+                        <td>{{round(stat.DefRebounds,2)}}</td>
+                        <td>{{round(stat.OffRebounds,2)}}</td>
+                        <td>{{round(stat.Turnovers,2)}}</td>
+                        <td>{{round(stat.Assists,2)}}</td>
+                        <td>{{round(stat.Steals,2)}}</td>
+                        <td>{{round(stat.FreeThrows,2)}}</td>
+                        <td>{{round(stat.FreeThrowsGiven,2)}}</td>
                     </tr>
                 %end
             </table>

@@ -42,6 +42,6 @@ def load_team_stats(filepath):
 def load_teams(filepath):
 
     teams = pd.read_csv(filepath, header = 0)
-    unique_teams = list(set(chain(*[x[0].split("-") for x in teams.to_records(index=False)])))
+    unique_teams = [""]+list(set(chain(*[x[0].split("-") for x in teams.to_records(index=False)])))
 
     return unique_teams

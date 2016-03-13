@@ -120,14 +120,21 @@ $(document).ready(function(){
 
   $.getJSON("static/probs.json", function(json){
 
-      $('#sel1').on('change', function(){
-        var selected1 = $(this).find("option:selected").val();
-        console.log(json[selected1]);
-        $('#sel2').on('change', function(){
-          var selected2 = $(this).find("option:selected").val();
-          $("p.output").text(selected1 +" has a "+(json[selected1][selected2]*100)+"% percent chance of beating "+ selected2);
+        $('#sel1').on('change', function(){
+        selected1 = $(this).find("option:selected").val();
+          if(selected2 !== "" & selected1 !== selected2){
+            $("p.output").text(selected1 +" has a "+(json[selected1][selected2]*100)+"% percent chance of beating "+ selected2);
+            }
         });
-      });
+
+        $('#sel2').on('change', function(){
+          selected2 = $(this).find("option:selected").val();
+          if(selected1 !== "" & selected1 !== selected2){
+            $("p.output").text(selected1 +" has a "+Math.round(json[selected1][selected2]*100)+
+                "% percent chance of beating "+ selected2);
+            }
+        });
+
 
 
   });
