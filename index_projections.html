@@ -124,7 +124,7 @@ $(document).ready(function(){
         selected1 = $(this).find("option:selected").val();
           if(selected2 !== "" & selected1 !== selected2){
             $("p.output").text(selected1 +" has a "+Math.round(json[selected1][selected2]*100)+
-                "% percent chance of beating "+ selected2);
+                "% chance of beating "+ selected2);
             }
         });
 
@@ -132,7 +132,7 @@ $(document).ready(function(){
           selected2 = $(this).find("option:selected").val();
           if(selected1 !== "" & selected1 !== selected2){
             $("p.output").text(selected1 +" has a "+Math.round(json[selected1][selected2]*100)+
-                "% percent chance of beating "+ selected2);
+                "% chance of beating "+ selected2);
             }
         });
 
@@ -144,4 +144,5 @@ $(document).ready(function(){
 </script>
 
 
+</body>
 </html>
