@@ -62,7 +62,34 @@
 
 <div class="container">
 
-
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <button>Show More/Less</button>
+            <table class="table-striped table">
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Score</th>
+                </tr>
+                %for ranking in rankings:
+                    %if ranking.rank < 25:
+                        <tr class="top25">
+                            <td>{{ranking.rank + 1}}</td>
+                            <td>{{ranking.team}}</td>
+                            <td>{{ranking.score}}</td>
+                        </tr>
+                    %else:
+                        <tr class="nottop">
+                            <td>{{ranking.rank + 1}}</td>
+                            <td>{{ranking.team}}</td>
+                            <td>{{ranking.score}}</td>
+                        </tr>
+                    %end
+                %end
+            </table>
+            <button>Show More/Less</button>
+        </div>
+    </div>
 
 <div class="row">
 
