@@ -86,20 +86,22 @@
                     <th class="col-sm-1">Fouls</th>
                 </tr>
                 %for stat in stats:
-                    <tr>
-                        <td>{{stat.Team}}</td>
-                        <td>{{round(stat.Offense,2)}}</td>
-                        <td>{{round(stat.Defense,2)}}</td>
-                        <td>{{round(stat.Threes,2)}}</td>
-                        <td>{{round(stat.DefRebounds,2)}}</td>
-                        <td>{{round(stat.OffRebounds,2)}}</td>
-                        <td>{{round(stat.Pace,2)}}</td>
-                        <td>{{round(stat.Turnovers,2)}}</td>
-                        <td>{{round(stat.Assists,2)}}</td>
-                        <td>{{round(stat.Steals,2)}}</td>
-                        <td>{{round(stat.FreeThrows,2)}}</td>
-                        <td>{{round(stat.FreeThrowsGiven,2)}}</td>
-                    </tr>
+                    %id stat.Team in teams:
+                        <tr>
+                            <td>{{stat.Team}}</td>
+                            <td>{{round(stat.Offense,2)}}</td>
+                            <td>{{round(stat.Defense,2)}}</td>
+                            <td>{{round(stat.Threes,2)}}</td>
+                            <td>{{round(stat.DefRebounds,2)}}</td>
+                            <td>{{round(stat.OffRebounds,2)}}</td>
+                            <td>{{round(stat.Pace,2)}}</td>
+                            <td>{{round(stat.Turnovers,2)}}</td>
+                            <td>{{round(stat.Assists,2)}}</td>
+                            <td>{{round(stat.Steals,2)}}</td>
+                            <td>{{round(stat.FreeThrows,2)}}</td>
+                            <td>{{round(stat.FreeThrowsGiven,2)}}</td>
+                        </tr>
+                    %end
                 %end
             </table>
         </div>

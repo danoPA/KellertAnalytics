@@ -28,12 +28,12 @@ def powerrank():
 @route('/stats')
 def stats():
     stats = load_team_stats("adjustedStats_2016_finalish.csv")
-
-    return template("index_stats.html", url = url, stats = stats)
+    teams = load_teams("bracket_guide_2016.csv")
+    return template("index_stats.html", url = url, stats = stats, teams=teams)
 
 @route('/projections')
 def projections():
-    teams = load_teams("bracket_guide_2016.csv")
+    teams = [""] + load_teams("bracket_guide_2016.csv")
     return template("index_projections.html", url=url, teams=teams)
 
 
