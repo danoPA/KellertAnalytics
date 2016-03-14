@@ -86,7 +86,7 @@
                     <th class="col-sm-1">Fouls</th>
                 </tr>
                 %for stat in stats:
-                    %id stat.Team in teams:
+                    %if stat.Team in teams:
                         <tr>
                             <td>{{stat.Team}}</td>
                             <td>{{round(stat.Offense,2)}}</td>
