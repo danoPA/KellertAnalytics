@@ -33,7 +33,7 @@ def stats():
 
 @route('/projections')
 def projections():
-    teams = load_teams("probs_2015.csv")
+    teams = load_teams("bracket_guide_2016.csv")
     return template("index_projections.html", url=url, teams=teams)
 
 
