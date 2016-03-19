@@ -3,7 +3,9 @@ from bottle import static_file, url
 import json
 import os
 import pandas as pd
+import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
+from load_scores import load_scores
 
 
 def check_login(username, password):
@@ -35,6 +37,13 @@ def stats():
 def projections():
     teams = [""] + load_teams("bracket_guide_2016_final.csv")
     return template("index_projections.html", url=url, teams=teams)
+
+@route('/masters')
+def masters():
+    update_time, individual_standings, total_standings = load_scores()
+    return template("index_masters.html", url=url, update_time=update_time,
+                    individual_standings=individual_standings,
+                    total_standings=total_standings)
 
 
 @route('/static/<filename>', name = 'static')
