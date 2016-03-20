@@ -1,15 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib2
-import re
-import html5lib
-import os
-import time
-import random
-import csv
-import sys
 import datetime
-import matplotlib.pyplot as plt
-import matplotlib
 from collections import namedtuple
 
 
