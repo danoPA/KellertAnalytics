@@ -40,10 +40,11 @@ def projections():
 
 @route('/masters')
 def masters():
-    update_time, individual_standings, total_standings = load_scores()
+    update_time, individual_standings, total_standings, places = load_scores()
     return template("index_masters.html", url=url, update_time=update_time,
                     individual_standings=individual_standings,
-                    total_standings=total_standings)
+                    total_standings=total_standings,
+                    places=places)
 
 
 @route('/static/<filename>', name = 'static')

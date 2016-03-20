@@ -160,4 +160,4 @@ def load_scores():
 
     total_standings = sorted(total_standings, key=lambda x: x.score,reverse=False)
 
-    return update_time, individual_standings, total_standings
+    return update_time, individual_standings, total_standings, places
