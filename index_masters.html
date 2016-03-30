@@ -129,81 +129,46 @@
         </div>
     </div>
 
-    %for i in range(int(round(len(individual_standings)/2.0))):
-        <div class="row">
-            <div class="col-md-4 col-md-offset-1" id="{{individual_standings.keys()[2*i]}}">
-                <p align="center" id="player_name">{{individual_standings.keys()[2*i]}}</p>
-                <table class="table-bordered table">
-                    <tr class="tableheader">
-                        <th>Player</th>
-                        <th>Place</th>
-                        <th>Score</th>
-                        <th>Hole</th>
-                    </tr>
-                    %for player in sorted(individual_standings[individual_standings.keys()[2*i]], key=lambda x: x.place):
-                        <tr>
-                            <td>{{player.player}}</td>
-                            <td>{{player.place}}</td>
-                            <td>{{player.score}}</td>
-                            <td>{{player.hole}}</td>
-                        </tr>
-                    %end
-                    %try:
-                        <tr class="tabletotal">
-                            <td>Total</td>
-                            <td>{{sum([int(v.place) for v in individual_standings[individual_standings.keys()[2*i]]])}}</td>
-                            <td>{{sum([int(v.score) if v.score != 'E' else 0 for v in individual_standings[individual_standings.keys()[2*i]]])}}</td>
-                            <td></td>
-                        </tr>
-                    %except:
-                        <tr class="tabletotal">
-                            <td>Total</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td></td>
-                        </tr>
-                    %end
-                </table>
-            </div>
-            %if len(individual_standings.keys())%2 == 0:
-            <div class="col-md-4 col-md-offset-2"  id="{{individual_standings.keys()[2*i + 1]}}">
-                <p align="center" id="player_name">{{individual_standings.keys()[2*i + 1]}}</p>
-                    <table class="table-bordered table">
-                        <tr class="tableheader">
-                            <th>Player</th>
-                            <th>Place</th>
-                            <th>Score</th>
-                            <th>Hole</th>
-                        </tr>
-                        %for player in sorted(individual_standings[individual_standings.keys()[2*i + 1]], key=lambda x: x.place):
-                            <tr>
-                                <td>{{player.player}}</td>
-                                <td>{{player.place}}</td>
-                                <td>{{player.score}}</td>
-                                <td>{{player.hole}}</td>
-                            </tr>
-                        %end
-                    %try:
-                        <tr class="tabletotal">
-                            <td>Total</td>
-                            <td>{{sum([int(v.place) for v in individual_standings[individual_standings.keys()[2*i]]])}}</td>
-                            <td>{{sum([int(v.score) if v.score != 'E' else 0 for v in individual_standings[individual_standings.keys()[2*i]]])}}</td>
-                            <td></td>
-                        </tr>
-                    %except:
-                        <tr class="tabletotal">
-                            <td>Total</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td></td>
-                        </tr>
-                    %end
-                    </table>
 
-            </div>
-            %end
+    <div class="row">
+        %for i, p in enumerate(individual_standings.keys()):
+        <div class="col-md-4" id="{{p}}">
+            <p align="center" id="player_name">{{p}}</p>
+            <table class="table-bordered table">
+                <tr class="tableheader">
+                    <th>Player</th>
+                    <th>Place</th>
+                    <th>Score</th>
+                    <th>Hole</th>
+                </tr>
+                %for player in sorted(individual_standings[p], key=lambda x: x.POS):
+                    <tr>
+                        <td>{{player.PLAYER}}</td>
+                        <td>{{player.POS}}</td>
+                        <td>{{player.TOPAR}}</td>
+                        <td>{{player.HOLE}}</td>
+                    </tr>
+                %end
+                %try:
+                    <tr class="tabletotal">
+                        <td>Total</td>
+                        <td>{{sum([int(v.POS) for v in individual_standings[p]])}}</td>
+                        <td>{{sum([int(v.TOPAR) if v.TOPAR != 'E' else 0 for v in individual_standings[p]])}}</td>
+                        <td></td>
+                    </tr>
+                %except:
+                    <tr class="tabletotal">
+                        <td>Total</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td></td>
+                    </tr>
+                %end
+            </table>
         </div>
-    %end
+        %end
+    </div>
+
 
 
     <div class="row">

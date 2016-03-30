@@ -21,7 +21,7 @@ def kr(x):
 
 
 def load_scores():
-    update_time = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
+    update_time = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %I:%M %p')
     url = 'http://scores.espn.go.com/golf/leaderboard'
     request = urllib2.Request(url)
     page = urllib2.urlopen(request)
@@ -150,7 +150,7 @@ def load_scores():
             places[tt.PLAYER] = tt
 
     standing_tuple = namedtuple("standing_tuple", ["name","score"])
-    players_tuple = namedtuple("players_tuple", ["player","hole","score","place"])
+    players_tuple = namedtuple("players_tuple", ["PLAYER","HOLE","TOPAR","POS"])
 
     individual_standings = {}
     total_standings = []
