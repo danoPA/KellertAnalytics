@@ -146,18 +146,21 @@ def load_scores():
                 tt[tableheaders.index("POS")] = cutplace
             if "T" in tt[tableheaders.index("POS")]:
                 tt[tableheaders.index("POS")] = tt[tableheaders.index("POS")][1:]
+            try:
+                tt[tableheaders.index("POS")] = int(tt[tableheaders.index("POS")])
+            except ValueError:
+                tt[tableheaders.index("POS")] = "WD"
             tt = table_tuple(*tt)
             places[tt.PLAYER] = tt
 
-    standing_tuple = namedtuple("standing_tuple", ["name","score"])
-    players_tuple = namedtuple("players_tuple", ["PLAYER","HOLE","TOPAR","POS"])
+    standing_tuple = namedtuple("standing_tuple", ["name","total_pos","total_score"])
+    players_tuple = namedtuple("players_tuple", ["PLAYER","THRU","TOPAR","POS"])
 
     individual_standings = {}
     total_standings = []
 
     for name, players in standings.items():
         individual_standings[name] = []
-        score = 0
         for player in players:
             x = []
             for field in players_tuple._fields:
@@ -166,12 +169,13 @@ def load_scores():
                 except:
                     x.append("")
             individual_standings[name].append(players_tuple(*x))
-            try:
-                score += int(places[player].SCORE)
-            except:
-                score += 0
-        total_standings.append(standing_tuple(name,score))
+        all_places = [int(v.POS) if v.POS != '' else 0 for v in individual_standings[name]]
+        all_scores = [int(v.TOPAR) if v.TOPAR not in ('E','') else 0 for v in individual_standings[name]]
+        total_pos = sum(all_places) - max(all_places)
+        total_score = sum(all_scores)
+        total_standings.append(standing_tuple(name, total_pos, total_score))
 
-    total_standings = sorted(total_standings, key=lambda x: x.score,reverse=False)
+
+    total_standings = sorted(total_standings, key=lambda x: x.total_pos,reverse=False)
 
     return update_time, individual_standings, total_standings, places

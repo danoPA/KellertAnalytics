@@ -94,7 +94,7 @@
                     <tr>
                         <td>{{rank + 1}}</td>
                         <td>{{name.name}}</td>
-                        <td>{{name.score}}</td>
+                        <td>{{name.total_pos}}</td>
                     </tr>
                 %end
                 </tr>
@@ -117,7 +117,7 @@
                             <td>{{place.POS}}</td>
                             <td>{{place.TOPAR}}</td>
                             %try:
-                                <td>{{place.HOLE}}</td>
+                                <td>{{place.THRU}}</td>
                             %except:
                                 <td>F</td>
                             %end
@@ -147,24 +147,15 @@
                         <td>{{player.PLAYER}}</td>
                         <td>{{player.POS}}</td>
                         <td>{{player.TOPAR}}</td>
-                        <td>{{player.HOLE}}</td>
+                        <td>{{player.THRU}}</td>
                     </tr>
                 %end
-                %try:
-                    <tr class="tabletotal">
-                        <td>Total</td>
-                        <td>{{sum([int(v.POS) for v in individual_standings[p]])}}</td>
-                        <td>{{sum([int(v.TOPAR) if v.TOPAR != 'E' else 0 for v in individual_standings[p]])}}</td>
-                        <td></td>
-                    </tr>
-                %except:
-                    <tr class="tabletotal">
-                        <td>Total</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td></td>
-                    </tr>
-                %end
+                <tr class="tabletotal">
+                    <td>Total</td>
+                    <td>{{filter(lambda x: x.name == p, total_standings)[0].total_pos}}</td>
+                    <td>{{filter(lambda x: x.name == p, total_standings)[0].total_score}}</td>
+                    <td></td>
+                </tr>
             </table>
         </div>
         %end
