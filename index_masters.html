@@ -29,6 +29,9 @@
         font-size: 200%;
         color: #FFFD00;
     }
+    a {
+        color: #FFFD00;
+    }
     .jumbotron {
       margin-bottom: 0px;
       height: 350px;
@@ -41,6 +44,9 @@
     }
     .tabletotal{
         background-color:#339933;
+    }
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+      background-color: #339933;
     }
 </style>
 
@@ -84,7 +90,7 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-1">
             <p>LAST UPDATE: {{update_time}}</p>
-            <table class="table-condensed table-bordered table">
+            <table class="table-condensed table-bordered table-hover table">
                 <tr class="tableheader">
                     <th>Rank</th>
                     <th>Name</th>
@@ -102,8 +108,8 @@
         </div>
 
         <div class="col-md-4 col-md-offset-2">
-            <p align="center" class="tableheader">LEADERBOARD</p>
-            <table class="table-bordered table">
+            <p align="center" class="tableheader"><a href="http://scores.espn.go.com/golf/leaderboard">LEADERBOARD</a></p>
+            <table class="table-bordered  table-hover table">
                 <tr class="tableheader">
                     <th>Player</th>
                     <th>Place</th>
@@ -135,7 +141,7 @@
         %for i, p in enumerate(individual_standings.keys()):
         <div class="col-md-4" id="{{p}}">
             <p align="center" id="player_name">{{p}}</p>
-            <table class="table-bordered table">
+            <table class="table-bordered table-hover table">
                 <tr class="tableheader">
                     <th>Player</th>
                     <th>Place</th>

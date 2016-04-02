@@ -21,7 +21,7 @@ def kr(x):
 
 
 def load_scores():
-    update_time = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %I:%M %p')
+    update_time = datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(hours=4), '%Y-%m-%d %I:%M %p')
     url =  'http://scores.espn.go.com/golf/leaderboard'
     request = urllib2.Request(url)
     page = urllib2.urlopen(request)
