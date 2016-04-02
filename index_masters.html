@@ -147,7 +147,11 @@
                         <td>{{player.PLAYER}}</td>
                         <td>{{player.POS}}</td>
                         <td>{{player.TOPAR}}</td>
-                        <td>{{player.THRU}}</td>
+                        %if player.THRU == "":
+                            <td>F</td>
+                        %else:
+                            <td>{{player.THRU}}</td>
+                        %end
                     </tr>
                 %end
                 <tr class="tabletotal">

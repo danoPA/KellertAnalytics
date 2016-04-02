@@ -22,7 +22,7 @@ def kr(x):
 
 def load_scores():
     update_time = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %I:%M %p')
-    url = 'http://scores.espn.go.com/golf/leaderboard'
+    url =  'http://scores.espn.go.com/golf/leaderboard'
     request = urllib2.Request(url)
     page = urllib2.urlopen(request)
     content = page.read()
@@ -130,6 +130,32 @@ def load_scores():
     if len(soup.findChildren('table',{'class':"tablehead leaderboard during"})) == 1:
 
         soupTable = soup.findChildren('table',{'class':"tablehead leaderboard during"})
+        headers = soupTable[0].findChildren('th')
+        rows = soupTable[0].findChildren('tr', {'class':re.compile(r"^(evenrow|oddrow)$")})
+        tableheaders = [header.text.replace(' ','') for header in headers]
+        cutplace = 1000
+        cutcheck = True
+
+        places = {}
+        table_tuple = namedtuple("table_tuple", tableheaders)
+        for i, row in enumerate(rows):
+            tt = [j.text for j in row.findAll('td')]
+            if cutcheck and tt[tableheaders.index("POS")] == "CUT":
+                cutplace = i + 5
+                cutcheck = False
+                tt[tableheaders.index("POS")] = cutplace
+            if "T" in tt[tableheaders.index("POS")]:
+                tt[tableheaders.index("POS")] = tt[tableheaders.index("POS")][1:]
+            try:
+                tt[tableheaders.index("POS")] = int(tt[tableheaders.index("POS")])
+            except ValueError:
+                tt[tableheaders.index("POS")] = "WD"
+            tt = table_tuple(*tt)
+            places[tt.PLAYER] = tt
+
+    if len(soup.findChildren('table',{'class':"tablehead leaderboard after"})) == 1:
+
+        soupTable = soup.findChildren('table',{'class':"tablehead leaderboard after"})
         headers = soupTable[0].findChildren('th')
         rows = soupTable[0].findChildren('tr', {'class':re.compile(r"^(evenrow|oddrow)$")})
         tableheaders = [header.text.replace(' ','') for header in headers]
