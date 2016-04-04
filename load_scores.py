@@ -30,84 +30,76 @@ def load_scores():
 
     standings = {
         "Kellert":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Adam Scott",
+            "Sergio Garcia",
+            "Kevin Na",
+            "Andy Sullivan",
+            "Keegan Bradley",
+            "Ian Poulter"
         ],
         "Keesee":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Rickie Fowler",
+            "Marc Leishman",
+            "Jason Dufner",
+            "J.B. Holmes",
+            "Fred Couples",
+            "Angel Cabrera"
         ],
         "Shane":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Jason Day",
+            "Danny Willett",
+            "Charl Schwartzel",
+            "Jamie Donaldson",
+            "Thongchai Jaidee",
+            "Ernie Els"
         ],
         "Rankin":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Louis Oosthuizen",
+            "Brandt Snedeker",
+            "Brooks Koepka",
+            "Branden Grace",
+            "David Lingmerth",
+            "Byeong-Hun An"
         ],
         "Trent":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Rory McIlroy",
+            "Hideki Matsuyama",
+            "Matt Kuchar",
+            "Shane Lowry",
+            "Charley Hoffman",
+            "Russell Knox"
         ],
         "Bergman":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "Grayhack":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Bubba Watson",
+            "Justin Rose",
+            "Martin Kaymer",
+            "Ryan Moore",
+            "Billy Horschel",
+            "Lee Westwood"
         ],
         "Moops":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Henrik Stenson",
+            "Phil Mickelson",
+            "Jimmy Walker",
+            "Paul Casey",
+            "Danny Lee",
+            "Victor Dubuisson"
         ],
         "Sample":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Jordan Spieth",
+            "Patrick Reed",
+            "Justin Thomas",
+            "Bill Haas",
+            "Harris English",
+            "Emiliano Grillo"
         ],
         "Day":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Dustin Johnson",
+            "Zach Johnson",
+            "Kevin Kisner",
+            "Rafael Cabrera Bello",
+            "Graeme McDowell",
+            "Hunter Mahan"
         ]
     }
 
@@ -140,16 +132,18 @@ def load_scores():
         table_tuple = namedtuple("table_tuple", tableheaders)
         for i, row in enumerate(rows):
             tt = [j.text for j in row.findAll('td')]
-            if cutcheck and tt[tableheaders.index("POS")] == "CUT":
+            if cutcheck and tt[tableheaders.index("POS")] == "-":
                 cutplace = i + 5
                 cutcheck = False
                 tt[tableheaders.index("POS")] = cutplace
-            if "T" in tt[tableheaders.index("POS")]:
+            elif tt[tableheaders.index("POS")] == "-":
+                tt[tableheaders.index("POS")] = cutplace
+            if "T" in str(tt[tableheaders.index("POS")]):
                 tt[tableheaders.index("POS")] = tt[tableheaders.index("POS")][1:]
             try:
                 tt[tableheaders.index("POS")] = int(tt[tableheaders.index("POS")])
             except ValueError:
-                tt[tableheaders.index("POS")] = "WD"
+                tt[tableheaders.index("POS")] = cutplace
             tt = table_tuple(*tt)
             places[tt.PLAYER] = tt
 
@@ -166,11 +160,13 @@ def load_scores():
         table_tuple = namedtuple("table_tuple", tableheaders)
         for i, row in enumerate(rows):
             tt = [j.text for j in row.findAll('td')]
-            if cutcheck and tt[tableheaders.index("POS")] == "CUT":
+            if cutcheck and tt[tableheaders.index("POS")] == "-":
                 cutplace = i + 5
                 cutcheck = False
                 tt[tableheaders.index("POS")] = cutplace
-            if "T" in tt[tableheaders.index("POS")]:
+            elif tt[tableheaders.index("POS")] == "-":
+                tt[tableheaders.index("POS")] = cutplace
+            if "T" in str(tt[tableheaders.index("POS")]):
                 tt[tableheaders.index("POS")] = tt[tableheaders.index("POS")][1:]
             try:
                 tt[tableheaders.index("POS")] = int(tt[tableheaders.index("POS")])
@@ -190,10 +186,13 @@ def load_scores():
         for player in players:
             x = []
             for field in players_tuple._fields:
-                try:
-                    x.append(getattr(places[player], field))
-                except:
-                    x.append("")
+                if field == "PLAYER":
+                    x.append(player)
+                else:
+                    try:
+                        x.append(getattr(places[player], field))
+                    except:
+                        x.append("")
             individual_standings[name].append(players_tuple(*x))
         all_places = [int(v.POS) if v.POS != '' else 0 for v in individual_standings[name]]
         all_scores = [int(v.TOPAR) if v.TOPAR not in ('E','') else 0 for v in individual_standings[name]]
