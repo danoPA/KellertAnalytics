@@ -42,7 +42,7 @@ def load_scores():
             "Marc Leishman",
             "Jason Dufner",
             "J.B. Holmes",
-            "Fred Couples",
+            "Webb Simpson",
             "Angel Cabrera"
         ],
         "Shane":[
