@@ -195,7 +195,7 @@ def load_scores():
                         x.append("")
             individual_standings[name].append(players_tuple(*x))
         all_places = [int(v.POS) if v.POS != '' else 0 for v in individual_standings[name]]
-        all_scores = [int(v.TOPAR) if v.TOPAR not in ('E','') else 0 for v in individual_standings[name]]
+        all_scores = [int(v.TOPAR) if v.TOPAR not in ('E','MDF','WD','CUT','') else 0 for v in individual_standings[name]]
         total_pos = sum(all_places) - max(all_places)
         total_score = sum(all_scores)
         total_standings.append(standing_tuple(name, total_pos, total_score))
