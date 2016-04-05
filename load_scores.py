@@ -204,7 +204,7 @@ def load_scores():
     total_standings = sorted(total_standings, key=lambda x: x.total_pos,reverse=False)
     t = [datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(hours=4), '%Y-%m-%d %I:%M')]
     write_line = ",".join(t + [str(i.total_pos) for i in sorted(total_standings, key=lambda r: r.name)])
-    if datetime.datetime.now().day >= 7 & datetime.datetime.now().day.minute % 10 == 0:
+    if datetime.datetime.now().day >= 7 & datetime.datetime.now().minute % 10 == 0:
         try:
             with open("static/score_graph.csv", 'a') as outfile:
                 outfile.write(write_line+'\n')
