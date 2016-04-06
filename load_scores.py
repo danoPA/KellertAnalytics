@@ -110,7 +110,7 @@ def load_scores():
         soupTable = soup.findChildren('table',{'class':"tablehead leaderboard before"})
         headers = soupTable[0].findChildren('th')
         rows = soupTable[0].findChildren('tr', {'class':re.compile(r"^(evenrow|oddrow)$")})
-        tableheaders = [header.text.replace(' ','') for header in headers]
+        tableheaders = [header.text.replace(' ','') if header.text != "TEE TIME" else "THRU" for header in headers]
 
         places = {}
         table_tuple = namedtuple("table_tuple", tableheaders)
