@@ -38,7 +38,7 @@ def projections():
     teams = [""] + load_teams("bracket_guide_2016_final.csv")
     return template("index_projections.html", url=url, teams=teams)
 
-# @route('/masters')
+# @route('/master')
 # def masters():
 #     update_time, individual_standings, total_standings, places = load_scores()
 #     return template("index_masters.html", url=url, update_time=update_time,
