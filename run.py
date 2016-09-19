@@ -38,13 +38,13 @@ def projections():
     teams = [""] + load_teams("bracket_guide_2016_final.csv")
     return template("index_projections.html", url=url, teams=teams)
 
-@route('/masters')
-def masters():
-    update_time, individual_standings, total_standings, places = load_scores()
-    return template("index_masters.html", url=url, update_time=update_time,
-                    individual_standings=individual_standings,
-                    total_standings=total_standings,
-                    places=places)
+# @route('/masters')
+# def masters():
+#     update_time, individual_standings, total_standings, places = load_scores()
+#     return template("index_masters.html", url=url, update_time=update_time,
+#                     individual_standings=individual_standings,
+#                     total_standings=total_standings,
+#                     places=places)
 
 
 @route('/static/<filename>', name = 'static')
@@ -58,6 +58,6 @@ from bottle import get, post, request # or route
 
 if __name__ == "__main__":
 
-    port = int(os.environ.get('PORT', 80))
+    port = int(os.environ.get('PORT', 8000))
     debug(True)
-    run(host='0.0.0.0', port=port, reloader=True)
+    run(host='localhost', port=port, reloader=True)
