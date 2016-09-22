@@ -40,7 +40,7 @@ def projections():
 
 @route('/master')
 def masters():
-    return "Come back next year"
+    return "Come back next year, 2017"
 #     update_time, individual_standings, total_standings, places = load_scores()
 #     return template("index_masters.html", url=url, update_time=update_time,
 #                     individual_standings=individual_standings,
