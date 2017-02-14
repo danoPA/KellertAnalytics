@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
-from load_scores import load_scores
+# from load_scores import load_scores
 
 
 def check_login(username, password):
@@ -38,9 +38,13 @@ def projections():
     teams = [""] + load_teams("bracket_guide_2016_final.csv")
     return template("index_projections.html", url=url, teams=teams)
 
-@route('/master')
-def masters():
-    return "Come back next year, 2017"
+@route('/bracket')
+def bracket():
+    return template("bracket.html", url=url)
+
+# @route('/master')
+# def masters():
+#     return "Come back next year, 2017"
 #     update_time, individual_standings, total_standings, places = load_scores()
 #     return template("index_masters.html", url=url, update_time=update_time,
 #                     individual_standings=individual_standings,
@@ -59,6 +63,6 @@ from bottle import get, post, request # or route
 
 if __name__ == "__main__":
 
-    port = int(os.environ.get('PORT', 80))
+    port = int(os.environ.get('PORT', 8000))
     debug(True)
-    run(host='0.0.0.0', port=port, reloader=True)
+    run(host='localhost', port=port, reloader=True)

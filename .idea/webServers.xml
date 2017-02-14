@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="982d73f7-fac5-4d06-977c-21a881e0eee8" name="kellert_space" url="http://kellert.space">
+        <fileTransfer host="kellert.space" port="22" accessType="SFTP" username="skellert">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
