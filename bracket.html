@@ -693,7 +693,7 @@ var test_dict = Object;
                           },
                           {
                           "name": test_dict[("right5")][11][1]['team'],
-                          "seed_id": test_dict[("right5")][12][0],
+                          "seed_id": test_dict[("right5")][11][0],
                           "right": [
                           {
                           "name": test_dict[("right6")][22][1]['team'],
@@ -803,9 +803,9 @@ var test_dict = Object;
   return slots
 }
 
-d3.json("static/bracket_dict.json", function(bracket){
+d3.json("static/bracket_dict.JSON", function(bracket){
   d3.json("static/probs.json", function(probs){
-    d3.json("static/team_images.json", function(imgs){
+    d3.json("static/team_images.JSON", function(imgs){
       update(bracket, probs, imgs);
     });
   });
