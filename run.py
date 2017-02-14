@@ -4,7 +4,6 @@ import json
 import os
 import pandas as pd
 import numpy as np
-import meinheld
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
 from load_scores import load_scores
 
@@ -62,4 +61,4 @@ if __name__ == "__main__":
 
     port = int(os.environ.get('PORT', 80))
     debug(True)
-    run(host='0.0.0.0', port=port, reloader=True, server='meinheld')
+    run(host='0.0.0.0', port=port, reloader=True)
