@@ -72,6 +72,6 @@ from bottle import get, post, request # or route
 
 if __name__ == "__main__":
 
-    port = int(os.environ.get('PORT', 8000))
+    port = int(os.environ.get('PORT', 80))
     debug(True)
-    run(host='localhost', port=port, reloader=True)
+    run(host='0.0.0.0', port=port, reloader=True)
