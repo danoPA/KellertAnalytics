@@ -42,6 +42,15 @@ def projections():
 def bracket():
     return template("bracket.html", url=url)
 
+@route('/team_stats/<team>')
+def team_stats(team):
+    team = team.replace("_"," ")
+    stats = load_team_stats("adjustedStats_2016_finalish.csv")
+    stats = stats.loc[stats.Team == team, :]
+    with open("team_images.JSON") as infile:
+        team_images = json.load(infile)
+        return template("team_stats.html", url=url, stats=stats, teams=team_images, team=team)
+
 # @route('/master')
 # def masters():
 #     return "Come back next year, 2017"

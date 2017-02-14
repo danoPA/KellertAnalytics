@@ -52,9 +52,8 @@ def load_team_stats(filepath):
 
     data = pd.read_csv(filepath, header = 0)
     data = data.sort("Offense", ascending = False)
-    team_statistics = [team_stats(*i) for i in data.to_records(index=False)]
 
-    return team_statistics
+    return data
 
 
 def load_teams(filepath):
