@@ -86,7 +86,7 @@
                         %if stat not in ("Index", "Team"):
                             <tr>
                                 <td>{{stat}}</td>
-                                <td>{{round(getattr(statistics, stat),2)}}</td>
+                                <td>{{getattr(statistics, stat)}}</td>
                             </tr>
                         %end
                     %end

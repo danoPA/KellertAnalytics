@@ -863,8 +863,10 @@ function update(bracket, probs, imgs) {
   nodeEnter.append("image")
       .attr("dy", "20")
       .attr("xlink:href", function(d){
-        if(d.name in imgs){
-        return imgs[d.name];}
+        var team_1_split = d.name.split(" ");
+        var team_1 = team_1_split.slice(1, team_1_split.length).join(" ");
+        if(team_1 in imgs){
+        return imgs[team_1];}
         else{return "https://www.transparenttextures.com/patterns/debut-light.png";}
       })
       .attr("width", function(d){return d.name != ""?20:1;})

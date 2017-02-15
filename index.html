@@ -20,6 +20,17 @@
     .nottop{
        display:none;
     }
+
+    p {
+        font-size: 12pt;
+        font-family: 'Arvo', sans-serif;
+    }
+
+    p.paragraph_header {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -64,28 +75,145 @@
 </div>
 
 <div class="container">
-    <div class="col-md-12">
+    <div class="col-md-10 col-md-offset-1">
+        <p class="paragraph_header">Welcome!</p>
         <p>
-            <font size="5">
-            Welcome to my NCAA tournament guide. This project is based on the calculation for opponent adjusted statistics
-            using recursive algorithm I developed with help primarily from this
-            <a href="http://football.kislanko.com/normalizing.html">source</a>.
-            </font>
+            Welcome to the 2017 edition of my NCAA tournament guide. Every year
+            <a href="https://www.kaggle.com/c/march-machine-learning-mania-2017">Kaggle</a>
+            hosts a data science competition to see who can build the best model for predicting the tournament. The
+            goal of this competition is to produce a win probability for every team in the tournament against every
+            other team. For the matchups that occur, each submission is scored based on how close the probability was
+            to the actual outcome. For example, if I say that Northwestern has a 90% chance of beating Kentucky and they
+            win I only suffer a penalty related to the 10% difference. However, in the highly unlikely scenario that
+            Northwestern loses this game I would suffer a much greater penalty related to the 90% difference.
         </p>
         <p>
-            <font size="5">
-            The opponent adjusted point differential is how I sort teams for the power rankings page. The stats page
-            gives an overview of some of the opponent adjusted box score statistics used in the analysis. Finally, the
-            projections page was developed by testing an array of machine learning algorithms using the stats I
-            developed to predict wins and losses. There, you can find win probabilities for all possible tournament
-            match-ups.
-            </font>
+            That is my motivation for all the analysis I have done. However, win probabilities cannot fill out a
+            bracket on their own, which is where this website comes into the picture. Its purpose is to assist you with
+            the task of actually filling out your bracket with the power of data science. I have added a few features
+            this year, most notably the bracket feature. This now allows you to view the whole bracket and see all the
+            win probabilities as different teams advance.
+        </p>
+        <div class="col-md-3">
+        <table class="table table-striped">
+            <tr>
+                <th>Seed A</th>
+                <th>Seed B</th>
+                <th>Expected Win Probability</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>16</td>
+                <td>95%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>15</td>
+                <td>89%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>14</td>
+                <td>83%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>13</td>
+                <td>77%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>12</td>
+                <td>71%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>11</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>10</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>53%</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>8</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>7</td>
+                <td>41%</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>6</td>
+                <td>35%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>5</td>
+                <td>29%</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>4</td>
+                <td>23%</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>3</td>
+                <td>17%</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>2</td>
+                <td>11%</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>1</td>
+                <td>5%</td>
+            </tr>
+        </table>
+        </div>
+        <p>
+            Finally, before we get to the math which I'm sure you will all stick around for and read diligently, here are a
+            few notes on how to interpret the various numbers you will see here. The probabilities are the most
+            straightforward and can be found in the projections and bracket pages. This is simply the probability that
+            team A will beat team B. There are two important things to note here. The first is that a team with a 90%
+            win probability is not guaranteed to win, and will, in fact, lose 1 in every 10 matchups with that opponent.
+            The second note is around bracket strategy. If you were simply trying to give yourself the best chance to
+            get every game right, you would pick the team with the higher win probability in every game. However, my
+            model is not going to get every game right and neither will anyone else. You're true goal is get more games
+            right than anyone else in your bracket group. To accomplish this you are going to need to pick some upsets,
+            so you should look for matchups where the lower seed has a higher probability than you would expect given
+            their seed. These are the upsets where you will gain an advantage over the rest of your pool. For example,
+            using the chart below and everyone's favorite matchup, a 12 should beat a 5 29% of the time, so if you see a
+            12 seed with a 40% win probability then that is a good pick to gain an advantage in your pool even though
+            that team is not favored (you can generate more seed based expected probabilities using the formula 50 + 3*
+            seed difference). My last word about this is that you should also take into account the size of your
+            pool; bigger groups require more upset picks and smaller groups less.
         </p>
         <p>
-            <font size="5">
+            The other numbers you will find on the site are my version of some of the basic box score statistics for
+            each team. These are calculated using a recursive algorithm that accounts for opponent strength in preventing
+            the statistic in question. The numbers themselves have no absolute meaning, but are scaled such that the
+            highest score over the last 15 years registers as a 100 and the lowest is a 0. PtDiff is the most important
+            of these metrics and is, therefore, what I use for producing my power rankings.
+        </p>
+        <p>
             Thanks for checking out the site and I hope we all win our braket groups with these predictions.
-            </font>
         </p>
+        <p></p>
+        <p></p>
+        <p class="paragraph_header">Time for Some Math!</p>
     </div>
 </div>
 
