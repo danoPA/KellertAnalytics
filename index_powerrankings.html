@@ -82,13 +82,13 @@
                                     {{ranking.team}}
                                 %end
                             </td>
-                            <td>{{round(ranking.score,2)}}</td>
+                            <td>{{ranking.score}}</td>
                         </tr>
                     %else:
                         <tr class="nottop">
                             <td>{{ranking.rank + 1}}</td>
                             <td>{{ranking.team}}</td>
-                            <td>{{round(ranking.score,2)}}</td>
+                            <td>{{ranking.score}}</td>
                         </tr>
                     %end
                 %end
