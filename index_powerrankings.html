@@ -87,7 +87,13 @@
                     %else:
                         <tr class="nottop">
                             <td>{{ranking.rank + 1}}</td>
-                            <td>{{ranking.team}}</td>
+                            <td>
+                                %if ranking.team in teams:
+                                    <a href={{"/team_stats/" + ranking.team.replace(" ","_")}}>{{ranking.team}}</a>
+                                %else:
+                                    {{ranking.team}}
+                                %end
+                            </td>
                             <td>{{ranking.score}}</td>
                         </tr>
                     %end

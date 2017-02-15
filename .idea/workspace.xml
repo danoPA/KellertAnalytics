@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88c8f250-0766-42a8-a247-09275567178c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_powerrankings.html" afterPath="$PROJECT_DIR$/index_powerrankings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_stats.html" afterPath="$PROJECT_DIR$/index_stats.html" />
     </list>
     <ignored path="KellertAnalytics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="index_powerrankings.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index_powerrankings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58079624">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.8196721">
+              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -102,8 +101,8 @@
         <option value="$PROJECT_DIR$/power_rankings_load.py" />
         <option value="$PROJECT_DIR$/bracket.html" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/index_powerrankings.html" />
         <option value="$PROJECT_DIR$/index_stats.html" />
+        <option value="$PROJECT_DIR$/index_powerrankings.html" />
       </list>
     </option>
   </component>
@@ -689,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index_powerrankings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58079624">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.8196721">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
           <folding />
         </state>
       </provider>
