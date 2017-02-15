@@ -74,7 +74,7 @@
                     %if ranking.rank < 25:
                         <tr class="top25">
                             <td>{{ranking.rank + 1}}</td>
-                            <td>{{ranking.team}}</td>
+                            <td><a href={{"/team_stats/" + ranking.Team.replace(" ","_")}}>{{ranking.Team}}</a></td>
                             <td>{{round(ranking.score,2)}}</td>
                         </tr>
                     %else:

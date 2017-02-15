@@ -57,3 +57,18 @@ Hit Ctrl-C to quit.
 89.248.163.3 - - [14/Feb/2017 22:14:49] "GET //phpmyadmin/scripts/setup.php HTTP/1.1" 404 776
 89.248.163.3 - - [14/Feb/2017 22:14:50] "GET //pma/scripts/setup.php HTTP/1.1" 404 762
 31.210.102.114 - - [14/Feb/2017 22:22:19] "GET / HTTP/1.0" 200 4626
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+67.164.229.210 - - [14/Feb/2017 23:59:09] "GET / HTTP/1.1" 200 4626
+/home/skellert/git/website/KellertAnalytics/power_rankings_load.py:54: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  data = data.sort("Offense", ascending = False)
+67.164.229.210 - - [14/Feb/2017 23:59:10] "GET /stats HTTP/1.1" 200 46437
+67.164.229.210 - - [14/Feb/2017 23:59:13] "GET /team_stats/Iowa_St HTTP/1.1" 200 6124
+67.164.229.210 - - [14/Feb/2017 23:59:13] "GET /team_stats/static/sorttable.js HTTP/1.1" 404 779
+67.164.229.210 - - [14/Feb/2017 23:59:32] "GET /projections HTTP/1.1" 200 9189
+67.164.229.210 - - [14/Feb/2017 23:59:33] "GET /static/probs.json HTTP/1.1" 304 0
+/home/skellert/git/website/KellertAnalytics/power_rankings_load.py:28: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  data = data.sort("PtDiff", ascending = False)
+67.164.229.210 - - [14/Feb/2017 23:59:38] "GET /powerrankings HTTP/1.1" 200 75978
