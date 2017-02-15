@@ -10,6 +10,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://mbostock.github.com/d3/d3.v2.js"></script>
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 <style type="text/css">
@@ -74,7 +75,13 @@
                     %if ranking.rank < 25:
                         <tr class="top25">
                             <td>{{ranking.rank + 1}}</td>
-                            <td><a href={{"/team_stats/" + ranking.Team.replace(" ","_")}}>{{ranking.Team}}</a></td>
+                            <td>
+                                %if ranking.team in teams:
+                                    <a href={{"/team_stats/" + ranking.team.replace(" ","_")}}>{{ranking.team}}</a>
+                                %else:
+                                    {{ranking.team}}
+                                %end
+                            </td>
                             <td>{{round(ranking.score,2)}}</td>
                         </tr>
                     %else:

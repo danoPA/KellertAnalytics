@@ -23,20 +23,21 @@ def home():
 
 @route('/powerrankings')
 def powerrank():
-    rankings = load_power_rankings("adjustedStats_2016_finalish.csv")
-
-    return template("index_powerrankings.html", url = url, rankings = rankings)
+    rankings = load_power_rankings("adjustedStats_2016_2017.csv")
+    teams = [""] + load_teams("bracket_guide_2016_2017.csv")
+    return template("index_powerrankings.html", url = url, rankings = rankings, teams=teams)
 
 @route('/stats')
 def stats():
-    stats = load_team_stats("adjustedStats_2016_finalish.csv")
-    teams = load_teams("bracket_guide_2016_final.csv")
+    stats = load_team_stats("adjustedStats_2016_2017.csv")
+    teams = load_teams("bracket_guide_2016_2017.csv")
     return template("index_stats.html", url = url, stats = stats, teams=teams)
 
 @route('/projections')
 def projections():
-    teams = [""] + load_teams("bracket_guide_2016_final.csv")
-    return template("index_projections.html", url=url, teams=teams)
+    teams = [""] + load_teams("bracket_guide_2016_2017.csv")
+    stats = load_team_stats("adjustedStats_2016_2017.csv")
+    return template("index_projections.html", url=url, teams=teams, stats=stats)
 
 @route('/bracket')
 def bracket():
@@ -45,7 +46,7 @@ def bracket():
 @route('/team_stats/<team>')
 def team_stats(team):
     team = team.replace("_"," ")
-    stats = load_team_stats("adjustedStats_2016_finalish.csv")
+    stats = load_team_stats("adjustedStats_2016_2017.csv")
     stats = stats.loc[stats.Team == team, :]
     with open("team_images.JSON") as infile:
         team_images = json.load(infile)
@@ -64,8 +65,6 @@ def team_stats(team):
 @route('/static/<filename>', name = 'static')
 def send_static(filename):
     return static_file(filename, root='static')
-
-
 
 from bottle import get, post, request # or route
 
