@@ -5,33 +5,31 @@ import os
 import pandas as pd
 import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
-# from load_scores import load_scores
 
-
-def check_login(username, password):
-	with open("login.json", 'r') as infile:
-		logins = json.load(infile)
-		try:
-			return logins[username] == password
-		except KeyError:
-			return False
 
 @route('/')
 def home():
-	return template("index.html", url = url)
+    return template("index.html", url=url)
+
+
+@route('/details')
+def details():
+    return template("index_details.html", url=url)
 
 
 @route('/powerrankings')
 def powerrank():
     rankings = load_power_rankings("adjustedStats_2016_2017.csv")
     teams = [""] + load_teams("bracket_guide_2016_2017.csv")
-    return template("index_powerrankings.html", url = url, rankings = rankings, teams=teams)
+    return template("index_powerrankings.html", url=url, rankings=rankings, teams=teams)
+
 
 @route('/stats')
 def stats():
     stats = load_team_stats("adjustedStats_2016_2017.csv")
     teams = load_teams("bracket_guide_2016_2017.csv")
-    return template("index_stats.html", url = url, stats = stats, teams=teams)
+    return template("index_stats.html", url=url, stats=stats, teams=teams)
+
 
 @route('/projections')
 def projections():
@@ -39,9 +37,11 @@ def projections():
     stats = load_team_stats("adjustedStats_2016_2017.csv")
     return template("index_projections.html", url=url, teams=teams, stats=stats)
 
+
 @route('/bracket')
 def bracket():
     return template("bracket.html", url=url)
+
 
 @route('/team_stats/<team>')
 def team_stats(team):

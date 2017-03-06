@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Kellert Analytics</title>
+<title>Pascals Triangle Offense</title>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -14,7 +14,7 @@
 
 <style type="text/css">
     body {
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     .nottop{
@@ -25,12 +25,45 @@
         font-size: 12pt;
         font-family: 'Arvo', sans-serif;
     }
+    img.logo{
+        width:18%;
+    }
 
     p.paragraph_header {
         font-size: 20px;
         font-weight: bold;
         text-align: center;
     }
+
+    .navbar-inverse{
+        background-color: blueviolet;
+    }
+    .nav.navbar-nav.navbar-right li a{
+        color: white;
+    }
+    .navbar-header a.navbar-brand{
+        color: white;
+    }
+
+    .dropdown-menu{
+        background-color: blueviolet;
+    }
+
+    .dropdown-menu{
+        background-color: blueviolet;
+    }
+    .dropdown-menu > li > a:hover{
+        background-color: mediumpurple;
+    }
+    .dropdown-submenu > li > a:hover{
+        background-color: mediumpurple;
+    }
+
+    .dropdown-submenu{position:relative;}
+    .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+    .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:mediumpurple;margin-top:5px;margin-right:-10px;}
+    .dropdown-submenu:hover>a:after{background-color:mediumpurple;}
+    .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -52,13 +85,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Kellert Analytics</a>
+            <a class="navbar-brand" href="/"><img src="static/pto.PNG" class="logo"> Pascal's Triangle Offense</a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
 
             <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentation
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/details">Introduction</a></li>
+                        <li class="dropdown dropdown-submenu">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/details#toolpr">Power Rankings</a></li>
+                                <li><a href="/details#toolstats">Stats</a></li>
+                                <li><a href="/details#toolproj">Projections</a></li>
+                                <li><a href="/details#toolbracket">Bracket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/details#tips">Bracket Tips</a></li>
+                        <li><a href="/details#math">Math/Algorithms</a></li>
+                    </ul>
+                </li>
                 <li><a href="/powerrankings">Power Rankings</a></li>
                 <li><a href="/stats">Stats</a></li>
                 <li><a href="/projections">Projections</a></li>
@@ -70,7 +122,7 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>NCAA Tournament Guide</h1>
+        <h1>NCAA Tournament Guide 2017</h1>
     </div>
 </div>
 
@@ -78,142 +130,17 @@
     <div class="col-md-10 col-md-offset-1">
         <p class="paragraph_header">Welcome!</p>
         <p>
-            Welcome to the 2017 edition of my NCAA tournament guide. Every year
-            <a href="https://www.kaggle.com/c/march-machine-learning-mania-2017">Kaggle</a>
-            hosts a data science competition to see who can build the best model for predicting the tournament. The
-            goal of this competition is to produce a win probability for every team in the tournament against every
-            other team. For the matchups that occur, each submission is scored based on how close the probability was
-            to the actual outcome. For example, if I say that Northwestern has a 90% chance of beating Kentucky and they
-            win I only suffer a penalty related to the 10% difference. However, in the highly unlikely scenario that
-            Northwestern loses this game I would suffer a much greater penalty related to the 90% difference.
+            Welcome to the 2017 edition of my NCAA tournament guide. Within this site you can find the following
+            resources for filling out your bracket.
         </p>
-        <p>
-            The analysis I have done is intended to be used for that competition. However, win probabilities cannot fill
-            out a bracket on their own, which is where this website comes into the picture. Its purpose is to assist you
-            with the task of actually filling out your bracket with the power of data science. I have added a few features
-            this year, most notably the bracket feature. This now allows you to view the whole bracket and see all the
-            win probabilities as different teams advance.
-        </p>
-        <div class="col-md-3">
-        <table class="table table-striped">
-            <tr>
-                <th>Seed A</th>
-                <th>Seed B</th>
-                <th>Expected Win Probability</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>16</td>
-                <td>95%</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>15</td>
-                <td>89%</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>14</td>
-                <td>83%</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>13</td>
-                <td>77%</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>12</td>
-                <td>71%</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>11</td>
-                <td>65%</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>10</td>
-                <td>59%</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>9</td>
-                <td>53%</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>8</td>
-                <td>47%</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>7</td>
-                <td>41%</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>6</td>
-                <td>35%</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>5</td>
-                <td>29%</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>4</td>
-                <td>23%</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>3</td>
-                <td>17%</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>2</td>
-                <td>11%</td>
-            </tr>
-            <tr>
-                <td>16</td>
-                <td>1</td>
-                <td>5%</td>
-            </tr>
-        </table>
-        </div>
-        <p>
-            Finally, before we get to the math which I'm sure you will all stick around for and read diligently, here are a
-            few notes on how to interpret the various numbers you will see here. The probabilities are the most
-            straightforward and can be found in the projections and bracket pages. This is simply the probability that
-            team A will beat team B. There are two important things to note here. The first is that a team with a 90%
-            win probability is not guaranteed to win, and will, in fact, lose 1 in every 10 matchups with that opponent.
-            The second note is around bracket strategy. If you were simply trying to give yourself the best chance to
-            get every game right, you would pick the team with the higher win probability in every game. However, my
-            model is not going to get every game right and neither will anyone else. Your true goal is get more games
-            right than anyone else in your bracket group. To accomplish this you are going to need to pick some upsets,
-            so you should look for matchups where the lower seed has a higher probability than you would expect given
-            their seed. These are the upsets where you will gain an advantage over the rest of your pool. For example,
-            using the chart below and everyone's favorite matchup, a 12 should beat a 5 29% of the time, so if you see a
-            12 seed with a 40% win probability then that is a good pick to gain an advantage in your pool even though
-            that team is not favored (you can generate more seed based expected probabilities using the formula 50 + 3*
-            seed difference). My last word about this is that you should also take into account the size of your
-            pool; bigger groups require more upset picks and smaller groups fewer.
-        </p>
-        <p>
-            The other numbers you will find on the site are my version of some of the basic box score statistics for
-            each team. These are calculated using a recursive algorithm that accounts for opponent strength in preventing
-            the statistic in question. The numbers themselves have no absolute meaning, but are scaled such that the
-            highest score over the last 15 years registers as a 100 and the lowest is a 0. PtDiff is the most important
-            of these metrics and is, therefore, what I use for producing my power rankings.
-        </p>
-        <p>
-            Thanks for checking out the site and I hope we all win our braket groups with these predictions.
-        </p>
-        <p></p>
-        <p></p>
-        <p class="paragraph_header">Time for Some Math!</p>
+        <ul>
+            <li><a href="/details">Documentation</a></li>
+            <li><a href="/powerrankings">Power Rankings</a></li>
+            <li><a href="/stats">Stats</a></li>
+            <li><a href="/projections">Projections</a></li>
+            <li><a href="/bracket">Bracket</a></li>
+        </ul>
+        <p>Thanks for checking out the site!</p>
     </div>
 </div>
 
@@ -258,6 +185,17 @@
 $(document).ready(function(){
 
 });
+(function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
+
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kellert Analytics</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<style type="text/css">
+    body {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .nottop{
+       display:none;
+    }
+
+    p {
+        font-size: 12pt;
+        font-family: 'Arvo', sans-serif;
+    }
+
+    p.paragraph_header {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    p.sub_paragraph_header {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .navbar-inverse{
+        background-color: blueviolet;
+    }
+    .nav.navbar-nav.navbar-right li a{
+        color: white;
+    }
+    .navbar-header a.navbar-brand{
+        color: white;
+    }
+
+    .dropdown-menu{
+        background-color: blueviolet;
+    }
+    .dropdown-menu > li > a:hover{
+        background-color: mediumpurple;
+    }
+    img.logo{
+        width:18%;
+    }
+    a.anchor{
+        display: block;
+        position: relative;
+        top: -150px;
+        visibility: hidden;
+    }
+        .dropdown-submenu{position:relative;}
+    .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+    .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:mediumpurple;margin-top:5px;margin-right:-10px;}
+    .dropdown-submenu:hover>a:after{background-color:mediumpurple;}
+    .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="static/pto.PNG" class="logo"> Pascal's Triangle Offense</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentation
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/details">Introduction</a></li>
+                        <li class="dropdown dropdown-submenu">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/details#toolpr">Power Rankings</a></li>
+                                <li><a href="/details#toolstats">Stats</a></li>
+                                <li><a href="/details#toolproj">Projections</a></li>
+                                <li><a href="/details#toolbracket">Bracket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/details#tips">Bracket Tips</a></li>
+                        <li><a href="/details#math">Math/Algorithms</a></li>
+                    </ul>
+                </li>
+                <li><a href="/powerrankings">Power Rankings</a></li>
+                <li><a href="/stats">Stats</a></li>
+                <li><a href="/projections">Projections</a></li>
+                <li><a href="/bracket">Bracket</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="col-md-10 col-md-offset-1">
+        <p class="paragraph_header">Welcome!</p>
+        <p>
+            Welcome to the 2017 edition of my NCAA tournament guide. Every year
+            <a href="https://www.kaggle.com/c/march-machine-learning-mania-2017">Kaggle</a>
+            hosts a data science competition to see who can build the best model for predicting the tournament. The
+            goal of this competition is to produce a win probability for every team in the tournament against every
+            other team. For the matchups that occur, each submission is scored based on how close the probability was
+            to the actual outcome. For example, if I say that Northwestern has a 90% chance of beating Kentucky and they
+            win I only suffer a penalty related to the 10% difference between 100% and 90%. However, in the highly unlikely scenario that
+            Northwestern loses this game I would suffer a much greater penalty related to the 90% difference 90% and 0%.
+        </p>
+        <p>
+            The analysis I have done is intended to be used for that competition. However, this website is intended to be
+            used to fill out a bracket. Win probabilities cannot fill
+            out a bracket on their own, so I have created tools that will assist you in applying my research to that task.
+            I have added a few features
+            this year, most notably the bracket. This now allows you to view the whole bracket and see all the
+            win probabilities as different teams advance.
+        </p>
+        <p class="paragraph_header" id="tools">Tool Guides</p>
+        <p class="sub_paragraph_header"><a class="anchor" id="toolpr"></a>Power Rankings</p>
+        <p>
+            The power rankings are simply my ranking of every team in college basketball as measured by their
+            opponent adjusted point differential. Only the top 25 are shown by default but the rest can be toggled
+            by clicking to show more/less. Additionally, each of the tournament teams contain a link to that team's
+            stats page.
+        </p>
+        <p class="sub_paragraph_header"><a class="anchor" id="toolstats"></a>Stats</p>
+        <p>
+            The stats page highlights a selection of the opponent adjusted stats that I generated for this analysis.
+            All of the columns are sortable. Only the tournament teams are given in this section and all of their
+            team names link to that team's stats page.
+        </p>
+        <p class="sub_paragraph_header"><a class="anchor" id="toolproj"></a>Projections</p>
+        <p>
+            The projections page allows the user to select any two teams in the tournament via drop down menus and compare them side
+            by side. The probability that the first selected team beats the second is given as well as a statistical
+            comparison of the two teams.
+        </p>
+        <p class="sub_paragraph_header"><a class="anchor" id="toolbracket"></a>Bracket</p>
+        <p>
+            The bracket tool gives the entire bracket (be sure to scroll or swipe around as it is very large). Each
+            node in the graph, represented by a team name with seed as well as a team icon is clickable. Clicking the
+            team will imply a win in that round and advance the team to the next round. When there is a valid matchup
+            present the win probability for each team is presented next to the team name. There is a toggle in the
+            upper left corner that allows the user to switch from win probabilities to point spreads.
+        </p>
+        <p>
+            When a team is clicked that invalidates downstream matchups, that whole stream is cleared from the bracket.
+            Refreshing the page will always reset the bracket to its original state. As the tournament progresses
+            I will update the bracket to reflect the actual results, and this will become the default state.
+            However, you will still be able to manipulate the entire bracket.
+        </p>
+        <div class="col-md-3">
+        <table class="table table-striped">
+            <tr>
+                <th>Seed A</th>
+                <th>Seed B</th>
+                <th>Expected Win Probability</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>16</td>
+                <td>95%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>15</td>
+                <td>89%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>14</td>
+                <td>83%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>13</td>
+                <td>77%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>12</td>
+                <td>71%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>11</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>10</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>53%</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>8</td>
+                <td>47%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>7</td>
+                <td>41%</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>6</td>
+                <td>35%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>5</td>
+                <td>29%</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>4</td>
+                <td>23%</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>3</td>
+                <td>17%</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>2</td>
+                <td>11%</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>1</td>
+                <td>5%</td>
+            </tr>
+        </table>
+        </div>
+        <p id="tips" class="paragraph_header">Tips</p>
+        <p>
+            Before we get to the math which I'm sure you will all stick around for and read diligently, here are a
+            few notes on how to interpret the various numbers you will see here.
+        </p>
+        <p>
+            The probabilities are the most
+            straightforward, and important, and can be found in the
+            <a href="/projections">projections</a> and
+            <a href="/bracket">bracket</a> pages. This is simply the probability that
+            team A will beat team B. There are two important things to note here. The first is that a team with a 90%
+            win probability is not guaranteed to win, and will, in fact, lose 1 in every 10 matchups with that opponent.
+            The second note is around bracket strategy. If you were simply trying to give yourself the best chance to
+            get every game right, you would pick the team with the higher win probability in every game. However, my
+            model is not going to get every game right and neither will anyone else. Your true goal is get more games
+            right than anyone else in your bracket group. To accomplish this you are going to need to pick some upsets,
+            so you should look for matchups where the lower seed has a higher probability than you would expect given
+            their seed. These are the upsets where you will gain an advantage over the rest of your pool. For example,
+            using the chart below and everyone's favorite matchup, a 12 seed should beat a 5 seed 29% of the time, so if you see a
+            12 seed with a 40% win probability then that is a good pick to gain an advantage in your pool even though
+            that team is not favored (the table to the left gives all the first round seed pairings and
+            you can generate more seed based expected probabilities using the formula 50 + 3*
+            seed difference). My last word about this is that you should also take into account the size of your
+            pool; bigger groups require more upset picks and smaller groups fewer.
+        </p>
+        <p>
+            The other numbers you will find on the site are my version of some of the basic box score statistics for
+            each team. These are calculated using a recursive algorithm that accounts for opponent strength in preventing
+            the statistic in question. The numbers themselves have no absolute meaning, but are scaled such that the
+            highest score over the last 15 years registers as a 100 and the lowest is a 0. PtDiff, or opponent adjusted
+            point differential, is the most important
+            of these metrics and is, therefore, what I use for producing my power rankings.
+        </p>
+        <p></p>
+
+        <p class="paragraph_header" id="math">Time for Some Math!</p>
+    </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+
+    <div class="col-md-4">
+        <h2 class="page-header"><a name="contact"></a>Contact</h2>
+
+        <table class="table table-bordered" style="width: auto;">
+            <thead>
+                <tr>
+                    <th colspan="2">Scott Kellert</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Github:</th>
+                    <td><a href="http://github.com/skellert">github.com/skellert</a></td>
+                </tr>
+
+                <tr>
+                    <th>Email:</th>
+                    <td><a href="mailto:skellert22@gmail.com">skellert22@gmail.com</a></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr/>
+
+
+</div><!--/.container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63567020-2', 'auto');
+  ga('send', 'pageview');
+(function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
+</script>
+</body>
+</html>

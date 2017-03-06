@@ -15,7 +15,7 @@
 
 <style type="text/css">
     body {
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     table.sortable thead {
@@ -25,6 +25,30 @@
         cursor: default;
     }
 
+    .navbar-inverse{
+        background-color: blueviolet;
+    }
+    .nav.navbar-nav.navbar-right li a{
+        color: white;
+    }
+    .navbar-header a.navbar-brand{
+        color: white;
+    }
+
+    .dropdown-menu{
+        background-color: blueviolet;
+    }
+    .dropdown-menu > li > a:hover{
+        background-color: mediumpurple;
+    }
+    img.logo{
+        width:18%;
+    }
+        .dropdown-submenu{position:relative;}
+    .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+    .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:mediumpurple;margin-top:5px;margin-right:-10px;}
+    .dropdown-submenu:hover>a:after{background-color:mediumpurple;}
+    .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,13 +70,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Kellert Analytics</a>
+            <a class="navbar-brand" href="/"><img src="static/pto.PNG" class="logo"> Pascal's Triangle Offense</a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
 
             <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentation
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/details">Introduction</a></li>
+                        <li class="dropdown dropdown-submenu">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/details#toolpr">Power Rankings</a></li>
+                                <li><a href="/details#toolstats">Stats</a></li>
+                                <li><a href="/details#toolproj">Projections</a></li>
+                                <li><a href="/details#toolbracket">Bracket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/details#tips">Bracket Tips</a></li>
+                        <li><a href="/details#math">Math/Algorithms</a></li>
+                    </ul>
+                </li>
                 <li><a href="/powerrankings">Power Rankings</a></li>
                 <li><a href="/stats">Stats</a></li>
                 <li><a href="/projections">Projections</a></li>
@@ -146,7 +189,16 @@
 
   ga('create', 'UA-63567020-2', 'auto');
   ga('send', 'pageview');
-
+(function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </body>
