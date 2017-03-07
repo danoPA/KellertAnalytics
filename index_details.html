@@ -6,11 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Kellert Analytics</title>
+<title>Pascals Triangle Offense</title>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="icon" href="/static/pto.PNG">
 
 <style type="text/css">
     body {
@@ -267,7 +268,7 @@
             </tr>
         </table>
         </div>
-        <p id="tips" class="paragraph_header">Tips</p>
+        <p class="paragraph_header"><a class="anchor" id="tips"></a>Tips</p>
         <p>
             Before we get to the math which I'm sure you will all stick around for and read diligently, here are a
             few notes on how to interpret the various numbers you will see here.
@@ -302,7 +303,116 @@
         </p>
         <p></p>
 
-        <p class="paragraph_header" id="math">Time for Some Math!</p>
+        <p class="paragraph_header"><a class="anchor" id="math"></a>Time for Some Math!</p>
+        <p class="sub_paragraph_header">Opponent Adjusted Statistics</p>
+        <p>
+            Before you can start training a predictive model there is a massive amount of data and feature engineering
+            that must be performed. The raw data provided by the Kaggle competition is in the form of box score statistics
+            for every game, both regular season and tournament. However, in order to make a prediction for a game, we
+            need data points for each team in that game that describe those teams' abilities. This where the opponent
+            adjustment algorithm comes into play.
+        </p>
+        <p>
+            The simplest way we could generate these descriptive statistics for each team is to simply look at their
+            average output across the season. For example, we would describe a team's offense by taking its average
+            points scored across the season. There is a very clear problem with this approach. Applying it to the 2016
+            season the top 5 offensive teams in the country would be Oakland, The Citadel, Marshall, North Florida, and
+            Omaha. None of these teams even made the tournament. Applying the opponent adjustment algorithm reveals that
+            North Carolina was, in fact, the best offense in the country. The Tar Heels made it all the way to the final.
+        </p>
+        <p>
+            The algorithm itself is relatively simple but is computationally expensive. The idea is that for every stat
+            we want to adjust we'll give each team a relative score, meaning it has no units or direct interpretability.
+            Every team starts with a score of 0 which reflects our lack of knowledge about the system before the
+            optimization begins. The next step is to generate a score for every team and every game. This score is a
+            reflection of how well that team did with respect to the given stat in the given game. For point differential,
+            which is my metric for overall team quality, the score is calculated using the pythagorean expectation for
+            the game.
+        </p>
+        <p>
+            <img src="/static/pythagorean_expectation.PNG">
+        </p>
+        <p>
+            The rest of the statistics are absolute meaning that, unlike point differential there is no against portion
+            of the formula. For example a teams ability to produce blocks, ignoring the block they allow. In this case
+            I produce a score using the p value produced from the normal distribution.
+        </p>
+        <p>
+            <img src="/static/stat_score.PNG">
+        </p>
+        <p>
+            After game scores are calculated for every game a team's overall stat score is updated to be the average of
+            the sum of the game score and the opponent's score across all the games in the season. In the case of the
+            absolute stats, the opponent score is their score for preventing that stat, not producing. Then the whole
+            process is repeated until the scores converge. These scores typically end up distributed between -1 and 1.
+            The interpretation is that a team with a score of 0 would be expected to tie an average team in the case of
+            point differential or produce an average amount of a given statistic against a team that is average in
+            preventing it. As the score diverges from 0 there is not as simple an interpretation but it can be take to
+            mean absolute ability.
+        </p>
+        <p>
+            For simplicity, I have scaled these values to be bounded from 0 to 100. These bounds are simply defined as
+            the minimum and maximum scores observed over the last 15 years. Not only do these scores pass the eye test
+            of elevating power conference teams, discounting teams from smaller conferences, and matching up with experts'
+            opinions, but they also excel when used as inputs to predictive models.
+        </p>
+        <p class="sub_paragraph_header">Predictive Algorithm</p>
+        <p>
+            With the data transformed into usable features, I created an input file for modeling that included every
+            matchup two times so that each row in the data set could have each stat for both teams in both orders.
+            Otherwise the data would be biased by what ever system I used to pick which team filled which slots in the
+            data. Next, I needed a framework for testing models in a way that would avoid overfitting but would still
+            produce the most meaningful results. I settled on a tournament cross validation approach. In this system,
+            I separated all the tournament games for a given year and then use all the regular season and tournament games
+            except those to train the model. By repreating this for all the available years, 2003-2016, I get a
+            cross-validation log loss that spans many iterations of model fitting and has around 1000 total games to test on.
+            Additionally, I can see how models perform in different situations. For example, some tournaments have many
+            upsets and some have very few. Different types of models fair better in these scenarios, and it is nice to
+            know how a particular algorithm fares across a wide variety tournaments.
+        </p>
+        <p>
+            With all the aforementioned work complete, only the fun part remained, testing different algorithms. This
+            year it was a goal of mine to use neural networks. However, as has been my experience across a wide spectrum
+            of data science projects, logistic regression is really tough to beat. Finally, I found a winning algorithm
+            that employed neural nets and it was all thanks to the concept of variance reduction. While logistic regression
+            is deterministic and will give the same results every time, I was having trouble getting consistent results
+            with the neural net due to the stochastic nature of its optimization. While trying many combinations of its
+            hyper-parameters, particularly the shape of the hidden layers, I would see one set beat out logistic regression
+            only to lose those results when I tried again later. This is when it occurred to me that I should try bagging
+            smaller networks. This is the process of bootstrapping the data and using a subset of the features many times
+            and averaging the results of many estimators together. This turned into a robust solution that was my winner...
+            until regression won again.
+        </p>
+        <p>
+            The last few years I have done this competition I have always wanted to train my model in a way that takes
+            margin of victory into account. However, because the competition requires probabilities as outputs, I have
+            always done this by using the pythagorean expectation as my dependent variable. This approach worked reasonably
+            well but would sometime produce results outside the [0, 1] range and would always lose out to binary classification
+            techniques. This year, for the first time, it occurred to me that I could use a regression based approach to
+            predict point spreads rather than the pythagorean expectation. I could then use the same logic as prediction
+            intervals to generate the probability that the predicted spread was actually greater than 0 (ie winning the
+            game). This simple regression approach immediately outperformed my excessively complex bagged neural nets.
+        </p>
+        <p>
+            I added some finishing touches that only returned modest gains in model performance, but every bit counts
+            and the gains were real. I performed a rigorous round of stepwise selection on the linear regression that
+            game me the best set of variables that do not produce extensive overfitting. Finally, part of my motivation
+            for trying neural nets this year is that I have had the hypothesis that teams with certain combinations of
+            attributes probably match up particularly well or poorly against teams with other attributes. I thought the
+            hidden layers of the neural network might identify these. While that may have happened when I was using
+            classification, I could never get improvement with regression. Additionally, with over 30 attributes for each
+            team, I could not feasibly test all ~1000 possible interactions between the variables. Even if I could, it
+            was possible the meaningful interactions involved 3 or 4 or 5 variables. I realized the problem here was
+            dimensionality, so I started thinking about how I could use my favorite dimension reduction technique,
+            Principal Components Analysis. Using, PCA I could reduce the feature set to a handful of core components and
+            interact the components with each other. Now I could see how certain team archetypes interacted with each
+            other. As stated before, the gains were modest but real, and I was finally capturing style of play.
+        </p>
+        <p>
+            That concludes the core of the analysis I completed, but in reality I did much more than what is described
+            here. If you have any questions about concepts I explained here or are curious about something else I might
+            have tried, please feel free to reach out and ask. Thanks for reading!
+        </p>
     </div>
 </div>
 
