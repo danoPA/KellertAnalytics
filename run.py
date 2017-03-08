@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
 
-adjusted_stats_file = "adjustedStats_2017_prelim.csv"
+adjusted_stats_file = "adjustedStats_2017_prelim_all_years.csv"
 
 @route('/')
 def home():
