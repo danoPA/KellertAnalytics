@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
 
+adjusted_stats_file = "adjustedStats_2017_prelim.csv"
 
 @route('/')
 def home():
@@ -19,14 +20,14 @@ def details():
 
 @route('/powerrankings')
 def powerrank():
-    rankings = load_power_rankings("adjustedStats_2016_2017.csv")
+    rankings = load_power_rankings(adjusted_stats_file)
     teams = [""] + load_teams("bracket_guide_2016_2017.csv")
     return template("index_powerrankings.html", url=url, rankings=rankings, teams=teams)
 
 
 @route('/stats')
 def stats():
-    stats = load_team_stats("adjustedStats_2016_2017.csv")
+    stats = load_team_stats(adjusted_stats_file)
     teams = load_teams("bracket_guide_2016_2017.csv")
     return template("index_stats.html", url=url, stats=stats, teams=teams)
 
@@ -34,7 +35,7 @@ def stats():
 @route('/projections')
 def projections():
     teams = [""] + load_teams("bracket_guide_2016_2017.csv")
-    stats = load_team_stats("adjustedStats_2016_2017.csv")
+    stats = load_team_stats(adjusted_stats_file)
     return template("index_projections.html", url=url, teams=teams, stats=stats)
 
 
@@ -46,7 +47,7 @@ def bracket():
 @route('/team_stats/<team>')
 def team_stats(team):
     team = team.replace("_"," ")
-    stats = load_team_stats("adjustedStats_2016_2017.csv")
+    stats = load_team_stats(adjusted_stats_file)
     stats = stats.loc[stats.Team == team, :]
     with open("team_images.JSON") as infile:
         team_images = json.load(infile)
