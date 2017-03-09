@@ -7,6 +7,7 @@ import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
 
 adjusted_stats_file = "adjustedStats_2017_prelim_all_years.csv"
+bracket_guide = "bracket_guide_2016_2017.csv"
 
 @route('/')
 def home():
@@ -21,22 +22,23 @@ def details():
 @route('/powerrankings')
 def powerrank():
     rankings = load_power_rankings(adjusted_stats_file)
-    teams = [""] + load_teams("bracket_guide_2016_2017.csv")
+    teams = [""] + load_teams(bracket_guide)
     return template("index_powerrankings.html", url=url, rankings=rankings, teams=teams)
 
 
 @route('/stats')
 def stats():
     stats = load_team_stats(adjusted_stats_file)
-    teams = load_teams("bracket_guide_2016_2017.csv")
+    teams = load_teams(bracket_guide)
     return template("index_stats.html", url=url, stats=stats, teams=teams)
 
 
 @route('/projections')
 def projections():
-    teams = [""] + load_teams("bracket_guide_2016_2017.csv")
+    teams = [""] + load_teams(bracket_guide)
     stats = load_team_stats(adjusted_stats_file)
-    return template("index_projections.html", url=url, teams=teams, stats=stats)
+    file_name = adjusted_stats_file
+    return template("index_projections.html", url=url, teams=teams, stats=stats, file_name=file_name)
 
 
 @route('/bracket')

@@ -197,7 +197,7 @@ $(document).ready(function(){
         $('#sel1').on('change', function(){
         selected1 = $(this).find("option:selected").val();
           d3.select("th#team1").text(selected1);
-          d3.text("static/adjustedStats_2016_2017.csv", function(data){
+          d3.text({{file_name}}, function(data){
               var parsed_data = d3.csv.parseRows(data);
               var stat_names = parsed_data[0].slice(1);
               var stats_1 = parsed_data.filter(function(d){
@@ -218,7 +218,7 @@ $(document).ready(function(){
         $('#sel2').on('change', function(){
           selected2 = $(this).find("option:selected").val();
           d3.select("th#team2").text(selected2);
-          d3.text("static/adjustedStats_2016_2017.csv", function(data){
+          d3.text({{file_name}}, function(data){
               var parsed_data = d3.csv.parseRows(data);
               var stat_names = parsed_data[0].slice(1);
               var stats_1 = parsed_data.filter(function(d){
