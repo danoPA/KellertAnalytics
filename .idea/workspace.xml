@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88c8f250-0766-42a8-a247-09275567178c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/h2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/health.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/health_heat.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/health_scatter.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/topojson.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/twitter_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/us-congress-113.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/us-county-names.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/us-land.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/us-state-names.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/us.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bracket.html" afterPath="$PROJECT_DIR$/bracket.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_stats.html" afterPath="$PROJECT_DIR$/index_stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/power_rankings_load.py" afterPath="$PROJECT_DIR$/power_rankings_load.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/probs.json" afterPath="$PROJECT_DIR$/static/probs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/spreads.json" afterPath="$PROJECT_DIR$/static/spreads.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/team_images.JSON" afterPath="$PROJECT_DIR$/static/team_images.JSON" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team_images.JSON" afterPath="$PROJECT_DIR$/team_images.JSON" />
     </list>
     <ignored path="KellertAnalytics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.863061">
+            <state vertical-scroll-proportion="-29.25926">
               <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
@@ -85,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bracket.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bracket.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bracket.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.890909">
-              <caret line="408" column="59" selection-start-line="408" selection-start-column="59" selection-end-line="408" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.45422116">
+              <caret line="1096" column="95" selection-start-line="1096" selection-start-column="95" selection-end-line="1096" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -131,8 +112,8 @@
         <option value="$PROJECT_DIR$/index_projections.html" />
         <option value="$PROJECT_DIR$/index_stats.html" />
         <option value="$PROJECT_DIR$/power_rankings_load.py" />
-        <option value="$PROJECT_DIR$/bracket.html" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/bracket.html" />
       </list>
     </option>
   </component>
@@ -775,21 +756,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bracket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.890909">
-          <caret line="408" column="59" selection-start-line="408" selection-start-column="59" selection-end-line="408" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.863061">
+        <state vertical-scroll-proportion="-29.25926">
           <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bracket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45422116">
+          <caret line="1096" column="95" selection-start-line="1096" selection-start-column="95" selection-end-line="1096" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>
