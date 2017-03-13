@@ -975,7 +975,7 @@ var test_dict = Object;
 
 d3.json("static/bracket_dict_2017.JSON", function(bracket){
   d3.json("static/probs.json", function(probs){
-    d3.json("static/spreads.json", function(spreads){
+    d3.json("static/spreads2.json", function(spreads){
       d3.json("static/team_images.JSON", function(imgs) {
           update(bracket, probs, spreads, imgs);
       });
