@@ -1094,7 +1094,7 @@ function update(bracket, probs, spreads, imgs) {
                     else{
                         if(spreads[team_1][team_2] > 0){var sign = "-"}
                         else{var sign = "+"}
-                        return sign + (Math.round(Math.abs(spreads[team_1][team_2] * 10)) / 10);
+                        return sign + (Math.round(Math.abs(spreads[team_1][team_2]) * 10) / 10);
                     }
                 }
             }
