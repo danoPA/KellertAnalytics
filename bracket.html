@@ -200,7 +200,7 @@
 <div id="chart"></div>
 
 <script type="text/javascript">
-var margin = {top: 30, right: 10, bottom: 10, left: 10},
+var margin = {top: 50, right: 10, bottom: 10, left: 10},
     width = 2300 - margin.left - margin.right,
     halfWidth = width / 2,
     height = 1500 - margin.top - margin.bottom,
@@ -314,7 +314,17 @@ var test_dict = Object;
                           },
                           {
                           "name": test_dict[("left6")][1][1]['team'],
-                          "seed_id": test_dict[("left6")][1][0]
+                          "seed_id": test_dict[("left6")][1][0],
+                          "left": [
+                          {
+                          "name": test_dict["left7"][2][1]['team'],
+                          "seed_id": test_dict[("left7")][2][0]
+                          },
+                          {
+                          "name": test_dict["left7"][3][1]['team'],
+                          "seed_id": test_dict[("left7")][3][0]
+                          }
+                          ]
                           }   
                           ]
                           },
@@ -396,7 +406,7 @@ var test_dict = Object;
                           },
                           {
                           "name": test_dict["left7"][1][1]['team'],
-                          "seed_id": test_dict[("left7")][0][0]
+                          "seed_id": test_dict[("left7")][1][0]
                           }
                           ]
                           }    
@@ -478,17 +488,7 @@ var test_dict = Object;
                           },
                           {
                           "name": test_dict[("left6")][17][1]['team'],
-                          "seed_id": test_dict[("left6")][17][0],
-                          "left": [
-                          {
-                          "name": test_dict["left7"][2][1]['team'],
-                          'seed_id': test_dict["left7"][2][0]
-                          },
-                          {
-                          "name": test_dict["left7"][3][1]['team'],
-                          'seed_id': test_dict["left7"][3][0]
-                          }
-                          ]
+                          "seed_id": test_dict[("left6")][17][0]
                           }    
                           ]
                           },
@@ -649,7 +649,17 @@ var test_dict = Object;
                           },
                           {
                           "name": test_dict[("right6")][1][1]['team'],
-                          "seed_id": test_dict[("right6")][1][0]
+                          "seed_id": test_dict[("right6")][1][0],
+                          "right": [
+                          {
+                          "name": test_dict["right7"][0][1]['team'],
+                          "seed_id": test_dict[("right7")][0][0]
+                          },
+                          {
+                          "name": test_dict["right7"][1][1]['team'],
+                          "seed_id": test_dict[("right7")][1][0]
+                          }
+                          ]
                           }   
                           ]
                           },
@@ -877,7 +887,17 @@ var test_dict = Object;
                           },
                           {
                           "name": test_dict[("right6")][25][1]['team'],
-                          "seed_id": test_dict[("right6")][25][0]
+                          "seed_id": test_dict[("right6")][25][0],
+                          "right": [
+                          {
+                          "name": test_dict["right7"][2][1]['team'],
+                          "seed_id": test_dict[("right7")][2][0]
+                          },
+                          {
+                          "name": test_dict["right7"][3][1]['team'],
+                          "seed_id": test_dict[("right7")][3][0]
+                          }
+                          ]
                           }    
                           ]
                           },
@@ -953,7 +973,7 @@ var test_dict = Object;
   return slots
 }
 
-d3.json("static/bracket_dict.JSON", function(bracket){
+d3.json("static/bracket_dict_2017.JSON", function(bracket){
   d3.json("static/probs.json", function(probs){
     d3.json("static/spreads.json", function(spreads){
       d3.json("static/team_images.JSON", function(imgs) {
@@ -1074,7 +1094,7 @@ function update(bracket, probs, spreads, imgs) {
                     else{
                         if(spreads[team_1][team_2] > 0){var sign = "-"}
                         else{var sign = "+"}
-                        return sign + (Math.round(spreads[team_1][team_2] * 100) / 10);
+                        return sign + (Math.round(spreads[team_1][team_2]) / 10);
                     }
                 }
             }

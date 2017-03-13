@@ -48,6 +48,7 @@ team_stats = namedtuple("team_stats", [
     'FreeThrowsGiven'
 ])
 
+
 def load_team_stats(filepath):
 
     data = pd.read_csv(filepath, header = 0)
@@ -59,6 +60,6 @@ def load_team_stats(filepath):
 def load_teams(filepath):
 
     teams = pd.read_csv(filepath, header = 0)
-    unique_teams = list(set(chain(*[[x[2],x[3]] for x in teams.to_records(index=False)])))
+    unique_teams = list(set(chain(*[[x.Team1,x.Team2] for x in teams.itertuples()])))
 
     return unique_teams
