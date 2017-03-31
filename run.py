@@ -5,6 +5,7 @@ import os
 import pandas as pd
 import numpy as np
 from power_rankings_load import load_power_rankings, load_team_stats, load_teams
+from load_scores import load_scores
 
 adjusted_stats_file = "adjustedStats_2017_final.csv"
 bracket_guide = "bracket_guide_2017.csv"
@@ -55,14 +56,14 @@ def team_stats(team):
         team_images = json.load(infile)
         return template("team_stats.html", url=url, stats=stats, teams=team_images, team=team)
 
-# @route('/master')
-# def masters():
-#     return "Come back next year, 2017"
-#     update_time, individual_standings, total_standings, places = load_scores()
-#     return template("index_masters.html", url=url, update_time=update_time,
-#                     individual_standings=individual_standings,
-#                     total_standings=total_standings,
-#                     places=places)
+@route('/masters')
+def masters():
+    # return "Come back next year, 2017"
+    update_time, individual_standings, total_standings, places = load_scores()
+    return template("index_masters.html", url=url, update_time=update_time,
+                    individual_standings=individual_standings,
+                    total_standings=total_standings,
+                    places=places)
 
 
 @route('/static/<filename>', name = 'static')

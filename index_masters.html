@@ -166,8 +166,8 @@
                 %end
                 <tr class="tabletotal">
                     <td>Total</td>
-                    <td>{{filter(lambda x: x.name == p, total_standings)[0].total_pos}}</td>
-                    <td>{{filter(lambda x: x.name == p, total_standings)[0].total_score}}</td>
+                    <td>{{[t for t in filter(lambda x: x.name == p, total_standings)][0].total_pos}}</td>
+                    <td>{{[t for t in filter(lambda x: x.name == p, total_standings)][0].total_score}}</td>
                     <td></td>
                 </tr>
             </table>
