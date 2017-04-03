@@ -67,76 +67,68 @@ def load_scores():
 
     standings = {
         "Kellert":[
-            "Adam Scott",
-            "Sergio Garcia",
-            "Kevin Na",
-            "Andy Sullivan",
-            "Keegan Bradley",
-            "Ian Poulter"
+            "Dustin Johnson",
+            "Patrick Reed",
+            "Matt Kuchar",
+            "Gary Woodland",
+            "J.B. Holmes",
+            "Kevin Chappell"
         ],
         "Keesee":[
+            "Adam Scott",
             "Rickie Fowler",
-            "Marc Leishman",
-            "Jason Dufner",
-            "J.B. Holmes",
-            "Webb Simpson",
-            "Angel Cabrera"
+            "Branden Grace",
+            "Russell Knox",
+            "Rafael Cabrera Bello",
+            "Emiliano Grillo"
         ],
         "Shane":[
-            "Jason Day",
-            "Danny Willett",
-            "Charl Schwartzel",
-            "Jamie Donaldson",
-            "Thongchai Jaidee",
-            "Ernie Els"
+            "Hideki Matsuyama",
+            "Jon Rahm",
+            "Louis Oosthuizen",
+            "Thomas Pieters",
+            "Bill Haas",
+            "Jason Dufner"
         ],
         "Rankin":[
-            "Louis Oosthuizen",
-            "Brandt Snedeker",
-            "Brooks Koepka",
-            "Branden Grace",
-            "David Lingmerth",
-            "Byeong-Hun An"
+            "Henrik Stenson",
+            "Tyrrell Hatton",
+            "Alex Noren",
+            "Charley Hoffman",
+            "Tommy Fleetwood",
+            "Soren Kjeldsen"
         ],
         "Trent":[
             "Rory McIlroy",
-            "Hideki Matsuyama",
-            "Matt Kuchar",
-            "Shane Lowry",
-            "Charley Hoffman",
-            "Russell Knox"
+            "Phil Mickelson",
+            "Paul Casey",
+            "Marc Leishman",
+            "Lee Westwood",
+            "Shane Lowry"
         ],
         "Bergman":[
+            "Jason Day",
             "Bubba Watson",
-            "Justin Rose",
+            "Sergio Garcia",
+            "Zach Johnson",
             "Martin Kaymer",
-            "Ryan Moore",
-            "Billy Horschel",
-            "Lee Westwood"
+            "Ryan Moore"
         ],
         "Moops":[
-            "Henrik Stenson",
-            "Phil Mickelson",
-            "Jimmy Walker",
-            "Paul Casey",
-            "Danny Lee",
-            "Victor Dubuisson"
-        ],
-        "Sample":[
-            "Jordan Spieth",
-            "Patrick Reed",
             "Justin Thomas",
-            "Bill Haas",
-            "Harris English",
-            "Emiliano Grillo"
+            "Justin Rose",
+            "Jimmy Walker",
+            "Matthew Fitzpatrick",
+            "Charl Schwartzel",
+            "Hideto Tanihara"
         ],
         "Day":[
-            "Dustin Johnson",
-            "Zach Johnson",
-            "Kevin Kisner",
-            "Rafael Cabrera Bello",
-            "Graeme McDowell",
-            "Hunter Mahan"
+            "Jordan Spieth",
+            "Brandt Snedeker",
+            "Danny Willett",
+            "Francesco Molinari",
+            "Brooks Koepka",
+            "Daniel Berger"
         ]
     }
 
