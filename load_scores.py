@@ -140,7 +140,7 @@ def load_scores():
         ]
     }
 
-    leaderboard_pd = scrape_leaderboard("http://www.espn.com/golf/leaderboard?tournamentId=2493")
+    leaderboard_pd = scrape_leaderboard("http://www.espn.com/golf/leaderboard")
     places = dict(map(lambda y: (y.PLAYER, y), leaderboard_pd.itertuples()))
 
     standing_tuple = namedtuple("standing_tuple", ["name","total_pos","total_score"])
