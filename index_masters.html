@@ -158,7 +158,7 @@
                         <td>{{player.POS}}</td>
                         <td>{{player.TOPAR}}</td>
                         %if player.THRU == "":
-                            <td>F</td>
+                            <td>-</td>
                         %else:
                             <td>{{player.THRU}}</td>
                         %end
@@ -250,8 +250,10 @@ d3.csv("static/score_graph.csv", function(error, data) {
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "Time"; }));
 
+  var row_num = 0;
   data.forEach(function(d) {
-    d.Time = parseDate(d.Time);
+    d.Time = row_num;
+    row_num = row_num + 1;
   });
 
   var players = color.domain().map(function(player) {
