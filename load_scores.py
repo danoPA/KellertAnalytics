@@ -67,7 +67,7 @@ def load_scores():
 
     standings = {
         "Kellert":[
-            "Dustin Johnson",
+            "Pat Perez",
             "Patrick Reed",
             "Matt Kuchar",
             "Gary Woodland",
@@ -161,12 +161,15 @@ def load_scores():
         total_standings.append(standing_tuple(name, total_pos, total_score))
 
     total_standings = sorted(total_standings, key=lambda x: x.total_pos,reverse=False)
-    t = [datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(hours=4), '%Y-%m-%d %I:%M')]
+    t = [datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(hours=4), '%Y-%m-%d %H:%M')]
     write_line = ",".join(t + [str(i.total_pos) for i in sorted(total_standings, key=lambda r: r.name)])
-    if datetime.datetime.now().day >= 7 and datetime.datetime.now().minute % 10 == 0:
+    if datetime.datetime.now().day >= 6 and datetime.datetime.now().minute % 10 == 0:
         try:
             with open("static/score_graph.csv", 'a') as outfile:
                 outfile.write(write_line+'\n')
+            score_graph = pd.read_csv("static/score_graph.csv", header=0)
+            score_graph = score_graph.drop_duplicates()
+            score_graph.to_csv("static/score_graph.csv", index=False)
         except:
-            pass
+            pass       
     return update_time, individual_standings, total_standings, places

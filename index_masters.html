@@ -293,7 +293,8 @@ d3.csv("static/score_graph.csv", function(error, data) {
   player.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
-      .style("stroke", function(d) { return color(d.name); });
+      .style("stroke", function(d) { return color(d.name); })
+      .style("fill", "none");
 
   player.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
